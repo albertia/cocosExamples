@@ -1,0 +1,109 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "EnemyGenerator",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_native": "",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 0,
+    "persistent": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "EnemyGenerator",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": null,
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 2
+      }
+    ],
+    "_prefab": {
+      "__id__": 4
+    },
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "1c66aGHVYBIW47GMTuqoaAs",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 3
+    },
+    "timeBetweenWaves": 5,
+    "timeBetweenEnemies": 1,
+    "numberOfWaves": 3,
+    "enemiesPerWave": 10,
+    "enemyPrefab": {
+      "__uuid__": "ddadacc0-0536-4d8b-8800-162c76a5435c",
+      "__expectedType__": "cc.Prefab"
+    },
+    "easyEnemySprite": {
+      "__uuid__": "4e93d8dd-29ab-41e0-b5a0-6e9d82e6e92f@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "midEnemySprite": {
+      "__uuid__": "cf743787-c268-4d58-8e15-c9e8011b5281@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "hardEnemySprite": {
+      "__uuid__": "686648dd-d6b6-4c51-96ff-2a65dc9e0a7f@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "a6M1RR4vdJw51Qx6wR6Gu/"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "c46/YsCPVOJYA4mWEpNYRx",
+    "instance": null,
+    "targetOverrides": null
+  }
+]
