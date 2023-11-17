@@ -1,4 +1,4 @@
-import { _decorator, Component, director, EPhysics2DDrawFlags, Node, PhysicsSystem2D, RichText } from 'cc';
+import { _decorator, AudioClip, AudioSource, Component, director, EPhysics2DDrawFlags, Node, PhysicsSystem2D, RichText } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('Game')
@@ -9,6 +9,13 @@ export class Game extends Component {
     public hero:Node;
     @property(Node)
     public scoreNode:Node;
+    @property(AudioClip)
+    public diamondSound:AudioClip;
+    @property(AudioClip)
+    public dieSound:AudioClip;
+
+    private diamondSoundSource:AudioSource;
+    private dieSoundSource:AudioSource;
 
     start() {
         /*
@@ -18,18 +25,25 @@ export class Game extends Component {
         EPhysics2DDrawFlags.Joint |
         EPhysics2DDrawFlags.Shape;
     */
+        this.diamondSoundSource = new AudioSource()
+        this.diamondSoundSource.clip = this.diamondSound;
+        this.dieSoundSource = new AudioSource()
+        this.dieSoundSource.clip = this.dieSound;
+
         this.score= 0;
         localStorage.setItem("score", JSON.stringify(this.score));
         const scoreNodeComponent = this.scoreNode.getComponent(RichText);
         this.hero.on('score', () => {
-            //audioEngine.play(this.sound);
+            this.diamondSoundSource.play();
             ++this.score;
             scoreNodeComponent.string = this.score.toString();
             localStorage.setItem("score", JSON.stringify(this.score));
         });
         this.hero.once('die', () => {
-            //audioEngine.play(this.sound);
-            director.loadScene("Score");
+            this.dieSoundSource.play();
+            setTimeout(function () {
+                director.loadScene("Score");
+              }.bind(this), 1005); // 1 sec to allow sound to Finish
         });
     }
 

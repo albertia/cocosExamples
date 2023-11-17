@@ -1,5 +1,5 @@
 import { _decorator, Component, input, Input, EventKeyboard, EventTouch, Collider2D, Contact2DType, 
-    IPhysics2DContact, PhysicsSystem2D, KeyCode, Node, Vec2, RigidBody, RigidBody2D, Vec3, Sprite, Animation, UITransform } from 'cc';
+    IPhysics2DContact, PhysicsSystem2D, KeyCode, Node, Vec2, RigidBody, RigidBody2D, Vec3, Sprite, Animation, UITransform, AudioClip, AudioSource } from 'cc';
 import { Background } from './Background';
 const { ccclass, property } = _decorator;
 
@@ -13,6 +13,7 @@ export class Hero extends Component {
     private startJumpY = 0.0;
     private animation:Animation;
     private body : RigidBody2D;
+    private jumpSoundSource:AudioSource;
 
     @property
     public jumpSpeed:Vec2 = new Vec2(0.0, 300.0);
@@ -22,6 +23,8 @@ export class Hero extends Component {
     public jumpSprite:Sprite;
     @property(Background)
     public back:Background;
+    @property(AudioClip)
+    public jumpSound:AudioClip;
 
     protected onLoad(): void {
         input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
@@ -36,10 +39,8 @@ export class Hero extends Component {
             collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
         }
 
-        // Registering global contact callback functions
-        //if (PhysicsSystem2D.instance) {
-        //    PhysicsSystem2D.instance.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
-        //}
+        this.jumpSoundSource = new AudioSource()
+        this.jumpSoundSource.clip = this.jumpSound;
     }
 
     onKeyDown (event: EventKeyboard) {
@@ -113,6 +114,7 @@ export class Hero extends Component {
             this.isJumping = true;
             this.jumpFinished = false;
             this.body.linearVelocity = this.jumpSpeed;    
+            this.jumpSoundSource.play();
         } else if (this.isJumping && !this.jumpFinished) {
             if (this.node.position.y < this.startJumpY + this.jumpMaxHeight) {
                 this.body.linearVelocity = this.jumpSpeed;    
