@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Sprite, SpriteFrame, Vec3 } from 'cc';
+import { _decorator, Component, Node, Quat, Sprite, SpriteFrame, Vec3 } from 'cc';
 import { LevelMap } from './LevelMap';
 const { ccclass, property } = _decorator;
 
@@ -6,7 +6,9 @@ const { ccclass, property } = _decorator;
 export class Enemy extends Component {
 
     @property
-    public speed:number = 150;
+    public speed:number = 200;
+    @property
+    public rotationSpeed:number = 360;
 
     public levelMapNode:Node;
     public spriteToUse:SpriteFrame;
@@ -28,20 +30,73 @@ export class Enemy extends Component {
         if (toMove > distance) {
             this.node.position = this.pathToFollow[this.indexOfPath];
             this.indexOfPath++;
-            // Rotate Gracefully
         } else {
-
             if (direction.x > direction.y && direction.x > 0) {
+                // To Right
                 this.node.position = new Vec3(this.node.position.x + this.speed*deltaTime,this.node.position.y,0);
+                if (this.node.angle > 180){
+                    this.node.angle += this.rotationSpeed*deltaTime; 
+                    if (this.node.angle > 360) {
+                        this.node.angle = 0;
+                    }
+                }
+                else if (this.node.angle > 0){
+                    this.node.angle -= this.rotationSpeed*deltaTime; 
+                    if (this.node.angle < 0) {
+                        this.node.angle = 0;
+                    }
+                }
             }
             else if (direction.x < direction.y && direction.x < 0) {
+                // To Left
                 this.node.position = new Vec3(this.node.position.x - this.speed*deltaTime,this.node.position.y,0);
+                if (this.node.angle < 180){
+                    this.node.angle += this.rotationSpeed*deltaTime; 
+                    if (this.node.angle > 180) {
+                        this.node.angle = 180;
+                    }
+                }
+                else if (this.node.angle > 180){
+                    this.node.angle -= this.rotationSpeed*deltaTime; 
+                    if (this.node.angle < 180) {
+                        this.node.angle = 180;
+                    }
+                }
             }
             else if (direction.x < direction.y && direction.y > 0) {
+                // To UP
                 this.node.position = new Vec3(this.node.position.x ,this.node.position.y + this.speed*deltaTime,0);
+                if (this.node.angle < 90){
+                    this.node.angle += this.rotationSpeed*deltaTime; 
+                    if (this.node.angle > 90) {
+                        this.node.angle = 90;
+                    }
+                }
+                else if (this.node.angle > 90){
+                    this.node.angle -= this.rotationSpeed*deltaTime; 
+                    if (this.node.angle < 90) {
+                        this.node.angle = 90;
+                    }
+                }
             } 
             else if (direction.x > direction.y && direction.y < 0) {
+                // To Down
                 this.node.position = new Vec3(this.node.position.x ,this.node.position.y - this.speed*deltaTime,0);
+                if (this.node.angle > 90 && this.node.angle < 270){
+                    this.node.angle += this.rotationSpeed*deltaTime; 
+                    if (this.node.angle > 270) {
+                        this.node.angle = 270;
+                    }
+                }
+                else if (this.node.angle > 270 || this.node.angle < 90){
+                    this.node.angle -= this.rotationSpeed*deltaTime;
+                    if (this.node.angle < 0) {
+                        this.node.angle += 360;
+                    }
+                    if (this.node.angle < 270) {
+                        this.node.angle = 270;
+                    }
+                }
             }       
         }
     }
@@ -50,6 +105,6 @@ export class Enemy extends Component {
         this.pathToFollow = this.levelMapNode.getComponent(LevelMap).pathRoute;
         this.getComponent(Sprite).spriteFrame = this.spriteToUse;
         this.node.position = this.pathToFollow[0];
+        this.node.angle = 90;
     }
 }
-
