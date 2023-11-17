@@ -1,5 +1,6 @@
 import { _decorator, Component, input, Input, EventKeyboard, EventTouch, Collider2D, Contact2DType, 
-    IPhysics2DContact, PhysicsSystem2D, KeyCode, Node, Vec2, RigidBody, RigidBody2D, Vec3, Sprite, Animation } from 'cc';
+    IPhysics2DContact, PhysicsSystem2D, KeyCode, Node, Vec2, RigidBody, RigidBody2D, Vec3, Sprite, Animation, UITransform } from 'cc';
+import { Background } from './Background';
 const { ccclass, property } = _decorator;
 
 @ccclass('Hero')
@@ -11,13 +12,16 @@ export class Hero extends Component {
     private jumpFinished = false;
     private startJumpY = 0.0;
     private animation:Animation;
+    private body : RigidBody2D;
+
     @property
     public jumpSpeed:Vec2 = new Vec2(0.0, 300.0);
     @property
     public jumpMaxHeight = 300;
     @property(Sprite)
     public jumpSprite:Sprite;
-    private body : RigidBody2D;
+    @property(Background)
+    public back:Background;
 
     protected onLoad(): void {
         input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
@@ -77,6 +81,11 @@ export class Hero extends Component {
             this.jump(deltaTime);
         }
         this.animate();
+
+        if (this.node.position.y < -this.back.node.children[0].getComponent(UITransform).height/2) {
+            this.node.emit('die');
+        }
+
     }
 
     onBeginContact (selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
