@@ -1,0 +1,191 @@
+{
+  "version": "1.0.0",
+  "map": {
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites.meta": {
+      "time": 1699962757976.8774
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites": {
+      "time": 1699962786082.6584,
+      "uuid": "62266c77-d3a9-4f37-a420-bea529eeca8c"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/background.png.meta": {
+      "time": 1699962786104.6145
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/diamond.png.meta": {
+      "time": 1699962786121.1145
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/hero.png.meta": {
+      "time": 1699962786139.293
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/jump.png.meta": {
+      "time": 1699962786152.5718
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/platform.png.meta": {
+      "time": 1699962786161.4863
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/walk1.png.meta": {
+      "time": 1699962786177.019
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/walk2.png.meta": {
+      "time": 1699962786190.3718
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/background.png": {
+      "time": 1699962786078.04,
+      "uuid": "591c79ed-7b94-4eda-8b71-13396d6d3df2"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/diamond.png": {
+      "time": 1699962786078.213,
+      "uuid": "9756aef4-4011-4e57-8ca4-46d6ebd85fa2"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/hero.png": {
+      "time": 1699962786078.3489,
+      "uuid": "64eefff4-c3e7-427b-93b4-b24430084701"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/jump.png": {
+      "time": 1699962786078.541,
+      "uuid": "3e95ec12-5ffe-4fed-a3fd-02a91466556e"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/platform.png": {
+      "time": 1699962786078.7751,
+      "uuid": "7895cedf-edd1-49c9-9bea-d78b45067ce5"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/walk1.png": {
+      "time": 1699962786078.7805,
+      "uuid": "08f189ff-8d02-4337-afeb-22dc87a54a14"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/sprites/walk2.png": {
+      "time": 1699962786079.0154,
+      "uuid": "6d88d12b-bfcb-4926-95a1-9b18c85fa174"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scenes.meta": {
+      "time": 1699963103050.8425
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scenes": {
+      "time": 1699975063865.71,
+      "uuid": "18348ad8-ed1a-4feb-917b-6787239907e2"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scene.meta": {
+      "time": 1699963141506.976
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scene": {
+      "time": 1700215501378.527,
+      "uuid": "ef9a3f1f-a0d4-43e4-b9c1-a12e786d1f77"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts.meta": {
+      "time": 1699975359800.405
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts": {
+      "time": 1700149356693.5945,
+      "uuid": "9b91a4d2-31b2-40a0-bb3d-e1e94a3c59b5"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/Game.ts.meta": {
+      "time": 1699975400538.2698
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/Game.ts": {
+      "time": 1700213919710.8,
+      "uuid": "da6d174d-a801-4dfb-8ba8-a6fdbb63bdbb"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.ts.meta": {
+      "time": 1699978022751.177
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.ts": {
+      "time": 1700216482141.3352,
+      "uuid": "b7bc2dce-e188-4257-ba13-0cf2e7735885"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/Platform.ts.meta": {
+      "time": 1700059011296.974
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/Platform.ts": {
+      "time": 1700213124627.9607,
+      "uuid": "9ca942f6-0e38-4730-be20-b6ad913566b7"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/prefab.meta": {
+      "time": 1700059523436.989
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/prefab": {
+      "time": 1700149252226.841,
+      "uuid": "e85d99c9-a38f-4c01-8ea2-b4c12303c333"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/prefab/tile.prefab.meta": {
+      "time": 1700059540349.764
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/prefab/tile.prefab": {
+      "time": 1700149402209.8389,
+      "uuid": "35e693c0-e6ce-4d51-933f-da244857ad38"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/prefab/platform.prefab.meta": {
+      "time": 1700062363896.7808
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/prefab/platform.prefab": {
+      "time": 1700065020236.9739,
+      "uuid": "b720693e-8be5-4baf-b6e5-2d01b1b9525d"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/PlatformGenerator.ts.meta": {
+      "time": 1700062690124.895
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/PlatformGenerator.ts": {
+      "time": 1700213164825.3926,
+      "uuid": "bdd395d5-cbb8-412b-b2e9-468ea33d4044"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/prefab/diamond.prefab.meta": {
+      "time": 1700149252229.6694
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/prefab/diamond.prefab": {
+      "time": 1700153689092.5623,
+      "uuid": "9a0df7c4-4198-4190-ad0a-490cb73e8c52"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/Diamond.ts.meta": {
+      "time": 1700149351121.8367
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/scripts/Diamond.ts": {
+      "time": 1700213123583.2742,
+      "uuid": "130e0b90-2191-48b5-b381-1e3c9526d6b8"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/animation.meta": {
+      "time": 1700214209869.6577
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/animation": {
+      "time": 1700214284858.5771,
+      "uuid": "f08c410e-1ef8-436b-a7df-9f9d30d6206a"
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/animation/walkjing.anim.meta": {
+      "time": 1700214280293.7532
+    },
+    "/Users/alex/git/cocos/EndlessRunner/assets/animation/walkjing.anim": {
+      "time": 1700216597063.667,
+      "uuid": "c0703486-b80d-439e-ba7a-8f6885871785"
+    }
+  },
+  "missing": {
+    "ef9a3f1f-a0d4-43e4-b9c1-a12e786d1f77": {
+      "path": "/Users/alex/git/cocos/EndlessRunner/assets/GameScene.scene",
+      "time": 1699963141505.7798,
+      "removeTime": 1699963146062
+    },
+    "c9987867-0fe0-4425-9a3b-d19c34315f06": {
+      "path": "/Users/alex/git/cocos/EndlessRunner/assets/scenes/Game.scene",
+      "time": 1699963126488.6594,
+      "removeTime": 1699975063866
+    },
+    "9a0df7c4-4198-4190-ad0a-490cb73e8c52": {
+      "path": "/Users/alex/git/cocos/EndlessRunner/assets/prefab/tile-001.prefab",
+      "time": 1700149245557.6145,
+      "removeTime": 1700149252227
+    },
+    "130e0b90-2191-48b5-b381-1e3c9526d6b8": {
+      "path": "/Users/alex/git/cocos/EndlessRunner/assets/scripts/Platform-001.ts",
+      "time": 1700149351122.4822,
+      "removeTime": 1700149356694
+    },
+    "e3318362-b8cf-4712-aeda-a79884cd38e5": {
+      "path": "/Users/alex/git/cocos/EndlessRunner/assets/animation/animation.anim",
+      "time": 1700214255048.127,
+      "removeTime": 1700214264258
+    },
+    "c0703486-b80d-439e-ba7a-8f6885871785": {
+      "path": "/Users/alex/git/cocos/EndlessRunner/assets/walkjing.anim",
+      "time": 1700214280290.7388,
+      "removeTime": 1700214284859
+    }
+  }
+}

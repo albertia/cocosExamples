@@ -1,0 +1,1629 @@
+14-11-2023 16:57:25-log: Cannot access game frame or container.
+14-11-2023 16:57:25-debug: asset-db:require-engine-code (1385ms)
+14-11-2023 16:57:25-log: Cocos Creator v3.8.1
+14-11-2023 16:57:25-debug: [Assets Memory track]: asset-db-plugin-enable: project start:94.52MB, end 97.55MB, increase: 3.03MB
+14-11-2023 16:57:25-debug: [Assets Memory track]: asset-db:worker-init: initPlugin start:92.09MB, end 97.55MB, increase: 5.46MB
+14-11-2023 16:57:25-debug: [Assets Memory track]: asset-db:worker-init: initEngine start:19.72MB, end 92.08MB, increase: 72.36MB
+14-11-2023 16:57:25-debug: [Assets Memory track]: asset-db-plugin-register: engine-extends start:94.35MB, end 97.55MB, increase: 3.20MB
+14-11-2023 16:57:25-debug: [Assets Memory track]: asset-db-plugin-register: programming start:92.68MB, end 94.30MB, increase: 1.62MB
+14-11-2023 16:57:25-debug: asset-db:worker-init: initPlugin (164ms)
+14-11-2023 16:57:25-debug: [Assets Memory track]: asset-db:worker-init start:19.72MB, end 97.61MB, increase: 77.89MB
+14-11-2023 16:57:25-debug: Run asset db hook engine-extends:beforePreStart ...
+14-11-2023 16:57:25-debug: Run asset db hook programming:beforePreStart success!
+14-11-2023 16:57:25-debug: Run asset db hook engine-extends:beforePreStart success!
+14-11-2023 16:57:25-debug: Run asset db hook programming:beforePreStart ...
+14-11-2023 16:57:26-debug: asset-db:worker-init (2632ms)
+14-11-2023 16:57:26-debug: asset-db-hook-programming-beforePreStart (694ms)
+14-11-2023 16:57:26-debug: asset-db-hook-engine-extends-beforePreStart (693ms)
+14-11-2023 16:57:26-debug: Preimport db internal success
+14-11-2023 16:57:26-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Game.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 16:57:26-debug: Preimport db assets success
+14-11-2023 16:57:26-debug: Run asset db hook programming:afterPreStart ...
+14-11-2023 16:57:28-debug: run package(builder) handler(enable) start
+14-11-2023 16:57:37-debug: run package(builder) handler(enable) success!
+14-11-2023 16:57:37-debug: [Assets Memory track]: asset-db-plugin-enable: builder start:116.71MB, end 341.77MB, increase: 225.06MB
+14-11-2023 16:57:37-debug: run package(shortcuts) handler(enable) start
+14-11-2023 16:57:37-debug: run package(about) handler(enable) start
+14-11-2023 16:57:37-debug: run package(about) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(assets) handler(enable) start
+14-11-2023 16:57:37-debug: run package(assets) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(console) handler(enable) start
+14-11-2023 16:57:37-debug: run package(console) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(crash-reporter) handler(enable) start
+14-11-2023 16:57:37-debug: run package(crash-reporter) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(extension) handler(enable) start
+14-11-2023 16:57:37-debug: run package(extension) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(hierarchy) handler(enable) start
+14-11-2023 16:57:37-debug: run package(hierarchy) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(inspector) handler(enable) start
+14-11-2023 16:57:37-debug: run package(inspector) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(light-probe) handler(enable) start
+14-11-2023 16:57:37-debug: run package(light-probe) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(lightmap) handler(enable) start
+14-11-2023 16:57:37-debug: run package(lightmap) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(node-library) handler(enable) start
+14-11-2023 16:57:37-debug: run package(node-library) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(package-asset) handler(enable) start
+14-11-2023 16:57:37-debug: run package(package-asset) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(process) handler(enable) start
+14-11-2023 16:57:37-debug: run package(process) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(reference-image) handler(enable) start
+14-11-2023 16:57:37-debug: run package(reference-image) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(reflection-probe) handler(enable) start
+14-11-2023 16:57:37-debug: run package(reflection-probe) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(engine-extends) handler(enable) start
+14-11-2023 16:57:37-debug: run package(engine-extends) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(adsense-h5g-plugin) handler(enable) start
+14-11-2023 16:57:37-debug: run package(adsense-h5g-plugin) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(alipay-mini-game) handler(enable) start
+14-11-2023 16:57:37-debug: run package(alipay-mini-game) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(android) handler(enable) start
+14-11-2023 16:57:37-debug: run package(android) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(animation-graph) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(bytedance-mini-game) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(certificate) handler(enable) start
+14-11-2023 16:57:37-debug: run package(certificate) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(channel-upload-tools) handler(enable) start
+14-11-2023 16:57:37-debug: run package(channel-upload-tools) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(fb-instant-games) handler(enable) start
+14-11-2023 16:57:37-debug: run package(shortcuts) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(huawei-agc) handler(enable) start
+14-11-2023 16:57:37-debug: run package(huawei-agc) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(fb-instant-games) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(huawei-quick-game) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(ios) handler(enable) start
+14-11-2023 16:57:37-debug: run package(ios) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(linux) handler(enable) start
+14-11-2023 16:57:37-debug: run package(linux) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(mac) handler(enable) start
+14-11-2023 16:57:37-debug: run package(mac) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(native) handler(enable) start
+14-11-2023 16:57:37-debug: run package(native) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(ohos) handler(enable) start
+14-11-2023 16:57:37-debug: run package(ohos) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(openharmony) handler(enable) start
+14-11-2023 16:57:37-debug: run package(openharmony) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(oppo-mini-game) handler(enable) start
+14-11-2023 16:57:37-debug: run package(oppo-mini-game) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(runtime-dev-tools) handler(enable) start
+14-11-2023 16:57:37-debug: run package(runtime-dev-tools) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(taobao-creative-app) handler(enable) start
+14-11-2023 16:57:37-debug: run package(taobao-creative-app) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(taobao-mini-game) handler(enable) start
+14-11-2023 16:57:37-debug: run package(taobao-mini-game) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(vivo-mini-game) handler(enable) start
+14-11-2023 16:57:37-debug: run package(vivo-mini-game) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(web-desktop) handler(enable) start
+14-11-2023 16:57:37-debug: run package(web-desktop) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(web-mobile) handler(enable) start
+14-11-2023 16:57:37-debug: run package(web-mobile) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(wechatgame) handler(enable) start
+14-11-2023 16:57:37-debug: run package(wechatgame) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(wechatprogram) handler(enable) start
+14-11-2023 16:57:37-debug: run package(wechatprogram) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(windows) handler(enable) start
+14-11-2023 16:57:37-debug: run package(windows) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(xiaomi-quick-game) handler(enable) start
+14-11-2023 16:57:37-debug: run package(xiaomi-quick-game) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(cocos-service) handler(enable) start
+14-11-2023 16:57:37-debug: run package(cocos-service) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(im-plugin) handler(enable) start
+14-11-2023 16:57:37-debug: run package(im-plugin) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(placeholder) handler(enable) start
+14-11-2023 16:57:37-debug: run package(placeholder) handler(enable) success!
+14-11-2023 16:57:37-debug: run package(animation-graph) handler(enable) start
+14-11-2023 16:57:37-debug: run package(bytedance-mini-game) handler(enable) start
+14-11-2023 16:57:37-debug: run package(huawei-quick-game) handler(enable) start
+14-11-2023 16:57:37-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 16:57:37-debug: Run asset db hook engine-extends:afterPreStart success!
+14-11-2023 16:57:37-debug: Start up the 'internal' database...
+14-11-2023 16:57:37-debug: Run asset db hook engine-extends:afterPreStart ...
+14-11-2023 16:57:37-debug: [Assets Memory track]: asset-db:worker-init: preStart start:97.61MB, end 343.58MB, increase: 245.97MB
+14-11-2023 16:57:37-debug: Run asset db hook programming:afterPreStart success!
+14-11-2023 16:57:38-debug: asset-db-hook-programming-afterPreStart (11335ms)
+14-11-2023 16:57:38-debug: asset-db:worker-effect-data-processing (50ms)
+14-11-2023 16:57:38-debug: asset-db-hook-engine-extends-afterPreStart (51ms)
+14-11-2023 16:57:38-debug: start asset-db(internal) with asset: 463
+14-11-2023 16:57:38-debug: [Assets Memory track]: asset-db:worker-startup-database[internal] start:115.39MB, end 340.86MB, increase: 225.48MB
+14-11-2023 16:57:38-debug: Start up the 'assets' database...
+14-11-2023 16:57:38-debug: start asset-db(assets) with asset: 12
+14-11-2023 16:57:38-debug: asset-db:worker-startup-database[internal] (11509ms)
+14-11-2023 16:57:38-debug: [Assets Memory track]: asset-db:worker-startup-database[assets] start:116.45MB, end 341.07MB, increase: 224.62MB
+14-11-2023 16:57:38-debug: asset-db:worker-startup-database[assets] (11391ms)
+14-11-2023 16:57:38-debug: asset-db:start-database (12099ms)
+14-11-2023 16:57:38-debug: asset-db:ready (17191ms)
+14-11-2023 16:57:38-debug: init worker message success
+14-11-2023 16:57:38-debug: programming:execute-script (9ms)
+14-11-2023 16:57:38-debug: [Build Memory track]: builder:worker-init start:344.60MB, end 351.09MB, increase: 6.49MB
+14-11-2023 16:57:38-debug: builder:worker-init (501ms)
+14-11-2023 16:57:40-debug: programming:execute-script (5ms)
+14-11-2023 16:58:06-debug: refresh db internal success
+14-11-2023 16:58:06-debug: refresh db assets success
+14-11-2023 16:58:06-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 16:58:06-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 16:58:06-debug: asset-db:refresh-all-database (61ms)
+14-11-2023 16:58:06-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 16:58:06-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 16:59:04-debug: refresh db internal success
+14-11-2023 16:59:04-debug: refresh db assets success
+14-11-2023 16:59:04-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 16:59:04-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 16:59:04-debug: asset-db:refresh-all-database (45ms)
+14-11-2023 16:59:04-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 16:59:04-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:03:06-debug: refresh db internal success
+14-11-2023 17:03:06-debug: refresh db assets success
+14-11-2023 17:03:06-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:03:06-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:03:06-debug: asset-db:refresh-all-database (65ms)
+14-11-2023 17:03:06-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:03:10-debug: refresh db internal success
+14-11-2023 17:03:10-debug: refresh db assets success
+14-11-2023 17:03:10-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:03:10-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:03:10-debug: asset-db:refresh-all-database (52ms)
+14-11-2023 17:03:10-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:03:10-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:03:42-debug: refresh db internal success
+14-11-2023 17:03:42-debug: refresh db assets success
+14-11-2023 17:03:42-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:03:42-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:03:42-debug: asset-db:refresh-all-database (48ms)
+14-11-2023 17:03:42-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:03:42-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:04:44-debug: refresh db internal success
+14-11-2023 17:04:44-debug: refresh db assets success
+14-11-2023 17:04:44-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:04:44-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:04:44-debug: asset-db:refresh-all-database (45ms)
+14-11-2023 17:04:44-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:06:20-debug: refresh db internal success
+14-11-2023 17:06:20-debug: refresh db assets success
+14-11-2023 17:06:20-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:06:20-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:06:20-debug: asset-db:refresh-all-database (47ms)
+14-11-2023 17:06:20-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:06:20-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:06:40-debug: refresh db internal success
+14-11-2023 17:06:40-debug: refresh db assets success
+14-11-2023 17:06:40-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:06:40-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:06:40-debug: asset-db:refresh-all-database (42ms)
+14-11-2023 17:06:40-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:06:40-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:06:49-debug: refresh db internal success
+14-11-2023 17:06:49-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Game.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:06:49-debug: refresh db assets success
+14-11-2023 17:06:49-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:06:49-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:06:49-debug: asset-db:refresh-all-database (39ms)
+14-11-2023 17:06:49-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:06:49-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:07:02-debug: start refresh asset from /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.ts...
+14-11-2023 17:07:02-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:07:02-debug: refresh asset /Users/alex/git/cocos/EndlessRunner/assets/scripts success
+14-11-2023 17:07:02-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scriptsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:07:44-debug: refresh db internal success
+14-11-2023 17:07:44-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:07:44-debug: refresh db assets success
+14-11-2023 17:07:44-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:07:44-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:07:44-debug: asset-db:refresh-all-database (36ms)
+14-11-2023 17:07:44-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:07:44-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:07:47-debug: Query all assets info in project
+14-11-2023 17:07:47-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:07:47-debug:   Number of all scenes: 1
+14-11-2023 17:07:47-debug:   Number of all scripts: 3
+14-11-2023 17:07:47-debug:   Number of other assets: 344
+14-11-2023 17:07:47-debug: reload all scripts.
+14-11-2023 17:07:47-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:07:47-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js is not in module cache!
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/gfx-empty" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/3d" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/animation" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/skeletal-animation" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/2d" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/sorting" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/ui" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/particle" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/particle-2d" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/gfx-webgl2" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/physics-2d-framework" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/gfx-webgl" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/intersection-2d" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/primitive" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/profiler" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/geometry-renderer" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/audio" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/video" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/physics-2d-box2d-wasm" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/light-probe" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/terrain" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/webview" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/tween" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/tiled-map" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/spine" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/dragon-bones" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/custom-pipeline" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/base" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/gfx-webgl" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/gfx-webgl2" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/gfx-empty" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/3d" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/animation" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/skeletal-animation" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/2d" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/sorting" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/ui" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/particle" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/particle-2d" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/physics-framework" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/physics-2d-framework" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/physics-2d-box2d-wasm" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/intersection-2d" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/primitive" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/profiler" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/geometry-renderer" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/audio" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/video" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/xr" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/light-probe" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/terrain" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/webview" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/tween" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/tiled-map" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/spine" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/dragon-bones" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/custom-pipeline" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:07:47-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:07:47-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/base" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/physics-framework" loaded.
+14-11-2023 17:07:47-debug: [[Executor]] Module "cce:/internal/x/cc-fu/xr" loaded.
+14-11-2023 17:07:47-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 17:07:47-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:07:47-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js is not in module cache!
+14-11-2023 17:07:47-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:07:47-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:07:47-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js is not in module cache!
+14-11-2023 17:07:47-debug: [[Executor]] Register Game
+14-11-2023 17:07:47-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:07:47-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 17:07:47-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:07:47-debug: Query asset bundle start0%
+14-11-2023 17:07:47-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:07:47-debug: [[Executor]] Register Hero
+14-11-2023 17:07:47-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:07:47-debug: Incremental keys: 
+14-11-2023 17:07:47-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:07:47-debug: // ---- build task Query asset bundle ---- (15ms)
+14-11-2023 17:07:47-debug: [Build Memory track]: Query asset bundle start:289.89MB, end 290.23MB, increase: 350.10KB
+14-11-2023 17:07:47-debug: run build task Query asset bundle success in 15 ms √5%
+14-11-2023 17:07:47-debug: Query asset bundle start5%
+14-11-2023 17:07:47-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:07:47-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 17:07:47-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 17:07:47-debug: [Build Memory track]: Query asset bundle start:290.24MB, end 290.25MB, increase: 12.33KB
+14-11-2023 17:07:47-debug: Sort some build options to settings.json start10%
+14-11-2023 17:07:47-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:07:47-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 17:07:47-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:07:47-debug: Fill script data to settings start12%
+14-11-2023 17:07:47-debug: [Build Memory track]: Sort some build options to settings.json start:290.26MB, end 290.27MB, increase: 11.18KB
+14-11-2023 17:07:47-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 17:07:47-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 17:07:47-debug: [Build Memory track]: Fill script data to settings start:290.28MB, end 290.29MB, increase: 12.64KB
+14-11-2023 17:07:47-debug: Sort some build options to settings.json start13%
+14-11-2023 17:07:47-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:07:47-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+14-11-2023 17:07:47-debug: run build task Sort some build options to settings.json success in 3 ms √15%
+14-11-2023 17:07:47-debug: [Build Memory track]: Sort some build options to settings.json start:290.30MB, end 290.41MB, increase: 117.24KB
+14-11-2023 17:08:01-debug: Query all assets info in project
+14-11-2023 17:08:02-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:08:02-debug:   Number of all scenes: 1
+14-11-2023 17:08:02-debug:   Number of all scripts: 3
+14-11-2023 17:08:02-debug:   Number of other assets: 344
+14-11-2023 17:08:02-debug: reload all scripts.
+14-11-2023 17:08:02-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:08:02-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:08:02-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:08:02-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:08:02-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:08:02-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:08:02-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:08:02-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:08:02-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:08:02-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:08:02-debug: Unregister Hero
+14-11-2023 17:08:02-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:08:02-debug: [[Executor]] Register Hero
+14-11-2023 17:08:02-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:08:02-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:08:02-debug: Incremental keys: 
+14-11-2023 17:08:02-debug: Query asset bundle start0%
+14-11-2023 17:08:02-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:08:02-debug: [[Executor]] Register Game
+14-11-2023 17:08:02-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:08:02-debug: Unregister Game
+14-11-2023 17:08:02-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:08:02-debug: // ---- build task Query asset bundle ---- (8ms)
+14-11-2023 17:08:02-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:08:02-debug: [Build Memory track]: Query asset bundle start:290.28MB, end 290.64MB, increase: 371.54KB
+14-11-2023 17:08:02-debug: Query asset bundle start5%
+14-11-2023 17:08:02-debug: run build task Query asset bundle success in 8 ms √5%
+14-11-2023 17:08:02-debug: run build task Query asset bundle success in 0 ms √10%
+14-11-2023 17:08:02-debug: [Build Memory track]: Query asset bundle start:290.65MB, end 290.66MB, increase: 10.13KB
+14-11-2023 17:08:02-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:08:02-debug: Sort some build options to settings.json start10%
+14-11-2023 17:08:02-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 17:08:02-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:08:02-debug: Fill script data to settings start12%
+14-11-2023 17:08:02-debug: [Build Memory track]: Sort some build options to settings.json start:290.67MB, end 290.68MB, increase: 10.36KB
+14-11-2023 17:08:02-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 17:08:02-debug: [Build Memory track]: Fill script data to settings start:290.69MB, end 290.70MB, increase: 12.25KB
+14-11-2023 17:08:02-debug: Sort some build options to settings.json start13%
+14-11-2023 17:08:02-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 17:08:02-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:08:02-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+14-11-2023 17:08:02-debug: run build task Sort some build options to settings.json success in 3 ms √15%
+14-11-2023 17:08:02-debug: [Build Memory track]: Sort some build options to settings.json start:290.71MB, end 290.82MB, increase: 113.00KB
+14-11-2023 17:08:07-debug: refresh db internal success
+14-11-2023 17:08:07-debug: refresh db assets success
+14-11-2023 17:08:07-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:08:07-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:08:07-debug: asset-db:refresh-all-database (56ms)
+14-11-2023 17:08:07-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:08:07-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:08:16-debug: refresh db internal success
+14-11-2023 17:08:16-debug: refresh db assets success
+14-11-2023 17:08:16-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:08:16-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:08:16-debug: asset-db:refresh-all-database (48ms)
+14-11-2023 17:08:16-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:08:16-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:08:18-debug: start refresh asset from /Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scene...
+14-11-2023 17:08:18-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scenebackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:08:18-debug: refresh asset /Users/alex/git/cocos/EndlessRunner/assets/scenes success
+14-11-2023 17:08:19-debug: Query all assets info in project
+14-11-2023 17:08:19-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:08:19-debug:   Number of all scripts: 3
+14-11-2023 17:08:19-debug:   Number of other assets: 344
+14-11-2023 17:08:19-debug:   Number of all scenes: 1
+14-11-2023 17:08:19-debug: reload all scripts.
+14-11-2023 17:08:19-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:08:19-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:08:19-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:08:19-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:08:19-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:08:19-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:08:19-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:08:19-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:08:19-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:08:19-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:08:19-debug: [[Executor]] Register Game
+14-11-2023 17:08:19-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:08:19-debug: [[Executor]] Register Hero
+14-11-2023 17:08:19-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:08:19-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:08:19-debug: Incremental keys: 
+14-11-2023 17:08:19-debug: Query asset bundle start0%
+14-11-2023 17:08:19-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:08:19-debug: Unregister Game
+14-11-2023 17:08:19-debug: Unregister Hero
+14-11-2023 17:08:19-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:08:19-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:08:19-debug: // ---- build task Query asset bundle ---- (10ms)
+14-11-2023 17:08:19-debug: run build task Query asset bundle success in 10 ms √5%
+14-11-2023 17:08:19-debug: [Build Memory track]: Query asset bundle start:293.86MB, end 295.14MB, increase: 1.29MB
+14-11-2023 17:08:19-debug: Query asset bundle start5%
+14-11-2023 17:08:19-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:08:19-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 17:08:19-debug: [Build Memory track]: Query asset bundle start:295.15MB, end 295.17MB, increase: 12.33KB
+14-11-2023 17:08:19-debug: Sort some build options to settings.json start10%
+14-11-2023 17:08:19-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 17:08:19-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:08:19-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 17:08:19-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:08:19-debug: Fill script data to settings start12%
+14-11-2023 17:08:19-debug: [Build Memory track]: Sort some build options to settings.json start:295.17MB, end 295.19MB, increase: 11.76KB
+14-11-2023 17:08:19-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 17:08:19-debug: [Build Memory track]: Fill script data to settings start:295.19MB, end 295.21MB, increase: 12.18KB
+14-11-2023 17:08:19-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 17:08:19-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:08:19-debug: Sort some build options to settings.json start13%
+14-11-2023 17:08:19-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+14-11-2023 17:08:19-debug: run build task Sort some build options to settings.json success in 4 ms √15%
+14-11-2023 17:08:19-debug: [Build Memory track]: Sort some build options to settings.json start:295.21MB, end 295.32MB, increase: 112.86KB
+14-11-2023 17:08:20-debug: Query all assets info in project
+14-11-2023 17:08:20-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:08:20-debug:   Number of all scenes: 1
+14-11-2023 17:08:20-debug:   Number of all scripts: 3
+14-11-2023 17:08:20-debug:   Number of other assets: 344
+14-11-2023 17:08:20-debug: reload all scripts.
+14-11-2023 17:08:20-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:08:20-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:08:20-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:08:20-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:08:20-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:08:20-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:08:20-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:08:20-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:08:20-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:08:20-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:08:20-debug: [[Executor]] Register Game
+14-11-2023 17:08:20-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:08:20-debug: [[Executor]] Register Hero
+14-11-2023 17:08:20-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:08:20-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:08:20-debug: Incremental keys: 
+14-11-2023 17:08:20-debug: Query asset bundle start0%
+14-11-2023 17:08:20-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:08:20-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:08:20-debug: Unregister Game
+14-11-2023 17:08:20-debug: Unregister Hero
+14-11-2023 17:08:20-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:08:20-debug: // ---- build task Query asset bundle ---- (11ms)
+14-11-2023 17:08:20-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:08:20-debug: run build task Query asset bundle success in 11 ms √5%
+14-11-2023 17:08:20-debug: [Build Memory track]: Query asset bundle start:295.25MB, end 295.30MB, increase: 52.20KB
+14-11-2023 17:08:20-debug: Query asset bundle start5%
+14-11-2023 17:08:20-debug: run build task Query asset bundle success in 0 ms √10%
+14-11-2023 17:08:20-debug: [Build Memory track]: Query asset bundle start:295.31MB, end 295.32MB, increase: 10.11KB
+14-11-2023 17:08:20-debug: Sort some build options to settings.json start10%
+14-11-2023 17:08:20-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:08:20-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 17:08:20-debug: Fill script data to settings start12%
+14-11-2023 17:08:20-debug: [Build Memory track]: Sort some build options to settings.json start:295.33MB, end 295.35MB, increase: 17.59KB
+14-11-2023 17:08:20-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:08:20-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 17:08:20-debug: run build task Fill script data to settings success in 0 ms √13%
+14-11-2023 17:08:20-debug: [Build Memory track]: Fill script data to settings start:295.35MB, end 295.36MB, increase: 10.71KB
+14-11-2023 17:08:20-debug: Sort some build options to settings.json start13%
+14-11-2023 17:08:20-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:08:20-debug: // ---- build task Sort some build options to settings.json ---- (5ms)
+14-11-2023 17:08:20-debug: [Build Memory track]: Sort some build options to settings.json start:295.37MB, end 295.48MB, increase: 111.96KB
+14-11-2023 17:08:20-debug: run build task Sort some build options to settings.json success in 5 ms √15%
+14-11-2023 17:08:31-debug: Query all assets info in project
+14-11-2023 17:08:31-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:08:31-debug:   Number of all scenes: 1
+14-11-2023 17:08:31-debug:   Number of all scripts: 3
+14-11-2023 17:08:31-debug:   Number of other assets: 344
+14-11-2023 17:08:31-debug: reload all scripts.
+14-11-2023 17:08:31-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:08:31-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:08:31-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:08:31-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:08:31-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:08:31-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:08:31-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:08:31-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:08:31-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:08:31-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:08:31-debug: [[Executor]] Register Game
+14-11-2023 17:08:31-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:08:31-debug: Unregister Hero
+14-11-2023 17:08:31-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:08:31-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:08:31-debug: Incremental keys: 
+14-11-2023 17:08:31-debug: Query asset bundle start0%
+14-11-2023 17:08:31-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:08:31-debug: Unregister Game
+14-11-2023 17:08:31-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:08:31-debug: [[Executor]] Register Hero
+14-11-2023 17:08:31-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:08:31-debug: // ---- build task Query asset bundle ---- (10ms)
+14-11-2023 17:08:31-debug: Query asset bundle start5%
+14-11-2023 17:08:31-debug: [Build Memory track]: Query asset bundle start:295.87MB, end 296.21MB, increase: 348.14KB
+14-11-2023 17:08:31-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:08:31-debug: run build task Query asset bundle success in 10 ms √5%
+14-11-2023 17:08:31-debug: run build task Query asset bundle success in 0 ms √10%
+14-11-2023 17:08:31-debug: Sort some build options to settings.json start10%
+14-11-2023 17:08:31-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:08:31-debug: [Build Memory track]: Query asset bundle start:296.22MB, end 296.23MB, increase: 10.04KB
+14-11-2023 17:08:31-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 17:08:31-debug: [Build Memory track]: Sort some build options to settings.json start:296.24MB, end 296.25MB, increase: 10.46KB
+14-11-2023 17:08:31-debug: Fill script data to settings start12%
+14-11-2023 17:08:31-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:08:31-debug: run build task Fill script data to settings success in 0 ms √13%
+14-11-2023 17:08:31-debug: [Build Memory track]: Fill script data to settings start:296.26MB, end 296.27MB, increase: 9.91KB
+14-11-2023 17:08:31-debug: Sort some build options to settings.json start13%
+14-11-2023 17:08:31-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:08:31-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+14-11-2023 17:08:31-debug: run build task Sort some build options to settings.json success in 4 ms √15%
+14-11-2023 17:08:31-debug: [Build Memory track]: Sort some build options to settings.json start:296.28MB, end 295.70MB, increase: -589.93KB
+14-11-2023 17:08:39-debug: refresh db internal success
+14-11-2023 17:08:39-debug: refresh db assets success
+14-11-2023 17:08:39-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:08:39-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:08:39-debug: asset-db:refresh-all-database (49ms)
+14-11-2023 17:08:39-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:08:39-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:09:02-debug: refresh db internal success
+14-11-2023 17:09:02-debug: refresh db assets success
+14-11-2023 17:09:02-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:09:02-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:09:02-debug: asset-db:refresh-all-database (39ms)
+14-11-2023 17:09:02-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:09:02-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:10:48-debug: refresh db internal success
+14-11-2023 17:10:48-debug: refresh db assets success
+14-11-2023 17:10:48-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:10:48-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:10:48-debug: asset-db:refresh-all-database (41ms)
+14-11-2023 17:10:48-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:10:48-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:19:39-debug: refresh db internal success
+14-11-2023 17:19:39-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:19:39-debug: refresh db assets success
+14-11-2023 17:19:39-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:19:39-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:19:39-debug: asset-db:refresh-all-database (45ms)
+14-11-2023 17:25:53-debug: refresh db internal success
+14-11-2023 17:25:53-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:25:53-debug: refresh db assets success
+14-11-2023 17:25:53-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:25:53-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:25:53-debug: asset-db:refresh-all-database (35ms)
+14-11-2023 17:25:53-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:25:53-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:25:57-debug: Query all assets info in project
+14-11-2023 17:25:57-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:25:57-debug:   Number of all scripts: 3
+14-11-2023 17:25:57-debug:   Number of all scenes: 1
+14-11-2023 17:25:57-debug:   Number of other assets: 344
+14-11-2023 17:25:57-debug: reload all scripts.
+14-11-2023 17:25:57-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:25:57-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:25:57-debug: Unregister Hero
+14-11-2023 17:25:57-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:25:57-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:25:57-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:25:57-debug: Unregister Game
+14-11-2023 17:25:57-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:25:57-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:25:57-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:25:57-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 17:25:57-debug: [[Executor]] Register Game
+14-11-2023 17:25:57-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:25:57-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:25:57-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:25:57-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:25:57-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 17:25:57-debug: [[Executor]] Register Hero
+14-11-2023 17:25:57-debug: Query asset bundle start0%
+14-11-2023 17:25:57-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:25:57-debug: Incremental keys: 
+14-11-2023 17:25:57-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:25:57-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:25:57-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:25:57-debug: run build task Query asset bundle success in 9 ms √5%
+14-11-2023 17:25:57-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:25:57-debug: [Build Memory track]: Query asset bundle start:299.50MB, end 298.88MB, increase: -638.69KB
+14-11-2023 17:25:57-debug: Query asset bundle start5%
+14-11-2023 17:25:57-debug: // ---- build task Query asset bundle ---- (9ms)
+14-11-2023 17:25:57-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 17:25:57-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:25:57-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 17:25:57-debug: [Build Memory track]: Query asset bundle start:298.89MB, end 298.90MB, increase: 12.46KB
+14-11-2023 17:25:57-debug: Sort some build options to settings.json start10%
+14-11-2023 17:25:57-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 17:25:57-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 17:25:57-debug: [Build Memory track]: Sort some build options to settings.json start:298.91MB, end 298.92MB, increase: 13.39KB
+14-11-2023 17:25:57-debug: Fill script data to settings start12%
+14-11-2023 17:25:57-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:25:57-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 17:25:57-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 17:25:57-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:25:57-debug: Sort some build options to settings.json start13%
+14-11-2023 17:25:57-debug: [Build Memory track]: Fill script data to settings start:298.93MB, end 298.94MB, increase: 12.89KB
+14-11-2023 17:25:57-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+14-11-2023 17:25:57-debug: run build task Sort some build options to settings.json success in 4 ms √15%
+14-11-2023 17:25:57-debug: [Build Memory track]: Sort some build options to settings.json start:298.95MB, end 299.06MB, increase: 112.68KB
+14-11-2023 17:26:32-debug: refresh db internal success
+14-11-2023 17:26:32-debug: refresh db assets success
+14-11-2023 17:26:32-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:26:32-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:26:32-debug: asset-db:refresh-all-database (42ms)
+14-11-2023 17:26:32-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:26:32-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:34:24-debug: refresh db internal success
+14-11-2023 17:34:24-debug: refresh db assets success
+14-11-2023 17:34:24-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:34:24-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:34:24-debug: asset-db:refresh-all-database (34ms)
+14-11-2023 17:34:24-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:34:24-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:35:13-debug: refresh db internal success
+14-11-2023 17:35:13-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:35:13-debug: refresh db assets success
+14-11-2023 17:35:13-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:35:13-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:35:13-debug: asset-db:refresh-all-database (37ms)
+14-11-2023 17:35:13-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:35:13-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+14-11-2023 17:35:14-debug: Query all assets info in project
+14-11-2023 17:35:14-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:35:14-debug:   Number of all scenes: 1
+14-11-2023 17:35:14-debug:   Number of all scripts: 3
+14-11-2023 17:35:14-debug:   Number of other assets: 344
+14-11-2023 17:35:14-debug: reload all scripts.
+14-11-2023 17:35:15-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:35:15-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:35:15-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:35:15-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:35:15-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:35:15-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:35:15-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:35:15-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:35:15-debug: Unregister Game
+14-11-2023 17:35:15-debug: Unregister Hero
+14-11-2023 17:35:15-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 17:35:15-debug: [[Executor]] Register Game
+14-11-2023 17:35:15-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:35:15-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:35:15-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:35:15-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:35:15-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 17:35:15-debug: Incremental keys: 
+14-11-2023 17:35:15-debug: Query asset bundle start0%
+14-11-2023 17:35:15-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:35:15-debug: [[Executor]] Register Hero
+14-11-2023 17:35:15-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:35:15-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:35:15-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:35:15-debug: // ---- build task Query asset bundle ---- (16ms)
+14-11-2023 17:35:15-debug: Query asset bundle start5%
+14-11-2023 17:35:15-debug: [Build Memory track]: Query asset bundle start:302.12MB, end 301.50MB, increase: -632.11KB
+14-11-2023 17:35:15-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:35:15-debug: run build task Query asset bundle success in 16 ms √5%
+14-11-2023 17:35:15-debug: run build task Query asset bundle success in 0 ms √10%
+14-11-2023 17:35:15-debug: [Build Memory track]: Query asset bundle start:301.51MB, end 301.52MB, increase: 10.14KB
+14-11-2023 17:35:15-debug: Sort some build options to settings.json start10%
+14-11-2023 17:35:15-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:35:15-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 17:35:15-debug: Fill script data to settings start12%
+14-11-2023 17:35:15-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:35:15-debug: [Build Memory track]: Sort some build options to settings.json start:301.53MB, end 301.54MB, increase: 10.42KB
+14-11-2023 17:35:15-debug: run build task Fill script data to settings success in 0 ms √13%
+14-11-2023 17:35:15-debug: [Build Memory track]: Fill script data to settings start:301.55MB, end 301.55MB, increase: 9.92KB
+14-11-2023 17:35:15-debug: Sort some build options to settings.json start13%
+14-11-2023 17:35:15-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:35:15-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+14-11-2023 17:35:15-debug: run build task Sort some build options to settings.json success in 3 ms √15%
+14-11-2023 17:35:15-debug: [Build Memory track]: Sort some build options to settings.json start:301.56MB, end 301.69MB, increase: 129.04KB
+14-11-2023 17:35:37-debug: Query all assets info in project
+14-11-2023 17:35:37-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:35:37-debug:   Number of all scripts: 3
+14-11-2023 17:35:37-debug:   Number of other assets: 344
+14-11-2023 17:35:37-debug:   Number of all scenes: 1
+14-11-2023 17:35:37-debug: reload all scripts.
+14-11-2023 17:35:37-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:35:37-debug: Unregister Game
+14-11-2023 17:35:37-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:35:37-debug: Unregister Hero
+14-11-2023 17:35:37-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:35:37-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:35:37-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:35:37-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:35:37-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:35:37-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:35:37-debug: [[Executor]] Register Game
+14-11-2023 17:35:37-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:35:37-debug: [[Executor]] Register Hero
+14-11-2023 17:35:37-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:35:37-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:35:37-debug: Incremental keys: 
+14-11-2023 17:35:37-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:35:37-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:35:37-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:35:37-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:35:37-debug: Query asset bundle start0%
+14-11-2023 17:35:37-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:35:37-debug: // ---- build task Query asset bundle ---- (12ms)
+14-11-2023 17:35:37-debug: run build task Query asset bundle success in 12 ms √5%
+14-11-2023 17:35:37-debug: [Build Memory track]: Query asset bundle start:302.59MB, end 302.82MB, increase: 237.78KB
+14-11-2023 17:35:37-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:35:37-debug: Query asset bundle start5%
+14-11-2023 17:35:37-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 17:35:37-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 17:35:37-debug: [Build Memory track]: Query asset bundle start:302.83MB, end 302.84MB, increase: 12.38KB
+14-11-2023 17:35:37-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:35:37-debug: Sort some build options to settings.json start10%
+14-11-2023 17:35:37-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 17:35:37-debug: [Build Memory track]: Sort some build options to settings.json start:302.85MB, end 302.86MB, increase: 13.35KB
+14-11-2023 17:35:37-debug: Fill script data to settings start12%
+14-11-2023 17:35:37-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 17:35:37-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:35:37-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 17:35:37-debug: [Build Memory track]: Fill script data to settings start:302.87MB, end 302.88MB, increase: 12.93KB
+14-11-2023 17:35:37-debug: Sort some build options to settings.json start13%
+14-11-2023 17:35:37-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:35:37-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 17:35:37-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
+14-11-2023 17:35:37-debug: run build task Sort some build options to settings.json success in 2 ms √15%
+14-11-2023 17:35:37-debug: [Build Memory track]: Sort some build options to settings.json start:302.89MB, end 303.01MB, increase: 125.24KB
+14-11-2023 17:35:46-debug: refresh db internal success
+14-11-2023 17:35:46-debug: refresh db assets success
+14-11-2023 17:35:46-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:35:46-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:35:46-debug: asset-db:refresh-all-database (37ms)
+14-11-2023 17:35:46-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:35:46-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:37:54-debug: refresh db internal success
+14-11-2023 17:37:54-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:37:54-debug: refresh db assets success
+14-11-2023 17:37:54-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:37:54-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:37:54-debug: asset-db:refresh-all-database (60ms)
+14-11-2023 17:37:54-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:37:54-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:37:54-debug: Query all assets info in project
+14-11-2023 17:37:54-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:37:54-debug:   Number of all scenes: 1
+14-11-2023 17:37:54-debug:   Number of all scripts: 3
+14-11-2023 17:37:54-debug:   Number of other assets: 344
+14-11-2023 17:37:54-debug: reload all scripts.
+14-11-2023 17:37:54-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:37:54-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:37:54-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:37:54-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:37:54-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:37:54-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:37:54-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:37:54-debug: Unregister Game
+14-11-2023 17:37:54-debug: Unregister Hero
+14-11-2023 17:37:54-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:37:54-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 17:37:54-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:37:54-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:37:54-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:37:54-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:37:54-debug: [[Executor]] Register Game
+14-11-2023 17:37:54-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 17:37:54-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:37:54-debug: Query asset bundle start0%
+14-11-2023 17:37:54-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:37:54-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:37:54-debug: Incremental keys: 
+14-11-2023 17:37:54-debug: [[Executor]] Register Hero
+14-11-2023 17:37:54-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:37:54-debug: // ---- build task Query asset bundle ---- (18ms)
+14-11-2023 17:37:54-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:37:54-debug: run build task Query asset bundle success in 18 ms √5%
+14-11-2023 17:37:54-debug: [Build Memory track]: Query asset bundle start:305.23MB, end 305.52MB, increase: 300.35KB
+14-11-2023 17:37:54-debug: Query asset bundle start5%
+14-11-2023 17:37:54-debug: run build task Query asset bundle success in 0 ms √10%
+14-11-2023 17:37:54-debug: Sort some build options to settings.json start10%
+14-11-2023 17:37:54-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:37:54-debug: [Build Memory track]: Query asset bundle start:305.53MB, end 305.54MB, increase: 11.62KB
+14-11-2023 17:37:54-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 17:37:54-debug: [Build Memory track]: Sort some build options to settings.json start:305.55MB, end 305.56MB, increase: 10.45KB
+14-11-2023 17:37:54-debug: Fill script data to settings start12%
+14-11-2023 17:37:54-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:37:54-debug: run build task Fill script data to settings success in 0 ms √13%
+14-11-2023 17:37:54-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:37:54-debug: Sort some build options to settings.json start13%
+14-11-2023 17:37:54-debug: [Build Memory track]: Fill script data to settings start:305.57MB, end 305.58MB, increase: 9.92KB
+14-11-2023 17:37:54-debug: // ---- build task Sort some build options to settings.json ---- (5ms)
+14-11-2023 17:37:54-debug: run build task Sort some build options to settings.json success in 5 ms √15%
+14-11-2023 17:37:54-debug: [Build Memory track]: Sort some build options to settings.json start:305.59MB, end 305.03MB, increase: -567.16KB
+14-11-2023 17:38:31-debug: refresh db internal success
+14-11-2023 17:38:31-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:38:31-debug: refresh db assets success
+14-11-2023 17:38:31-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:38:31-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:38:31-debug: asset-db:refresh-all-database (34ms)
+14-11-2023 17:38:31-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:38:31-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:38:32-debug: Query all assets info in project
+14-11-2023 17:38:32-debug:   Number of all scenes: 1
+14-11-2023 17:38:32-debug:   Number of all scripts: 3
+14-11-2023 17:38:32-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:38:32-debug:   Number of other assets: 344
+14-11-2023 17:38:32-debug: reload all scripts.
+14-11-2023 17:38:32-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:38:32-debug: Unregister Hero
+14-11-2023 17:38:32-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:38:32-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:38:32-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:38:32-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:38:32-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:38:32-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:38:32-debug: Unregister Game
+14-11-2023 17:38:32-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:38:32-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 17:38:32-debug: [[Executor]] Register Game
+14-11-2023 17:38:32-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:38:32-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:38:32-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:38:32-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:38:32-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 17:38:32-debug: [[Executor]] Register Hero
+14-11-2023 17:38:32-debug: Query asset bundle start0%
+14-11-2023 17:38:32-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:38:32-debug: Incremental keys: 
+14-11-2023 17:38:32-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:38:32-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:38:32-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:38:32-debug: // ---- build task Query asset bundle ---- (12ms)
+14-11-2023 17:38:32-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:38:32-debug: [Build Memory track]: Query asset bundle start:306.97MB, end 306.55MB, increase: -434.22KB
+14-11-2023 17:38:32-debug: Query asset bundle start5%
+14-11-2023 17:38:32-debug: run build task Query asset bundle success in 12 ms √5%
+14-11-2023 17:38:32-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 17:38:32-debug: Sort some build options to settings.json start10%
+14-11-2023 17:38:32-debug: [Build Memory track]: Query asset bundle start:306.56MB, end 306.57MB, increase: 12.43KB
+14-11-2023 17:38:32-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 17:38:32-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:38:32-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 17:38:32-debug: Fill script data to settings start12%
+14-11-2023 17:38:32-debug: [Build Memory track]: Sort some build options to settings.json start:306.58MB, end 306.59MB, increase: 13.44KB
+14-11-2023 17:38:32-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:38:32-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 17:38:32-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 17:38:32-debug: [Build Memory track]: Fill script data to settings start:306.60MB, end 306.61MB, increase: 12.86KB
+14-11-2023 17:38:32-debug: Sort some build options to settings.json start13%
+14-11-2023 17:38:32-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:38:32-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 17:38:32-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+14-11-2023 17:38:32-debug: run build task Sort some build options to settings.json success in 3 ms √15%
+14-11-2023 17:38:32-debug: [Build Memory track]: Sort some build options to settings.json start:306.62MB, end 306.74MB, increase: 120.62KB
+14-11-2023 17:38:38-debug: refresh db internal success
+14-11-2023 17:38:38-debug: refresh db assets success
+14-11-2023 17:38:38-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:38:38-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:38:38-debug: asset-db:refresh-all-database (32ms)
+14-11-2023 17:38:38-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:38:38-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 17:40:47-debug: refresh db internal success
+14-11-2023 17:40:47-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:40:47-debug: refresh db assets success
+14-11-2023 17:40:47-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:40:47-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:40:47-debug: asset-db:refresh-all-database (37ms)
+14-11-2023 17:40:48-debug: Query all assets info in project
+14-11-2023 17:40:48-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:40:48-debug:   Number of other assets: 344
+14-11-2023 17:40:48-debug:   Number of all scripts: 3
+14-11-2023 17:40:48-debug:   Number of all scenes: 1
+14-11-2023 17:40:48-debug: reload all scripts.
+14-11-2023 17:40:48-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:40:48-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:40:48-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:40:48-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:40:48-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:40:48-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:40:48-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:40:48-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:40:48-debug: Unregister Game
+14-11-2023 17:40:48-debug: Unregister Hero
+14-11-2023 17:40:48-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 17:40:48-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:40:48-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:40:48-debug: [[Executor]] Register Game
+14-11-2023 17:40:48-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:40:48-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:40:48-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 17:40:48-debug: Incremental keys: 
+14-11-2023 17:40:48-debug: Query asset bundle start0%
+14-11-2023 17:40:48-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:40:48-debug: [[Executor]] Register Hero
+14-11-2023 17:40:48-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:40:48-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:40:48-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:40:48-debug: // ---- build task Query asset bundle ---- (14ms)
+14-11-2023 17:40:48-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:40:48-debug: [Build Memory track]: Query asset bundle start:309.12MB, end 309.40MB, increase: 286.96KB
+14-11-2023 17:40:48-debug: Query asset bundle start5%
+14-11-2023 17:40:48-debug: run build task Query asset bundle success in 14 ms √5%
+14-11-2023 17:40:48-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 17:40:48-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:40:48-debug: [Build Memory track]: Query asset bundle start:309.41MB, end 309.42MB, increase: 12.00KB
+14-11-2023 17:40:48-debug: Sort some build options to settings.json start10%
+14-11-2023 17:40:48-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 17:40:48-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 17:40:48-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:40:48-debug: [Build Memory track]: Sort some build options to settings.json start:309.43MB, end 309.45MB, increase: 13.73KB
+14-11-2023 17:40:48-debug: Fill script data to settings start12%
+14-11-2023 17:40:48-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 17:40:48-debug: run build task Fill script data to settings success in 0 ms √13%
+14-11-2023 17:40:48-debug: Sort some build options to settings.json start13%
+14-11-2023 17:40:48-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:40:48-debug: [Build Memory track]: Fill script data to settings start:309.45MB, end 309.46MB, increase: 10.58KB
+14-11-2023 17:40:48-debug: // ---- build task Sort some build options to settings.json ---- (5ms)
+14-11-2023 17:40:48-debug: run build task Sort some build options to settings.json success in 5 ms √15%
+14-11-2023 17:40:48-debug: [Build Memory track]: Sort some build options to settings.json start:309.47MB, end 308.92MB, increase: -571.07KB
+14-11-2023 17:59:52-debug: refresh db internal success
+14-11-2023 17:59:52-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 17:59:52-debug: refresh db assets success
+14-11-2023 17:59:52-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 17:59:52-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 17:59:52-debug: asset-db:refresh-all-database (69ms)
+14-11-2023 17:59:52-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 17:59:52-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+14-11-2023 17:59:53-debug: Query all assets info in project
+14-11-2023 17:59:53-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 17:59:53-debug:   Number of other assets: 344
+14-11-2023 17:59:53-debug:   Number of all scripts: 3
+14-11-2023 17:59:53-debug:   Number of all scenes: 1
+14-11-2023 17:59:53-debug: reload all scripts.
+14-11-2023 17:59:53-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 17:59:53-debug: Unregister DebugViewRuntimeControl
+14-11-2023 17:59:53-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 17:59:53-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 17:59:53-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 17:59:53-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 17:59:53-debug: Unregister Hero
+14-11-2023 17:59:53-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 17:59:53-debug: Unregister Game
+14-11-2023 17:59:53-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 17:59:53-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 17:59:53-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:59:53-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 17:59:53-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 17:59:53-debug: [[Executor]] Register Game
+14-11-2023 17:59:53-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 17:59:53-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 17:59:53-debug: [[Executor]] Register Hero
+14-11-2023 17:59:53-debug: Query asset bundle start0%
+14-11-2023 17:59:53-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:59:53-debug: Incremental keys: 
+14-11-2023 17:59:53-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 17:59:53-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 17:59:53-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 17:59:53-debug: // ---- build task Query asset bundle ---- (12ms)
+14-11-2023 17:59:53-debug: Query asset bundle start5%
+14-11-2023 17:59:53-debug: [Build Memory track]: Query asset bundle start:272.54MB, end 273.00MB, increase: 470.99KB
+14-11-2023 17:59:53-debug: // ---- build task Query asset bundle ----
+14-11-2023 17:59:53-debug: run build task Query asset bundle success in 12 ms √5%
+14-11-2023 17:59:53-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 17:59:53-debug: [Build Memory track]: Query asset bundle start:273.00MB, end 273.02MB, increase: 12.46KB
+14-11-2023 17:59:53-debug: Sort some build options to settings.json start10%
+14-11-2023 17:59:53-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:59:53-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 17:59:53-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 17:59:53-debug: // ---- build task Fill script data to settings ----
+14-11-2023 17:59:53-debug: Fill script data to settings start12%
+14-11-2023 17:59:53-debug: [Build Memory track]: Sort some build options to settings.json start:273.02MB, end 273.04MB, increase: 11.16KB
+14-11-2023 17:59:53-debug: run build task Fill script data to settings success in 0 ms √13%
+14-11-2023 17:59:53-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 17:59:53-debug: Sort some build options to settings.json start13%
+14-11-2023 17:59:53-debug: [Build Memory track]: Fill script data to settings start:273.04MB, end 273.05MB, increase: 9.95KB
+14-11-2023 17:59:53-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+14-11-2023 17:59:53-debug: run build task Sort some build options to settings.json success in 4 ms √15%
+14-11-2023 17:59:53-debug: [Build Memory track]: Sort some build options to settings.json start:273.06MB, end 273.19MB, increase: 129.08KB
+14-11-2023 18:00:39-debug: refresh db internal success
+14-11-2023 18:00:39-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:00:39-debug: refresh db assets success
+14-11-2023 18:00:39-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:00:39-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:00:39-debug: asset-db:refresh-all-database (33ms)
+14-11-2023 18:00:39-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:00:40-debug: Query all assets info in project
+14-11-2023 18:00:40-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:00:40-debug:   Number of all scenes: 1
+14-11-2023 18:00:40-debug:   Number of all scripts: 3
+14-11-2023 18:00:40-debug:   Number of other assets: 344
+14-11-2023 18:00:40-debug: reload all scripts.
+14-11-2023 18:00:40-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:00:40-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:00:40-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:00:40-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:00:40-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:00:40-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:00:40-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:00:40-debug: Unregister Game
+14-11-2023 18:00:40-debug: Unregister Hero
+14-11-2023 18:00:40-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:00:40-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 18:00:40-debug: [[Executor]] Register Game
+14-11-2023 18:00:40-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:00:40-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:00:40-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:00:40-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:00:40-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 18:00:40-debug: Incremental keys: 
+14-11-2023 18:00:40-debug: Query asset bundle start0%
+14-11-2023 18:00:40-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:00:40-debug: [[Executor]] Register Hero
+14-11-2023 18:00:40-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:00:40-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:00:40-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:00:40-debug: // ---- build task Query asset bundle ---- (9ms)
+14-11-2023 18:00:40-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:00:40-debug: run build task Query asset bundle success in 9 ms √5%
+14-11-2023 18:00:40-debug: Query asset bundle start5%
+14-11-2023 18:00:40-debug: [Build Memory track]: Query asset bundle start:274.49MB, end 274.78MB, increase: 292.50KB
+14-11-2023 18:00:40-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 18:00:40-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 18:00:40-debug: [Build Memory track]: Query asset bundle start:274.79MB, end 274.11MB, increase: -693.76KB
+14-11-2023 18:00:40-debug: Sort some build options to settings.json start10%
+14-11-2023 18:00:40-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:00:40-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 18:00:40-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 18:00:40-debug: Fill script data to settings start12%
+14-11-2023 18:00:40-debug: [Build Memory track]: Sort some build options to settings.json start:274.12MB, end 274.15MB, increase: 29.43KB
+14-11-2023 18:00:40-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:00:40-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 18:00:40-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 18:00:40-debug: Sort some build options to settings.json start13%
+14-11-2023 18:00:40-debug: [Build Memory track]: Fill script data to settings start:274.16MB, end 274.17MB, increase: 12.87KB
+14-11-2023 18:00:40-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:00:40-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
+14-11-2023 18:00:40-debug: run build task Sort some build options to settings.json success in 2 ms √15%
+14-11-2023 18:00:40-debug: [Build Memory track]: Sort some build options to settings.json start:274.18MB, end 274.29MB, increase: 118.90KB
+14-11-2023 18:09:18-debug: refresh db internal success
+14-11-2023 18:09:18-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:09:18-debug: refresh db assets success
+14-11-2023 18:09:18-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:09:18-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:09:18-debug: asset-db:refresh-all-database (46ms)
+14-11-2023 18:09:18-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 18:09:18-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:09:19-debug: Query all assets info in project
+14-11-2023 18:09:19-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:09:19-debug:   Number of all scripts: 3
+14-11-2023 18:09:19-debug:   Number of other assets: 344
+14-11-2023 18:09:19-debug:   Number of all scenes: 1
+14-11-2023 18:09:19-debug: reload all scripts.
+14-11-2023 18:09:19-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:09:19-debug: Unregister Hero
+14-11-2023 18:09:19-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:09:19-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:09:19-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:09:19-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:09:19-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:09:19-debug: Unregister Game
+14-11-2023 18:09:19-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:09:19-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:09:19-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 18:09:19-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:09:19-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:09:19-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:09:19-debug: [[Executor]] Register Game
+14-11-2023 18:09:19-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:09:19-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 18:09:19-debug: [[Executor]] Register Hero
+14-11-2023 18:09:19-debug: Query asset bundle start0%
+14-11-2023 18:09:19-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:09:19-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:09:19-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:09:19-debug: Incremental keys: 
+14-11-2023 18:09:19-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:09:19-debug: // ---- build task Query asset bundle ---- (11ms)
+14-11-2023 18:09:19-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:09:19-debug: [Build Memory track]: Query asset bundle start:276.36MB, end 277.45MB, increase: 1.09MB
+14-11-2023 18:09:19-debug: Query asset bundle start5%
+14-11-2023 18:09:19-debug: run build task Query asset bundle success in 11 ms √5%
+14-11-2023 18:09:19-debug: run build task Query asset bundle success in 0 ms √10%
+14-11-2023 18:09:19-debug: [Build Memory track]: Query asset bundle start:277.46MB, end 277.47MB, increase: 10.21KB
+14-11-2023 18:09:19-debug: Sort some build options to settings.json start10%
+14-11-2023 18:09:19-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:09:19-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 18:09:19-debug: [Build Memory track]: Sort some build options to settings.json start:277.48MB, end 277.49MB, increase: 10.40KB
+14-11-2023 18:09:19-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:09:19-debug: Fill script data to settings start12%
+14-11-2023 18:09:19-debug: run build task Fill script data to settings success in 0 ms √13%
+14-11-2023 18:09:19-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:09:19-debug: Sort some build options to settings.json start13%
+14-11-2023 18:09:19-debug: [Build Memory track]: Fill script data to settings start:277.49MB, end 277.50MB, increase: 9.90KB
+14-11-2023 18:09:19-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+14-11-2023 18:09:19-debug: run build task Sort some build options to settings.json success in 4 ms √15%
+14-11-2023 18:09:19-debug: [Build Memory track]: Sort some build options to settings.json start:277.51MB, end 275.87MB, increase: -1679.04KB
+14-11-2023 18:11:15-debug: refresh db internal success
+14-11-2023 18:11:15-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:11:15-debug: refresh db assets success
+14-11-2023 18:11:15-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:11:15-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:11:15-debug: asset-db:refresh-all-database (36ms)
+14-11-2023 18:11:15-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 18:11:15-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:11:16-debug: Query all assets info in project
+14-11-2023 18:11:16-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:11:16-debug:   Number of all scenes: 1
+14-11-2023 18:11:16-debug:   Number of all scripts: 3
+14-11-2023 18:11:16-debug:   Number of other assets: 344
+14-11-2023 18:11:16-debug: reload all scripts.
+14-11-2023 18:11:16-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:11:16-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:11:16-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:11:16-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:11:16-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:11:16-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:11:16-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:11:16-debug: Unregister Game
+14-11-2023 18:11:16-debug: Unregister Hero
+14-11-2023 18:11:16-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:11:16-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 18:11:16-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:11:16-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:11:16-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:11:16-debug: [[Executor]] Register Game
+14-11-2023 18:11:16-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:11:16-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 18:11:16-debug: [[Executor]] Register Hero
+14-11-2023 18:11:16-debug: Query asset bundle start0%
+14-11-2023 18:11:16-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:11:16-debug: Incremental keys: 
+14-11-2023 18:11:16-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:11:16-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:11:16-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:11:16-debug: // ---- build task Query asset bundle ---- (15ms)
+14-11-2023 18:11:16-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:11:16-debug: [Build Memory track]: Query asset bundle start:277.46MB, end 277.79MB, increase: 337.17KB
+14-11-2023 18:11:16-debug: Query asset bundle start5%
+14-11-2023 18:11:16-debug: run build task Query asset bundle success in 15 ms √5%
+14-11-2023 18:11:16-debug: // ---- build task Query asset bundle ---- (2ms)
+14-11-2023 18:11:16-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:11:16-debug: [Build Memory track]: Query asset bundle start:277.79MB, end 277.81MB, increase: 14.74KB
+14-11-2023 18:11:16-debug: Sort some build options to settings.json start10%
+14-11-2023 18:11:16-debug: run build task Query asset bundle success in 2 ms √10%
+14-11-2023 18:11:16-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 18:11:16-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 18:11:16-debug: [Build Memory track]: Sort some build options to settings.json start:277.82MB, end 277.83MB, increase: 13.45KB
+14-11-2023 18:11:16-debug: Fill script data to settings start12%
+14-11-2023 18:11:16-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:11:16-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 18:11:16-debug: Sort some build options to settings.json start13%
+14-11-2023 18:11:16-debug: [Build Memory track]: Fill script data to settings start:277.84MB, end 277.23MB, increase: -624.33KB
+14-11-2023 18:11:16-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 18:11:16-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:11:16-debug: // ---- build task Sort some build options to settings.json ---- (5ms)
+14-11-2023 18:11:16-debug: run build task Sort some build options to settings.json success in 5 ms √15%
+14-11-2023 18:11:16-debug: [Build Memory track]: Sort some build options to settings.json start:277.24MB, end 277.35MB, increase: 116.73KB
+14-11-2023 18:12:20-debug: refresh db internal success
+14-11-2023 18:12:20-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:12:20-debug: refresh db assets success
+14-11-2023 18:12:20-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:12:20-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:12:20-debug: asset-db:refresh-all-database (34ms)
+14-11-2023 18:12:20-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 18:12:20-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:12:21-debug: Query all assets info in project
+14-11-2023 18:12:21-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:12:21-debug:   Number of all scenes: 1
+14-11-2023 18:12:21-debug:   Number of other assets: 344
+14-11-2023 18:12:21-debug:   Number of all scripts: 3
+14-11-2023 18:12:21-debug: reload all scripts.
+14-11-2023 18:12:21-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:12:21-debug: Unregister Hero
+14-11-2023 18:12:21-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:12:21-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:12:21-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:12:21-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:12:21-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:12:21-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:12:21-debug: Unregister Game
+14-11-2023 18:12:21-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:12:21-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 18:12:21-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:12:21-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:12:21-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:12:21-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:12:21-debug: [[Executor]] Register Game
+14-11-2023 18:12:21-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 18:12:21-debug: [[Executor]] Register Hero
+14-11-2023 18:12:21-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:12:21-debug: Incremental keys: 
+14-11-2023 18:12:21-debug: Query asset bundle start0%
+14-11-2023 18:12:21-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:12:21-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:12:21-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:12:21-debug: // ---- build task Query asset bundle ---- (15ms)
+14-11-2023 18:12:21-debug: Query asset bundle start5%
+14-11-2023 18:12:21-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:12:21-debug: run build task Query asset bundle success in 15 ms √5%
+14-11-2023 18:12:21-debug: [Build Memory track]: Query asset bundle start:279.24MB, end 278.85MB, increase: -400.23KB
+14-11-2023 18:12:21-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 18:12:21-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 18:12:21-debug: [Build Memory track]: Query asset bundle start:278.86MB, end 278.87MB, increase: 12.43KB
+14-11-2023 18:12:21-debug: Sort some build options to settings.json start10%
+14-11-2023 18:12:21-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:12:21-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 18:12:21-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:12:21-debug: [Build Memory track]: Sort some build options to settings.json start:278.88MB, end 278.89MB, increase: 13.42KB
+14-11-2023 18:12:21-debug: Fill script data to settings start12%
+14-11-2023 18:12:21-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 18:12:21-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 18:12:21-debug: Sort some build options to settings.json start13%
+14-11-2023 18:12:21-debug: [Build Memory track]: Fill script data to settings start:278.90MB, end 278.91MB, increase: 12.87KB
+14-11-2023 18:12:21-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:12:21-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 18:12:21-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+14-11-2023 18:12:21-debug: run build task Sort some build options to settings.json success in 4 ms √15%
+14-11-2023 18:12:21-debug: [Build Memory track]: Sort some build options to settings.json start:278.92MB, end 279.03MB, increase: 117.43KB
+14-11-2023 18:13:00-debug: refresh db internal success
+14-11-2023 18:13:00-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:13:00-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:13:00-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:13:00-debug: refresh db assets success
+14-11-2023 18:13:00-debug: asset-db:refresh-all-database (34ms)
+14-11-2023 18:13:00-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 18:13:00-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:13:01-debug: Query all assets info in project
+14-11-2023 18:13:01-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:13:01-debug:   Number of all scenes: 1
+14-11-2023 18:13:01-debug:   Number of all scripts: 3
+14-11-2023 18:13:01-debug:   Number of other assets: 344
+14-11-2023 18:13:01-debug: reload all scripts.
+14-11-2023 18:13:01-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:13:01-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:13:01-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:13:01-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:13:01-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:13:01-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:13:01-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:13:01-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:13:01-debug: Unregister Game
+14-11-2023 18:13:01-debug: Unregister Hero
+14-11-2023 18:13:01-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 18:13:01-debug: [[Executor]] Register Game
+14-11-2023 18:13:01-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:13:01-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:13:01-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:13:01-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:13:01-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 18:13:01-debug: [[Executor]] Register Hero
+14-11-2023 18:13:01-debug: Query asset bundle start0%
+14-11-2023 18:13:01-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:13:01-debug: Incremental keys: 
+14-11-2023 18:13:01-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:13:01-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:13:01-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:13:01-debug: // ---- build task Query asset bundle ---- (15ms)
+14-11-2023 18:13:01-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:13:01-debug: [Build Memory track]: Query asset bundle start:280.44MB, end 280.69MB, increase: 248.59KB
+14-11-2023 18:13:01-debug: Query asset bundle start5%
+14-11-2023 18:13:01-debug: run build task Query asset bundle success in 15 ms √5%
+14-11-2023 18:13:01-debug: run build task Query asset bundle success in 0 ms √10%
+14-11-2023 18:13:01-debug: [Build Memory track]: Query asset bundle start:280.69MB, end 280.70MB, increase: 10.19KB
+14-11-2023 18:13:01-debug: Sort some build options to settings.json start10%
+14-11-2023 18:13:01-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:13:01-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 18:13:01-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:13:01-debug: [Build Memory track]: Sort some build options to settings.json start:280.72MB, end 280.73MB, increase: 12.73KB
+14-11-2023 18:13:01-debug: Fill script data to settings start12%
+14-11-2023 18:13:01-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 18:13:01-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 18:13:01-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:13:01-debug: [Build Memory track]: Fill script data to settings start:280.74MB, end 280.75MB, increase: 12.87KB
+14-11-2023 18:13:01-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 18:13:01-debug: Sort some build options to settings.json start13%
+14-11-2023 18:13:01-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+14-11-2023 18:13:01-debug: run build task Sort some build options to settings.json success in 4 ms √15%
+14-11-2023 18:13:01-debug: [Build Memory track]: Sort some build options to settings.json start:280.76MB, end 280.87MB, increase: 112.67KB
+14-11-2023 18:13:07-debug: refresh db internal success
+14-11-2023 18:13:07-debug: refresh db assets success
+14-11-2023 18:13:07-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:13:07-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:13:07-debug: asset-db:refresh-all-database (31ms)
+14-11-2023 18:13:07-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:13:40-debug: refresh db internal success
+14-11-2023 18:13:40-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:13:40-debug: refresh db assets success
+14-11-2023 18:13:40-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:13:40-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:13:40-debug: asset-db:refresh-all-database (36ms)
+14-11-2023 18:13:40-debug: Query all assets info in project
+14-11-2023 18:13:40-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:13:40-debug:   Number of all scripts: 3
+14-11-2023 18:13:40-debug:   Number of other assets: 344
+14-11-2023 18:13:40-debug:   Number of all scenes: 1
+14-11-2023 18:13:41-debug: reload all scripts.
+14-11-2023 18:13:41-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:13:41-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:13:41-debug: Unregister Game
+14-11-2023 18:13:41-debug: Unregister Hero
+14-11-2023 18:13:41-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:13:41-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:13:41-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:13:41-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:13:41-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:13:41-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:13:41-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 18:13:41-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:13:41-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:13:41-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:13:41-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:13:41-debug: [[Executor]] Register Game
+14-11-2023 18:13:41-debug: [[Executor]] Register Hero
+14-11-2023 18:13:41-debug: Incremental keys: 
+14-11-2023 18:13:41-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 18:13:41-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:13:41-debug: Query asset bundle start0%
+14-11-2023 18:13:41-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:13:41-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:13:41-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:13:41-debug: // ---- build task Query asset bundle ---- (15ms)
+14-11-2023 18:13:41-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:13:41-debug: run build task Query asset bundle success in 15 ms √5%
+14-11-2023 18:13:41-debug: [Build Memory track]: Query asset bundle start:282.56MB, end 282.88MB, increase: 325.94KB
+14-11-2023 18:13:41-debug: Query asset bundle start5%
+14-11-2023 18:13:41-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 18:13:41-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 18:13:41-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:13:41-debug: Sort some build options to settings.json start10%
+14-11-2023 18:13:41-debug: [Build Memory track]: Query asset bundle start:282.89MB, end 282.90MB, increase: 12.27KB
+14-11-2023 18:13:41-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
+14-11-2023 18:13:41-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:13:41-debug: run build task Sort some build options to settings.json success in 2 ms √12%
+14-11-2023 18:13:41-debug: [Build Memory track]: Sort some build options to settings.json start:282.91MB, end 282.32MB, increase: -601.41KB
+14-11-2023 18:13:41-debug: Fill script data to settings start12%
+14-11-2023 18:13:41-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 18:13:41-debug: [Build Memory track]: Fill script data to settings start:282.33MB, end 282.34MB, increase: 12.88KB
+14-11-2023 18:13:41-debug: Sort some build options to settings.json start13%
+14-11-2023 18:13:41-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:13:41-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 18:13:41-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+14-11-2023 18:13:41-debug: [Build Memory track]: Sort some build options to settings.json start:282.35MB, end 282.48MB, increase: 131.07KB
+14-11-2023 18:13:41-debug: run build task Sort some build options to settings.json success in 3 ms √15%
+14-11-2023 18:13:55-debug: refresh db internal success
+14-11-2023 18:13:55-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:13:55-debug: refresh db assets success
+14-11-2023 18:13:55-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:13:55-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:13:55-debug: asset-db:refresh-all-database (32ms)
+14-11-2023 18:13:55-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 18:13:55-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:13:56-debug: Query all assets info in project
+14-11-2023 18:13:56-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:13:56-debug:   Number of all scripts: 3
+14-11-2023 18:13:56-debug:   Number of other assets: 344
+14-11-2023 18:13:56-debug:   Number of all scenes: 1
+14-11-2023 18:13:56-debug: reload all scripts.
+14-11-2023 18:13:56-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:13:56-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:13:56-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:13:56-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:13:56-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:13:56-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:13:56-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:13:56-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:13:56-debug: Unregister Game
+14-11-2023 18:13:56-debug: Unregister Hero
+14-11-2023 18:13:56-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 18:13:56-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:13:56-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:13:56-debug: [[Executor]] Register Game
+14-11-2023 18:13:56-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:13:56-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:13:56-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 18:13:56-debug: Incremental keys: 
+14-11-2023 18:13:56-debug: Query asset bundle start0%
+14-11-2023 18:13:56-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:13:56-debug: [[Executor]] Register Hero
+14-11-2023 18:13:56-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:13:56-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:13:56-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:13:56-debug: // ---- build task Query asset bundle ---- (13ms)
+14-11-2023 18:13:56-debug: Query asset bundle start5%
+14-11-2023 18:13:56-debug: [Build Memory track]: Query asset bundle start:284.03MB, end 284.27MB, increase: 236.26KB
+14-11-2023 18:13:56-debug: run build task Query asset bundle success in 13 ms √5%
+14-11-2023 18:13:56-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:13:56-debug: run build task Query asset bundle success in 0 ms √10%
+14-11-2023 18:13:56-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:13:56-debug: Sort some build options to settings.json start10%
+14-11-2023 18:13:56-debug: [Build Memory track]: Query asset bundle start:284.27MB, end 284.28MB, increase: 10.01KB
+14-11-2023 18:13:56-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 18:13:56-debug: [Build Memory track]: Sort some build options to settings.json start:284.29MB, end 284.30MB, increase: 10.43KB
+14-11-2023 18:13:56-debug: Fill script data to settings start12%
+14-11-2023 18:13:56-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:13:56-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 18:13:56-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 18:13:56-debug: [Build Memory track]: Fill script data to settings start:284.31MB, end 284.33MB, increase: 18.18KB
+14-11-2023 18:13:56-debug: Sort some build options to settings.json start13%
+14-11-2023 18:13:56-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:13:56-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+14-11-2023 18:13:56-debug: run build task Sort some build options to settings.json success in 4 ms √15%
+14-11-2023 18:13:56-debug: [Build Memory track]: Sort some build options to settings.json start:284.34MB, end 284.46MB, increase: 121.77KB
+14-11-2023 18:14:12-debug: refresh db internal success
+14-11-2023 18:14:12-debug: refresh db assets success
+14-11-2023 18:14:12-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:14:12-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:14:12-debug: asset-db:refresh-all-database (32ms)
+14-11-2023 18:14:12-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:14:18-debug: refresh db internal success
+14-11-2023 18:14:18-debug: refresh db assets success
+14-11-2023 18:14:18-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:14:18-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:14:18-debug: asset-db:refresh-all-database (33ms)
+14-11-2023 18:14:18-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 18:14:18-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:15:16-debug: refresh db internal success
+14-11-2023 18:15:16-debug: refresh db assets success
+14-11-2023 18:15:16-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:15:16-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:15:16-debug: asset-db:refresh-all-database (32ms)
+14-11-2023 18:16:52-debug: refresh db internal success
+14-11-2023 18:16:52-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scripts/Hero.tsbackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:16:52-debug: refresh db assets success
+14-11-2023 18:16:52-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:16:52-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:16:52-debug: asset-db:refresh-all-database (34ms)
+14-11-2023 18:16:52-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 18:16:52-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:16:53-debug: Query all assets info in project
+14-11-2023 18:16:53-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:16:53-debug:   Number of all scenes: 1
+14-11-2023 18:16:53-debug:   Number of all scripts: 3
+14-11-2023 18:16:53-debug:   Number of other assets: 344
+14-11-2023 18:16:53-debug: reload all scripts.
+14-11-2023 18:16:53-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:16:53-debug: Unregister Hero
+14-11-2023 18:16:53-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:16:53-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:16:53-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:16:53-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:16:53-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:16:53-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:16:53-debug: Unregister Game
+14-11-2023 18:16:53-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:16:53-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js is not in module cache!
+14-11-2023 18:16:53-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:16:53-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:16:53-debug: [[Executor]] Register Game
+14-11-2023 18:16:53-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:16:53-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:16:53-debug: /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js resolved to /Users/alex/git/cocos/EndlessRunner/temp/programming/packer-driver/targets/editor/chunks/31/31e154e583281a16cb0a242187b910c2949449be.js is not in module cache!
+14-11-2023 18:16:53-debug: [[Executor]] Register Hero
+14-11-2023 18:16:53-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:16:53-debug: Incremental keys: 
+14-11-2023 18:16:53-debug: Query asset bundle start0%
+14-11-2023 18:16:53-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:16:53-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:16:53-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:16:53-debug: // ---- build task Query asset bundle ---- (12ms)
+14-11-2023 18:16:53-debug: run build task Query asset bundle success in 12 ms √5%
+14-11-2023 18:16:53-debug: [Build Memory track]: Query asset bundle start:286.65MB, end 286.38MB, increase: -274.79KB
+14-11-2023 18:16:53-debug: Query asset bundle start5%
+14-11-2023 18:16:53-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:16:53-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 18:16:53-debug: Sort some build options to settings.json start10%
+14-11-2023 18:16:53-debug: [Build Memory track]: Query asset bundle start:286.39MB, end 286.40MB, increase: 12.29KB
+14-11-2023 18:16:53-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:16:53-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 18:16:53-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 18:16:53-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:16:53-debug: Fill script data to settings start12%
+14-11-2023 18:16:53-debug: [Build Memory track]: Sort some build options to settings.json start:286.41MB, end 286.42MB, increase: 11.14KB
+14-11-2023 18:16:53-debug: // ---- build task Fill script data to settings ---- (1ms)
+14-11-2023 18:16:53-debug: Sort some build options to settings.json start13%
+14-11-2023 18:16:53-debug: [Build Memory track]: Fill script data to settings start:286.43MB, end 286.44MB, increase: 12.17KB
+14-11-2023 18:16:53-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:16:53-debug: run build task Fill script data to settings success in 1 ms √13%
+14-11-2023 18:16:53-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+14-11-2023 18:16:53-debug: run build task Sort some build options to settings.json success in 3 ms √15%
+14-11-2023 18:16:53-debug: [Build Memory track]: Sort some build options to settings.json start:286.45MB, end 286.61MB, increase: 169.90KB
+14-11-2023 18:17:04-debug: refresh db internal success
+14-11-2023 18:17:04-debug: refresh db assets success
+14-11-2023 18:17:04-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:17:04-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:17:04-debug: asset-db:refresh-all-database (34ms)
+14-11-2023 18:17:04-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:17:27-debug: refresh db internal success
+14-11-2023 18:17:27-debug: refresh db assets success
+14-11-2023 18:17:27-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:17:27-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:17:27-debug: asset-db:refresh-all-database (34ms)
+14-11-2023 18:17:36-debug: start refresh asset from /Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scene...
+14-11-2023 18:17:36-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scenebackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:17:36-debug: refresh asset /Users/alex/git/cocos/EndlessRunner/assets/scenes success
+14-11-2023 18:17:37-debug: Query all assets info in project
+14-11-2023 18:17:37-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:17:37-debug:   Number of all scenes: 1
+14-11-2023 18:17:37-debug:   Number of all scripts: 3
+14-11-2023 18:17:37-debug:   Number of other assets: 344
+14-11-2023 18:17:37-debug: reload all scripts.
+14-11-2023 18:17:37-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:17:37-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:17:37-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:17:37-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:17:37-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:17:37-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:17:37-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:17:37-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:17:37-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:17:37-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:17:37-debug: [[Executor]] Register Game
+14-11-2023 18:17:37-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:17:37-debug: Unregister Hero
+14-11-2023 18:17:37-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:17:37-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:17:37-debug: Incremental keys: 
+14-11-2023 18:17:37-debug: Query asset bundle start0%
+14-11-2023 18:17:37-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:17:37-debug: Unregister Game
+14-11-2023 18:17:37-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:17:37-debug: [[Executor]] Register Hero
+14-11-2023 18:17:37-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:17:37-debug: // ---- build task Query asset bundle ---- (15ms)
+14-11-2023 18:17:37-debug: Query asset bundle start5%
+14-11-2023 18:17:37-debug: [Build Memory track]: Query asset bundle start:289.10MB, end 289.41MB, increase: 319.32KB
+14-11-2023 18:17:37-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:17:37-debug: run build task Query asset bundle success in 15 ms √5%
+14-11-2023 18:17:37-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 18:17:37-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:17:37-debug: [Build Memory track]: Query asset bundle start:288.73MB, end 288.74MB, increase: 12.29KB
+14-11-2023 18:17:37-debug: Sort some build options to settings.json start10%
+14-11-2023 18:17:37-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 18:17:37-debug: run build task Sort some build options to settings.json success in 0 ms √12%
+14-11-2023 18:17:37-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:17:37-debug: Fill script data to settings start12%
+14-11-2023 18:17:37-debug: [Build Memory track]: Sort some build options to settings.json start:288.75MB, end 288.76MB, increase: 11.11KB
+14-11-2023 18:17:37-debug: run build task Fill script data to settings success in 0 ms √13%
+14-11-2023 18:17:37-debug: Sort some build options to settings.json start13%
+14-11-2023 18:17:37-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:17:37-debug: [Build Memory track]: Fill script data to settings start:288.77MB, end 288.78MB, increase: 9.89KB
+14-11-2023 18:17:37-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+14-11-2023 18:17:37-debug: run build task Sort some build options to settings.json success in 3 ms √15%
+14-11-2023 18:17:37-debug: [Build Memory track]: Sort some build options to settings.json start:288.79MB, end 288.90MB, increase: 115.82KB
+14-11-2023 18:17:48-debug: refresh db internal success
+14-11-2023 18:17:48-debug: refresh db assets success
+14-11-2023 18:17:48-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:17:48-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:17:48-debug: asset-db:refresh-all-database (50ms)
+14-11-2023 18:17:53-debug: start refresh asset from /Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scene...
+14-11-2023 18:17:53-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scenebackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:17:53-debug: refresh asset /Users/alex/git/cocos/EndlessRunner/assets/scenes success
+14-11-2023 18:17:54-debug: Query all assets info in project
+14-11-2023 18:17:54-debug: init custom config: keepNodeUuid: false, useCache: true
+14-11-2023 18:17:54-debug:   Number of all scenes: 1
+14-11-2023 18:17:54-debug:   Number of all scripts: 3
+14-11-2023 18:17:54-debug:   Number of other assets: 344
+14-11-2023 18:17:54-debug: reload all scripts.
+14-11-2023 18:17:54-debug: Set detail map pack:///resolution-detail-map.json: {}
+14-11-2023 18:17:54-debug: Invalidating 'pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js'
+14-11-2023 18:17:54-debug: Invalidating 'pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js'
+14-11-2023 18:17:54-debug: Invalidating 'pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js'
+14-11-2023 18:17:54-debug: Invalidating 'pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js'
+14-11-2023 18:17:54-debug: Invalidating 'pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js'
+14-11-2023 18:17:54-debug: [[Executor]] Module "pack:///chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js" loaded.
+14-11-2023 18:17:54-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:17:54-debug: [[Executor]] Register DebugViewRuntimeControl
+14-11-2023 18:17:54-debug: [[Executor]] Module "pack:///chunks/f0/f0eb614dff6710c7d3e4255bd944130032704458.js" loaded.
+14-11-2023 18:17:54-debug: [[Executor]] Register Game
+14-11-2023 18:17:54-debug: [[Executor]] Module "pack:///chunks/9e/9edd6f07f9f090ddb8dd6b08f81510522220c307.js" loaded.
+14-11-2023 18:17:54-debug: [[Executor]] Register Hero
+14-11-2023 18:17:54-debug: [[Executor]] Module "pack:///chunks/31/31e154e583281a16cb0a242187b910c2949449be.js" loaded.
+14-11-2023 18:17:54-debug: [[Executor]] Module "pack:///chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js" loaded.
+14-11-2023 18:17:54-debug: Incremental keys: 
+14-11-2023 18:17:54-debug: Query asset bundle start0%
+14-11-2023 18:17:54-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:17:54-debug: Unregister Hero
+14-11-2023 18:17:54-debug: Unregister DebugViewRuntimeControl
+14-11-2023 18:17:54-debug: Unregister Game
+14-11-2023 18:17:54-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+14-11-2023 18:17:54-debug: // ---- build task Query asset bundle ---- (14ms)
+14-11-2023 18:17:54-debug: // ---- build task Query asset bundle ----
+14-11-2023 18:17:54-debug: [Build Memory track]: Query asset bundle start:290.93MB, end 290.40MB, increase: -542.46KB
+14-11-2023 18:17:54-debug: Query asset bundle start5%
+14-11-2023 18:17:54-debug: run build task Query asset bundle success in 14 ms √5%
+14-11-2023 18:17:54-debug: // ---- build task Query asset bundle ---- (1ms)
+14-11-2023 18:17:54-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:17:54-debug: [Build Memory track]: Query asset bundle start:290.41MB, end 290.42MB, increase: 12.26KB
+14-11-2023 18:17:54-debug: Sort some build options to settings.json start10%
+14-11-2023 18:17:54-debug: run build task Query asset bundle success in 1 ms √10%
+14-11-2023 18:17:54-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+14-11-2023 18:17:54-debug: // ---- build task Fill script data to settings ----
+14-11-2023 18:17:54-debug: [Build Memory track]: Sort some build options to settings.json start:290.43MB, end 290.44MB, increase: 13.40KB
+14-11-2023 18:17:54-debug: Fill script data to settings start12%
+14-11-2023 18:17:54-debug: run build task Sort some build options to settings.json success in 1 ms √12%
+14-11-2023 18:17:54-debug: run build task Fill script data to settings success in 0 ms √13%
+14-11-2023 18:17:54-debug: // ---- build task Sort some build options to settings.json ----
+14-11-2023 18:17:54-debug: Sort some build options to settings.json start13%
+14-11-2023 18:17:54-debug: [Build Memory track]: Fill script data to settings start:290.45MB, end 290.46MB, increase: 10.61KB
+14-11-2023 18:17:54-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+14-11-2023 18:17:54-debug: run build task Sort some build options to settings.json success in 3 ms √15%
+14-11-2023 18:17:54-debug: [Build Memory track]: Sort some build options to settings.json start:290.47MB, end 290.58MB, increase: 112.13KB
+14-11-2023 18:26:34-debug: refresh db internal success
+14-11-2023 18:26:34-debug: refresh db assets success
+14-11-2023 18:26:34-debug: Run asset db hook engine-extends:afterRefresh ...
+14-11-2023 18:26:34-debug: Run asset db hook engine-extends:afterRefresh success!
+14-11-2023 18:26:34-debug: asset-db:refresh-all-database (33ms)
+14-11-2023 18:26:34-debug: asset-db:worker-effect-data-processing (1ms)
+14-11-2023 18:26:34-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+14-11-2023 18:26:38-debug: start refresh asset from /Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scene...
+14-11-2023 18:26:38-debug: %cImport%c: /Users/alex/git/cocos/EndlessRunner/assets/scenes/GameScene.scenebackground: #aaff85; color: #000;color: #000;
+14-11-2023 18:26:38-debug: refresh asset /Users/alex/git/cocos/EndlessRunner/assets/scenes success
