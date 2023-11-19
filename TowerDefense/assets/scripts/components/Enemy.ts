@@ -1,5 +1,6 @@
-import { _decorator, BoxCollider2D, Component, Node, Sprite, SpriteFrame, Vec3 } from 'cc';
+import { _decorator, BoxCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, Sprite, SpriteFrame, Vec3 } from 'cc';
 import { LevelMap } from './LevelMap';
+import { Bullet } from './Bullet';
 const { ccclass, property } = _decorator;
 
 @ccclass('Enemy')
@@ -21,6 +22,9 @@ export class Enemy extends Component {
     }
 
     update(deltaTime: number) {
+        if (this.health < 0) {
+            this.node.destroy();
+        }
         if (this.indexOfPath == this.pathToFollow.length) {
             // EXPLODE
             return;
@@ -107,9 +111,26 @@ export class Enemy extends Component {
         this.getComponent(Sprite).spriteFrame = this.spriteToUse;
         this.node.position = this.pathToFollow[0];
         this.node.angle = 90;
-        this.node.getComponent(BoxCollider2D).size.x = 24;
-        this.node.getComponent(BoxCollider2D).size.y = 28;
-        this.node.getComponent(BoxCollider2D).name = "enemy";
-        this.node.getComponent(BoxCollider2D).apply();
+        let collider = this.node.getComponent(BoxCollider2D);
+
+        collider.size.x = 24;
+        collider.size.y = 28;
+        collider.name = "enemy";
+        if (collider) {
+            collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
+        }
+        collider.apply();
     }
+
+    onBeginContact (selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
+        // will be called once when two colliders begin to contact
+        if (otherCollider.name == 'bullet') {
+            this.health -= otherCollider.node.getComponent(Bullet).damage;
+            setTimeout(() => {
+                otherCollider.node.destroy();
+            }, 1);
+
+        }        
+    }
+
 }

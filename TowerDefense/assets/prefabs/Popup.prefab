@@ -398,6 +398,8 @@
       "__uuid__": "71375ba9-61fb-4f2b-b417-d44ba0097df2",
       "__expectedType__": "cc.Prefab"
     },
+    "fireRate": 2,
+    "damagePerBullet": 25,
     "_id": ""
   },
   {
@@ -699,6 +701,8 @@
       "__uuid__": "71375ba9-61fb-4f2b-b417-d44ba0097df2",
       "__expectedType__": "cc.Prefab"
     },
+    "fireRate": 1,
+    "damagePerBullet": 35,
     "_id": ""
   },
   {

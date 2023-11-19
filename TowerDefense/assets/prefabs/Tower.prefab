@@ -171,7 +171,7 @@
     "tag": 0,
     "_group": 1,
     "_density": 1,
-    "_sensor": false,
+    "_sensor": true,
     "_friction": 0.2,
     "_restitution": 0,
     "_offset": {
@@ -179,7 +179,7 @@
       "x": 0,
       "y": 0
     },
-    "_radius": 200,
+    "_radius": 250,
     "_id": ""
   },
   {

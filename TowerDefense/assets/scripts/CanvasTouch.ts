@@ -2,12 +2,15 @@ import { _decorator, Camera, Component, director, EPhysics2DDrawFlags, EventTouc
 import { LevelMap } from './components/LevelMap';
 import { PanelCreate } from './components/PanelCreate';
 import { Tower } from './components/Tower';
+import { Bullet } from './components/Bullet';
 const { ccclass, property } = _decorator;
 
 @ccclass('CanvasTouch')
 export class CanvasTouch extends Component {
     @property(Node)
     public levelMapNode:Node;
+    @property(Prefab)
+    public bulletPrefab:Prefab;
     @property(Prefab)
     public popupPrefab:Prefab;
     @property(Prefab)
@@ -31,6 +34,16 @@ export class CanvasTouch extends Component {
             this.node.getComponentsInChildren(PanelCreate).forEach(child => {
                 child.node.destroy();
             });    
+        });
+        director.on('generateBullet', (positionToCreateBullet, directionToFollow, angle, damagePerBullet) => {
+            const bullet = instantiate(this.bulletPrefab);
+            bullet.getComponent(Bullet).positionToCreateBullet = positionToCreateBullet;
+                //new Vec3(this.node.position.x + direction.y * 15, this.node.position.y + direction.y * 15);
+            bullet.getComponent(Bullet).directionToFollow = directionToFollow;
+            bullet.getComponent(Bullet).angle = angle;
+            bullet.getComponent(Bullet).damage = damagePerBullet;
+            bullet.getComponent(Bullet).init();
+            this.node.addChild(bullet);
         });
         PhysicsSystem2D.instance.debugDrawFlags = EPhysics2DDrawFlags.Aabb |
         EPhysics2DDrawFlags.Pair |

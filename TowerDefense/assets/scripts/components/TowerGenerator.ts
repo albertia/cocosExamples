@@ -7,13 +7,12 @@ export class TowerGenerator extends Component {
     @property(Prefab)
     public towerPrefab:Prefab;
     @property
-    public fireRate:number;
+    public fireRate:number = 1;
     @property
-    public damagePerBullet:number;
+    public damagePerBullet:number = 10;
     public sprite : SpriteFrame;
     public positionToCreateTower : Vec3;
     public towerIndex:number;
-    public fireRatio:number;
 
     start() {
         this.sprite = this.node.getComponentInChildren(Sprite).spriteFrame;

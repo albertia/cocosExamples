@@ -1132,6 +1132,10 @@
     "levelMapNode": {
       "__id__": 3
     },
+    "bulletPrefab": {
+      "__uuid__": "c4dc98cb-cad2-464f-8102-c437135b1b30",
+      "__expectedType__": "cc.Prefab"
+    },
     "popupPrefab": {
       "__uuid__": "94890438-1c9a-4ffd-88b9-e275b73dda58",
       "__expectedType__": "cc.Prefab"

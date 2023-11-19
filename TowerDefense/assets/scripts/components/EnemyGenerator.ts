@@ -59,6 +59,18 @@ export class EnemyGenerator extends Component {
                         break;
                 }
                 enemy.getComponent(Enemy).levelMapNode = this.levelMapNode;
+                switch(this.wave) {
+                    case 2: 
+                        enemy.getComponent(Enemy).health = 200;
+                        break;
+                    case 1: 
+                        enemy.getComponent(Enemy).health = 100;
+                        break;
+                    case 0:
+                    default:
+                        enemy.getComponent(Enemy).health = 50;
+                        break;
+                }
                 enemy.getComponent(Enemy).init();
                 this.node.addChild(enemy);
                 this.enemiesSpawn++;

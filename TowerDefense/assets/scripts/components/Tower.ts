@@ -1,8 +1,10 @@
-import { _decorator, CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, Quat, Vec2, Vec3 } from 'cc';
+import { _decorator, CircleCollider2D, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, Node, Prefab, Quat, Vec2, Vec3 } from 'cc';
+import { Bullet } from './Bullet';
 const { ccclass, property } = _decorator;
 
 @ccclass('Tower')
 export class Tower extends Component {
+
     public fireRate:number;
     public damagePerBullet:number;
     public positionToCreateTower : Vec3;
@@ -20,15 +22,15 @@ export class Tower extends Component {
         var targetIndex = this.getFirstTarget();
         if (targetIndex >= 0) {
             var target = this.enemiesAtRange[targetIndex];
-            var direction = new Vec2(target.position.x - this.node.position.x, target.position.y - this.node.position.y).normalize();
+            var direction = new Vec3(target.position.x - this.node.position.x, target.position.y - this.node.position.y).normalize();
             var angleRad = Math.atan2(direction.y, direction.x)- Math.PI/2;
             var angle = angleRad*180/Math.PI;
-            console.log(angleRad, angle);
             this.node.angle = angle;
-        }
-        // SHOOT
-        if (this.timer <= 0) {
-            this.timer = this.fireRate;
+            // SHOOT
+            if (this.timer <= 0) {
+                this.timer = this.fireRate;
+                director.emit('generateBullet', this.node.position, direction, angle, this.damagePerBullet);
+            }
         }
     }
 
@@ -37,7 +39,6 @@ export class Tower extends Component {
         this.timer = this.fireRate;
 
         let collider = this.node.getComponent(CircleCollider2D);
-        console.log(collider);
         if (collider) {
             collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
             collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
