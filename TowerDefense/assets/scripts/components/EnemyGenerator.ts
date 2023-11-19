@@ -5,7 +5,7 @@ const { ccclass, property } = _decorator;
 @ccclass('EnemyGenerator')
 export class EnemyGenerator extends Component {
     @property
-    public timeBetweenWaves = 50;
+    public timeBetweenWaves = 30;
     @property
     public timeBetweenEnemies = 1;
     @property
@@ -27,6 +27,7 @@ export class EnemyGenerator extends Component {
     private phase = 0;
     private wave = 0;
     private enemiesSpawn = 0;
+    private enemiesHealthMultiplier = 1;
     // Phase 0 = Wait
     // Phase 1 = SpawnEnemies
 
@@ -47,28 +48,28 @@ export class EnemyGenerator extends Component {
                 // Spawn Enemy
                 const enemy = instantiate(this.enemyPrefab);
                 switch(this.wave) {
-                    case 2: 
+                    case 0: 
                         enemy.getComponent(Enemy).spriteToUse = this.easyEnemySprite;
                         break;
                     case 1: 
-                        enemy.getComponent(Enemy).spriteToUse = this.hardEnemySprite;
+                        enemy.getComponent(Enemy).spriteToUse = this.midEnemySprite;
                         break;
-                    case 0:
+                    case 2:
                     default:
-                        enemy.getComponent(Enemy).spriteToUse = this.easyEnemySprite;
+                        enemy.getComponent(Enemy).spriteToUse = this.hardEnemySprite;
                         break;
                 }
                 enemy.getComponent(Enemy).levelMapNode = this.levelMapNode;
                 switch(this.wave) {
-                    case 2: 
-                        enemy.getComponent(Enemy).health = 200;
+                    case 0: 
+                        enemy.getComponent(Enemy).health = 50;
                         break;
                     case 1: 
                         enemy.getComponent(Enemy).health = 100;
                         break;
-                    case 0:
+                    case 2:
                     default:
-                        enemy.getComponent(Enemy).health = 50;
+                        enemy.getComponent(Enemy).health = 200 * this.enemiesHealthMultiplier;
                         break;
                 }
                 enemy.getComponent(Enemy).init();
@@ -80,6 +81,11 @@ export class EnemyGenerator extends Component {
                 this.enemiesSpawn = 0;
                 this.phase = 0;
                 this.wave++;
+                if (this.wave >= 3) {
+                    this.timeBetweenEnemies *= 0.95;
+                    this.enemiesPerWave = Math.ceil(this.enemiesPerWave * 1.2);
+                    this.enemiesHealthMultiplier = this.enemiesHealthMultiplier * 1.1;
+                }
             }
         }
     }
