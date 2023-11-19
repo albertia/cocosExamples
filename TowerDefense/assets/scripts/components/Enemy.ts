@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Quat, Sprite, SpriteFrame, Vec3 } from 'cc';
+import { _decorator, BoxCollider2D, Component, Node, Sprite, SpriteFrame, Vec3 } from 'cc';
 import { LevelMap } from './LevelMap';
 const { ccclass, property } = _decorator;
 
@@ -13,6 +13,7 @@ export class Enemy extends Component {
     public levelMapNode:Node;
     public spriteToUse:SpriteFrame;
     public pathToFollow:Vec3[]
+    public health:number;
 
     private indexOfPath = 1;
 
@@ -106,5 +107,9 @@ export class Enemy extends Component {
         this.getComponent(Sprite).spriteFrame = this.spriteToUse;
         this.node.position = this.pathToFollow[0];
         this.node.angle = 90;
+        this.node.getComponent(BoxCollider2D).size.x = 24;
+        this.node.getComponent(BoxCollider2D).size.y = 28;
+        this.node.getComponent(BoxCollider2D).name = "enemy";
+        this.node.getComponent(BoxCollider2D).apply();
     }
 }

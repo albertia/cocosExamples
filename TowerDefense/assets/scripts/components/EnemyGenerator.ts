@@ -41,11 +41,9 @@ export class EnemyGenerator extends Component {
             if (this.timer >= this.timeBetweenWaves) {
                 this.phase = 1;
                 this.timer = this.timeBetweenEnemies;
-                console.log("Changing phase to generate Enemies")
             }
         } else if (this.phase == 1){
             if (this.timer >= this.timeBetweenEnemies) {
-                console.log("Generate Enemy")
                 // Spawn Enemy
                 const enemy = instantiate(this.enemyPrefab);
                 switch(this.wave) {
@@ -67,7 +65,6 @@ export class EnemyGenerator extends Component {
                 this.timer = 0;
             }
             if (this.enemiesSpawn >= this.enemiesPerWave) {
-                console.log("Changing wave")
                 this.enemiesSpawn = 0;
                 this.phase = 0;
                 this.wave++;

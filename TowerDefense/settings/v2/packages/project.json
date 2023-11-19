@@ -1,3 +1,13 @@
 {
-  "__version__": "1.0.6"
+  "__version__": "1.0.6",
+  "general": {
+    "designResolution": {
+      "width": 2048,
+      "height": 1152,
+      "fitHeight": true
+    }
+  },
+  "physics": {
+    "allowSleep": true
+  }
 }
