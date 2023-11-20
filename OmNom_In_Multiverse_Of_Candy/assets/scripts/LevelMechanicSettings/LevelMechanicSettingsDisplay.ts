@@ -32,11 +32,11 @@ export class LevelMechanicSettingsDisplay extends Component {
     show(levelMechanic: LevelMechanic) {
         this.levelMechanic = levelMechanic;
 
-        this.changeColorButton.interactable = levelMechanic.canChangeColor;
-        this.rotateButton.interactable = levelMechanic.canRotate;
-
         this.updatePosition();
         this.setActive(true);
+
+        this.changeColorButton.interactable = levelMechanic.canChangeColor;
+        this.rotateButton.interactable = levelMechanic.canRotate;
     }
 
     updatePosition() {
