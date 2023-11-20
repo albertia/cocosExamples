@@ -2,6 +2,12 @@ import { _decorator, CCBoolean, Component, NodeEventType, Vec2, Vec3 } from 'cc'
 import { MechanicSelectedEvent } from './MechanicSelectedEvent';
 const { ccclass, property } = _decorator;
 
+export enum LevelMechanicColor {
+    Blue,
+    Green,
+    Purple
+}
+
 @ccclass('LevelMechanic')
 export class LevelMechanic extends Component {
 
@@ -10,6 +16,8 @@ export class LevelMechanic extends Component {
 
     @property({ type: CCBoolean })
     public canRotate: boolean;
+
+    public levelMechanicColor: LevelMechanicColor = LevelMechanicColor.Blue;
 
     start() {
         this.node.on(NodeEventType.TOUCH_START, this.onTouchStart, this);
@@ -33,7 +41,10 @@ export class LevelMechanic extends Component {
 
     selectMechanic() {
         this.node.dispatchEvent(new MechanicSelectedEvent('mechanic', this, true));
+    }
 
+    changeColor() {
+        this.levelMechanicColor = (this.levelMechanicColor + 1) % 3;
     }
 }
 

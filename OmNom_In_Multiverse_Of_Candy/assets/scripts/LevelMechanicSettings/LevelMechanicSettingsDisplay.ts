@@ -51,7 +51,7 @@ export class LevelMechanicSettingsDisplay extends Component {
     }
 
     onChangeColorMechanic() {
-        console.log('not yet implemented');
+        this.levelMechanic.changeColor();
     }
 
     onRotateMechanic() {
