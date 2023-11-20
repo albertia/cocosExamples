@@ -1,4 +1,5 @@
 import { _decorator, Component, instantiate, Node, NodeEventType, Prefab, Vec2, Vec3 } from 'cc';
+import { OmNom } from './OmNom';
 const { ccclass, property } = _decorator;
 
 @ccclass('OmNomBubble')
@@ -36,6 +37,7 @@ export class OmNomBubble extends Component {
         if (!this.bubbleMoved) {
             const omnom = instantiate(this.omnomPrefab);
             omnom.position = this.node.position;
+            omnom.getComponent(OmNom).init();
             this.gameNode.addChild(omnom);
             this.node.destroy();
         }
