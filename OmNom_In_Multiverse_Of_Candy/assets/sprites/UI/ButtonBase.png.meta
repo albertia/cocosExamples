@@ -2,7 +2,7 @@
   "ver": "1.0.26",
   "importer": "image",
   "imported": true,
-  "uuid": "e93c9bbe-95ce-4482-a167-55b74221ae3b",
+  "uuid": "033199c4-b6f3-4aa9-80b4-4de59c1cc297",
   "files": [
     ".json",
     ".png"
@@ -10,8 +10,8 @@
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "e93c9bbe-95ce-4482-a167-55b74221ae3b@6c48a",
-      "displayName": "RemoveButton",
+      "uuid": "033199c4-b6f3-4aa9-80b4-4de59c1cc297@6c48a",
+      "displayName": "ButtonBase",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -22,7 +22,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "e93c9bbe-95ce-4482-a167-55b74221ae3b",
+        "imageUuidOrDatabaseUri": "033199c4-b6f3-4aa9-80b4-4de59c1cc297",
         "visible": false
       },
       "ver": "1.0.22",
@@ -34,8 +34,8 @@
     },
     "f9941": {
       "importer": "sprite-frame",
-      "uuid": "e93c9bbe-95ce-4482-a167-55b74221ae3b@f9941",
-      "displayName": "RemoveButton",
+      "uuid": "033199c4-b6f3-4aa9-80b4-4de59c1cc297@f9941",
+      "displayName": "ButtonBase",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
@@ -114,7 +114,7 @@
           ]
         },
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "e93c9bbe-95ce-4482-a167-55b74221ae3b@6c48a",
+        "imageUuidOrDatabaseUri": "033199c4-b6f3-4aa9-80b4-4de59c1cc297@6c48a",
         "atlasUuid": ""
       },
       "ver": "1.0.12",
@@ -129,6 +129,6 @@
     "hasAlpha": true,
     "type": "sprite-frame",
     "fixAlphaTransparencyArtifacts": true,
-    "redirect": "e93c9bbe-95ce-4482-a167-55b74221ae3b@f9941"
+    "redirect": "033199c4-b6f3-4aa9-80b4-4de59c1cc297@f9941"
   }
 }
