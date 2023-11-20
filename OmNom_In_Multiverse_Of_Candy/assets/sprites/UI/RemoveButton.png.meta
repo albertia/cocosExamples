@@ -2,7 +2,7 @@
   "ver": "1.0.26",
   "importer": "image",
   "imported": true,
-  "uuid": "e501aeb9-9da7-4460-b632-8c0ef6adef0c",
+  "uuid": "e93c9bbe-95ce-4482-a167-55b74221ae3b",
   "files": [
     ".json",
     ".png"
@@ -10,8 +10,8 @@
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "e501aeb9-9da7-4460-b632-8c0ef6adef0c@6c48a",
-      "displayName": "Bubble",
+      "uuid": "e93c9bbe-95ce-4482-a167-55b74221ae3b@6c48a",
+      "displayName": "RemoveButton",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -22,7 +22,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "e501aeb9-9da7-4460-b632-8c0ef6adef0c",
+        "imageUuidOrDatabaseUri": "e93c9bbe-95ce-4482-a167-55b74221ae3b",
         "visible": false
       },
       "ver": "1.0.22",
@@ -34,8 +34,8 @@
     },
     "f9941": {
       "importer": "sprite-frame",
-      "uuid": "e501aeb9-9da7-4460-b632-8c0ef6adef0c@f9941",
-      "displayName": "Bubble",
+      "uuid": "e93c9bbe-95ce-4482-a167-55b74221ae3b@f9941",
+      "displayName": "RemoveButton",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
@@ -46,10 +46,10 @@
         "offsetY": 0,
         "trimX": 0,
         "trimY": 0,
-        "width": 221,
-        "height": 224,
-        "rawWidth": 221,
-        "rawHeight": 224,
+        "width": 100,
+        "height": 100,
+        "rawWidth": 100,
+        "rawHeight": 100,
         "borderTop": 0,
         "borderBottom": 0,
         "borderLeft": 0,
@@ -61,17 +61,17 @@
         "meshType": 0,
         "vertices": {
           "rawPosition": [
-            -110.5,
-            -112,
+            -50,
+            -50,
             0,
-            110.5,
-            -112,
+            50,
+            -50,
             0,
-            -110.5,
-            112,
+            -50,
+            50,
             0,
-            110.5,
-            112,
+            50,
+            50,
             0
           ],
           "indexes": [
@@ -84,12 +84,12 @@
           ],
           "uv": [
             0,
-            224,
-            221,
-            224,
+            100,
+            100,
+            100,
             0,
             0,
-            221,
+            100,
             0
           ],
           "nuv": [
@@ -103,18 +103,18 @@
             1
           ],
           "minPos": [
-            -110.5,
-            -112,
+            -50,
+            -50,
             0
           ],
           "maxPos": [
-            110.5,
-            112,
+            50,
+            50,
             0
           ]
         },
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "e501aeb9-9da7-4460-b632-8c0ef6adef0c@6c48a",
+        "imageUuidOrDatabaseUri": "e93c9bbe-95ce-4482-a167-55b74221ae3b@6c48a",
         "atlasUuid": ""
       },
       "ver": "1.0.12",
@@ -129,6 +129,6 @@
     "hasAlpha": true,
     "type": "sprite-frame",
     "fixAlphaTransparencyArtifacts": true,
-    "redirect": "e501aeb9-9da7-4460-b632-8c0ef6adef0c@f9941"
+    "redirect": "e93c9bbe-95ce-4482-a167-55b74221ae3b@f9941"
   }
 }
