@@ -1,14 +1,12 @@
-import { _decorator, Component, instantiate, Node, Prefab } from 'cc';
+import { Component, Node, Prefab, _decorator, instantiate } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('LevelMechanicButton')
 export class LevelMechanicButton extends Component {
-
-    @property({ type: Node })
-    public levelMechanicContainerNode: Node | null = null;
-
     @property({ type: Prefab })
-    public placeholderPrefab: Prefab | null = null;
+    private placeholderPrefab: Prefab | null = null;
+
+    private _levelMechanicContainerNode: Node | null = null;
 
     start() {
     }
@@ -17,9 +15,13 @@ export class LevelMechanicButton extends Component {
 
     }
 
+    init(levelMechanicContainerNode: Node) {
+        this._levelMechanicContainerNode = levelMechanicContainerNode;
+    }
+
     onButtonPressed() {
         var placeholderPrefabInstance = instantiate(this.placeholderPrefab);
-        placeholderPrefabInstance.setParent(this.levelMechanicContainerNode);
+        placeholderPrefabInstance.setParent(this._levelMechanicContainerNode);
     }
 }
 
