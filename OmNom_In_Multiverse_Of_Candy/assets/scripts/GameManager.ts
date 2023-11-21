@@ -13,11 +13,14 @@ export class GameManager extends Component {
     @property(LevelMechanicSettingsDisplay)
     private levelMechanicSettingsDisplay: LevelMechanicSettingsDisplay;
 
+    public static didGamePlayStart: boolean;
+
     start() {
         this.node.on('mechanicSelected', this.onMechanicSelected, this);
         this.node.on('gameplayStarted', this.onGameplayStarted, this);
 
         this.levelMechanicSettingsDisplay.setActive(false);
+        GameManager.didGamePlayStart = false;
     }
 
     onMechanicSelected(event: MechanicSelectedEvent) {
@@ -28,6 +31,8 @@ export class GameManager extends Component {
     onGameplayStarted() {
         this.levelMechanicBrowser.setActive(false);
         this.levelMechanicSettingsDisplay.setActive(false);
+
+        GameManager.didGamePlayStart = true;
     }
 }
 
