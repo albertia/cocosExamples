@@ -54,12 +54,10 @@ export class OmNom extends Component {
         }
 
         if (this.blackHoleDeviationToPos != undefined && this.blackHoleDeviationForce != undefined) {
-            console.log("this.body.linearVelocity", this.body.linearVelocity);
-            var direction = new Vec2(this.blackHoleDeviationToPos.x - this.node.position.x, this.blackHoleDeviationToPos.y - this.node.position.y);
+            var direction =  new Vec2(this.blackHoleDeviationToPos.x - this.node.position.x, this.blackHoleDeviationToPos.y - this.node.position.y);
             var directionN = direction.normalize();
-            var distance = Math.sqrt(direction.x * direction.x + direction.y * direction.y);
-            var devForce = this.blackHoleDeviationForce * (1 - distance / this.blackHoleDeviationRadius);
-            console.log("direction ", directionN, " this.blackHoleDeviationForce ", devForce);
+            var distance = Math.sqrt(direction.x*direction.x + direction.y*direction.y);
+            var devForce = this.blackHoleDeviationForce* (1 - distance/this.blackHoleDeviationRadius);
             this.body.linearVelocity = new Vec2(this.body.linearVelocity.x + directionN.x * devForce * deltaTime,
                 this.body.linearVelocity.y + directionN.y * devForce * deltaTime);
         }
@@ -67,7 +65,6 @@ export class OmNom extends Component {
 
     onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         // will be called once when two colliders begin to contact
-        console.log("CollisionBegin", otherCollider.name);
         if (otherCollider.name == 'gravityField') {
             var gravToApply = otherCollider.node.getComponent(GravityField).gravityToApply;
             var currentGrav = PhysicsSystem2D.instance.gravity;
