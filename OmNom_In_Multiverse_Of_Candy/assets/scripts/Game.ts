@@ -9,7 +9,7 @@ export class Game extends Component {
     public gameStarted:boolean = false;
 
     start() {
-
+        this.starsCollected = 0;
     }
 
     update(deltaTime: number) {

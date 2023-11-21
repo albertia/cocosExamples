@@ -1,4 +1,4 @@
-import { _decorator, BoxCollider2D, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3, Node } from 'cc';
+import { _decorator, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3, Node, CircleCollider2D } from 'cc';
 import { BlackHole } from './BlackHole';
 import { Candy } from './Candy';
 import { GravityField } from './GravityField';
@@ -16,7 +16,6 @@ export class OmNom extends Component {
     private body: RigidBody2D;
 
     public gameNode: Node;
-    public starsCollected: number = 0;
     public inPortal: PortalMechanic;
 
     private blackHoleDeviationToPos: Vec3;
@@ -25,12 +24,6 @@ export class OmNom extends Component {
     private currentPortal: PortalMechanic;
 
     start() {
-        this.starsCollected = 0;
-        let collider = this.node.getComponent(BoxCollider2D);
-        collider.name = 'omnom'
-        collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
-        collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
-        collider.apply();
     }
 
     update(deltaTime: number) {
@@ -57,6 +50,7 @@ export class OmNom extends Component {
 
                 omNom.setVelocity(exitVelocity);
                 omNom.gameNode = this.gameNode;
+                omNom.setAngularVelocity(this.body.angularVelocity * 0.5);
                 omNom.init();
             }
             this.gameNode.getComponent(Game).numOmNoms--;
@@ -82,12 +76,13 @@ export class OmNom extends Component {
             var currentGrav = PhysicsSystem2D.instance.gravity;
             PhysicsSystem2D.instance.gravity = v2(currentGrav.x + gravToApply.x * PHYSICS_2D_PTM_RATIO, currentGrav.y + gravToApply.y * PHYSICS_2D_PTM_RATIO);
         } else if (otherCollider.name == 'star') {
-            this.starsCollected++;
+            this.gameNode.getComponent(Game).starsCollected++;
             setTimeout(function () {
                 otherCollider.node.destroy();
             }.bind(this), 1);
         } else if (otherCollider.name == 'candy') {
             setTimeout(function () {
+                otherCollider.node.destroy();
                 director.loadScene(otherCollider.node.getComponent(Candy).nextScene);
             }.bind(this), 100);
         } else if (otherCollider.name == 'deathTouch') {
@@ -110,7 +105,7 @@ export class OmNom extends Component {
             }
         }
     }
-    
+
     onEndContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         // will be called once when two colliders begin to contact
         if (otherCollider.name == 'gravityField') {
@@ -130,7 +125,7 @@ export class OmNom extends Component {
     }
 
     init() {
-        let collider = this.node.getComponent(BoxCollider2D);
+        let collider = this.node.getComponent(CircleCollider2D);
         collider.name = 'omnom'
         collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
         collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
@@ -140,6 +135,14 @@ export class OmNom extends Component {
 
     setVelocity(velocity: Vec2) {
         this.body.linearVelocity = velocity;
+    }
+
+    addVelocity(velocity: Vec2) {
+        this.body.applyLinearImpulseToCenter(velocity, true);
+    }
+
+    setAngularVelocity(angularVelocity: number) {
+        this.body.applyAngularImpulse(angularVelocity, true);
     }
 }
 
