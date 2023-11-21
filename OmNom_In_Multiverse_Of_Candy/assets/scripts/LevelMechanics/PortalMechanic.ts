@@ -1,10 +1,13 @@
-import { Sprite, SpriteFrame, _decorator } from 'cc';
+import { CCBoolean, Sprite, SpriteFrame, _decorator } from 'cc';
 import { LevelMechanic, LevelMechanicColor } from './LevelMechanic';
 import { LevelMechanicManager } from './LevelMechanicManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('PortalMechanic')
 export class PortalMechanic extends LevelMechanic {
+
+    @property(CCBoolean)
+    public isGuidedPortal: boolean;
 
     @property({ type: Sprite })
     private sprite: Sprite | null = null;
