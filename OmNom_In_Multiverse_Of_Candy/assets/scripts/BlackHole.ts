@@ -1,9 +1,9 @@
-import { _decorator, CircleCollider2D, Component, Node } from 'cc';
+import { _decorator, CircleCollider2D, Component, Node, CCInteger } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('BlackHole')
 export class BlackHole extends Component {
-    @property(Number)
+    @property(CCInteger)
     public blackHoleDeviationForce:number = 50;
 
     public radius:number;

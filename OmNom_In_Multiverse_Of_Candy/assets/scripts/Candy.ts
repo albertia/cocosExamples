@@ -1,9 +1,9 @@
-import { _decorator, CircleCollider2D, Component, Node, Scene } from 'cc';
+import { _decorator, CCString, CircleCollider2D, Component, Node } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('Candy')
 export class Candy extends Component {
-    @property(String)
+    @property(CCString)
     public nextScene:string = "";
 
     start() {
