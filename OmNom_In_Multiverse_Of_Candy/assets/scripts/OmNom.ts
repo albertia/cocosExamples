@@ -92,7 +92,6 @@ export class OmNom extends Component {
 
             if (this.inPortal == null || portalMechanic != this.inPortal) {
                 this.currentPortal = portalMechanic;
-            } else {
             }
         }
     }
