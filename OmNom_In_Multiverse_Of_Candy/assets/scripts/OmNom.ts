@@ -1,9 +1,10 @@
-import { _decorator, BoxCollider2D, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3 } from 'cc';
+import { _decorator, BoxCollider2D, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3, Node } from 'cc';
 import { BlackHole } from './BlackHole';
 import { Candy } from './Candy';
 import { GravityField } from './GravityField';
 import { LevelMechanicManager } from './LevelMechanics/LevelMechanicManager';
 import { PortalMechanic } from './LevelMechanics/PortalMechanic';
+import { Game } from './Game';
 const { ccclass, property } = _decorator;
 
 @ccclass('OmNom')
@@ -11,10 +12,10 @@ export class OmNom extends Component {
 
     @property(Prefab)
     private omNomPrefab: Prefab;
-
     @property(RigidBody2D)
     private body: RigidBody2D;
 
+    public gameNode: Node;
     public starsCollected: number = 0;
     public inPortal: PortalMechanic;
 
@@ -55,8 +56,10 @@ export class OmNom extends Component {
                 }
 
                 omNom.setVelocity(exitVelocity);
+                omNom.gameNode = this.gameNode;
+                omNom.init();
             }
-
+            this.gameNode.getComponent(Game).numOmNoms--;
             this.node.destroy();
 
             this.currentPortal = null;
@@ -90,7 +93,8 @@ export class OmNom extends Component {
         } else if (otherCollider.name == 'deathTouch') {
             // Lasers or black hole center
             setTimeout(function () {
-                director.loadScene(director.getScene().name);
+                this.gameNode.getComponent(Game).numOmNoms--;
+                this.node.destroy();
             }.bind(this), 100);
         } else if (otherCollider.name == 'blackHole') {
             this.blackHoleDeviationForce = otherCollider.node.getComponent(BlackHole).blackHoleDeviationForce;
@@ -131,6 +135,7 @@ export class OmNom extends Component {
         collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
         collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
         collider.apply();
+        this.gameNode.getComponent(Game).numOmNoms++;
     }
 
     setVelocity(velocity: Vec2) {

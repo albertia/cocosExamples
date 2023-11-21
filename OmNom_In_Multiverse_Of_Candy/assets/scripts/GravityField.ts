@@ -18,7 +18,6 @@ export class GravityField extends Component {
         var angleRad = Math.atan2(gravityDir.y, gravityDir.x)- Math.PI/2;
         var angle = ((angleRad*180/Math.PI) + 360) % 360;
         mask.angle = angle;
-        console.log(angle)
         if (angle < 95 && angle > 85){
             var maskTransform = mask.getComponent(UITransform);
             maskTransform.setContentSize(new Size(maskTransform.height, maskTransform.width));
