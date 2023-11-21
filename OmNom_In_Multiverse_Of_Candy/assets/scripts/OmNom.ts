@@ -1,4 +1,4 @@
-import { _decorator, BoxCollider2D, Collider2D, Component, Contact2DType, director, Game, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3 } from 'cc';
+import { _decorator, BoxCollider2D, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3 } from 'cc';
 import { BlackHole } from './BlackHole';
 import { Candy } from './Candy';
 import { GravityField } from './GravityField';
@@ -38,14 +38,23 @@ export class OmNom extends Component {
 
             for (let i = 0; i < connectedPortals.length; i++) {
 
-                let portal = connectedPortals[i];
-            
+                let connectedPortal = connectedPortals[i];
+
                 let omNomInstance = instantiate(this.omNomPrefab);
-                omNomInstance.setPosition(portal.node.position);
+                omNomInstance.setPosition(connectedPortal.node.position);
                 omNomInstance.setParent(this.node.parent);
                 let omNom = omNomInstance.getComponent(OmNom);
-                omNom.inPortal = portal;
-                omNom.setVelocity(this.body.linearVelocity);
+                omNom.inPortal = connectedPortal;
+
+                let exitVelocity = this.body.linearVelocity;
+
+                if (connectedPortal.isGuidedPortal) {
+                    let speed = this.body.linearVelocity.length();
+                    let adjustedVelocity = connectedPortal.node.right.normalize().multiplyScalar(speed);
+                    exitVelocity = new Vec2(adjustedVelocity.x, adjustedVelocity.y);
+                }
+
+                omNom.setVelocity(exitVelocity);
             }
 
             this.node.destroy();
@@ -54,10 +63,10 @@ export class OmNom extends Component {
         }
 
         if (this.blackHoleDeviationToPos != undefined && this.blackHoleDeviationForce != undefined) {
-            var direction =  new Vec2(this.blackHoleDeviationToPos.x - this.node.position.x, this.blackHoleDeviationToPos.y - this.node.position.y);
+            var direction = new Vec2(this.blackHoleDeviationToPos.x - this.node.position.x, this.blackHoleDeviationToPos.y - this.node.position.y);
             var directionN = direction.normalize();
-            var distance = Math.sqrt(direction.x*direction.x + direction.y*direction.y);
-            var devForce = this.blackHoleDeviationForce* (1 - distance/this.blackHoleDeviationRadius);
+            var distance = Math.sqrt(direction.x * direction.x + direction.y * direction.y);
+            var devForce = this.blackHoleDeviationForce * (1 - distance / this.blackHoleDeviationRadius);
             this.body.linearVelocity = new Vec2(this.body.linearVelocity.x + directionN.x * devForce * deltaTime,
                 this.body.linearVelocity.y + directionN.y * devForce * deltaTime);
         }
@@ -87,14 +96,17 @@ export class OmNom extends Component {
             this.blackHoleDeviationForce = otherCollider.node.getComponent(BlackHole).blackHoleDeviationForce;
             this.blackHoleDeviationRadius = otherCollider.node.getComponent(BlackHole).radius;
             this.blackHoleDeviationToPos = otherCollider.node.position;
-        } else if (otherCollider.node.name == 'RegularPortalMechanic') {
-            let portalMechanic = otherCollider.getComponent(PortalMechanic);
+        }
 
+        let portalMechanic = otherCollider.node.getComponent(PortalMechanic);
+
+        if (portalMechanic != null) {
             if (this.inPortal == null || portalMechanic != this.inPortal) {
                 this.currentPortal = portalMechanic;
             }
         }
     }
+    
     onEndContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         // will be called once when two colliders begin to contact
         if (otherCollider.name == 'gravityField') {
@@ -104,12 +116,12 @@ export class OmNom extends Component {
         } else if (otherCollider.name == 'blackHole') {
             this.blackHoleDeviationForce = undefined;
             this.blackHoleDeviationToPos = undefined;
-        } else if (otherCollider.node.name == 'RegularPortalMechanic') {
-            let portalMechanic = otherCollider.getComponent(PortalMechanic);
+        }
 
-            if (this.inPortal != null && portalMechanic == this.inPortal) {
-                this.inPortal = null;
-            }
+        let portalMechanic = otherCollider.getComponent(PortalMechanic);
+
+        if (this.inPortal != null && portalMechanic == this.inPortal) {
+            this.inPortal = null;
         }
     }
 
