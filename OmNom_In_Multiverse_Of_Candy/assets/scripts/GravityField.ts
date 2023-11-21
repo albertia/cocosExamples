@@ -19,13 +19,10 @@ export class GravityField extends Component {
         var angleRad = Math.atan2(gravityDir.y, gravityDir.x)- Math.PI/2;
         var angle = ((angleRad*180/Math.PI) + 360) % 360;
         mask.angle = angle;
-        console.log("Size angle ", angle)
         if (angle < 95 && angle > 85){
-            console.log("changing size")
             var arrowsTransform = arrows.getComponent(UITransform);
             arrowsTransform.setContentSize(new Size(arrowsTransform.height, arrowsTransform.width));
         } else if (angle < 275 && angle > 265) {
-            console.log("changing size")
             var arrowsTransform = arrows.getComponent(UITransform);
             arrowsTransform.setContentSize(new Size(arrowsTransform.height, arrowsTransform.width));
         }

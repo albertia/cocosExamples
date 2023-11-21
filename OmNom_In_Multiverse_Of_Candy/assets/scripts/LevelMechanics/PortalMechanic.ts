@@ -1,5 +1,6 @@
 import { Sprite, SpriteFrame, _decorator } from 'cc';
 import { LevelMechanic, LevelMechanicColor } from './LevelMechanic';
+import { LevelMechanicManager } from './LevelMechanicManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('PortalMechanic')
@@ -16,6 +17,15 @@ export class PortalMechanic extends LevelMechanic {
 
     @property({ type: SpriteFrame })
     private purpleSprite: SpriteFrame | null = null;
+
+    start() {
+        super.start();
+        LevelMechanicManager.registerPortalMechanic(this);
+    }
+
+    onDestroy() {
+        LevelMechanicManager.unregisterPortalMechanic(this);
+    }
 
     changeColor(): void {
         super.changeColor();
