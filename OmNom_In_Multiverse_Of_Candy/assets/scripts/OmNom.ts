@@ -90,7 +90,7 @@ export class OmNom extends Component {
         } else if (otherCollider.node.name == 'RegularPortalMechanic') {
             let portalMechanic = otherCollider.getComponent(PortalMechanic);
 
-            if (this.inPortal == null || portalMechanic.nodeId != this.inPortal.nodeId) {
+            if (this.inPortal == null || portalMechanic != this.inPortal) {
                 this.currentPortal = portalMechanic;
             } else {
             }
@@ -108,7 +108,7 @@ export class OmNom extends Component {
         } else if (otherCollider.node.name == 'RegularPortalMechanic') {
             let portalMechanic = otherCollider.getComponent(PortalMechanic);
 
-            if (this.inPortal != null && portalMechanic.nodeId == this.inPortal.nodeId) {
+            if (this.inPortal != null && portalMechanic == this.inPortal) {
                 this.inPortal = null;
             }
         }
