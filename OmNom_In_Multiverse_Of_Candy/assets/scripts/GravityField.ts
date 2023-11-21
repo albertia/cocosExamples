@@ -1,4 +1,4 @@
-import { _decorator, BoxCollider2D, Component, Animation, Node, Vec2, UITransform, Size } from 'cc';
+import { _decorator, BoxCollider2D, Component, Animation, Node, Vec2, UITransform, Size, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('GravityField')
@@ -14,6 +14,8 @@ export class GravityField extends Component {
 
         var visuals = this.node.getChildByName("Visuals");
         var mask = visuals.getChildByName("Mask");
+        var arrows = mask.getChildByName("ArrowsTile");
+        arrows.scale = new Vec3(1/this.node.scale.x, 1/this.node.scale.y)
         var gravityDir = new Vec2(this.gravityToApply).normalize();
         var angleRad = Math.atan2(gravityDir.y, gravityDir.x)- Math.PI/2;
         var angle = ((angleRad*180/Math.PI) + 360) % 360;
