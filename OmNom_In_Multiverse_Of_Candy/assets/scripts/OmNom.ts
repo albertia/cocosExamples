@@ -106,6 +106,7 @@ export class OmNom extends Component {
             }
         }
     }
+    
     onEndContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         // will be called once when two colliders begin to contact
         if (otherCollider.name == 'gravityField') {
