@@ -1,5 +1,6 @@
 import { _decorator, Component, instantiate, Node, NodeEventType, Prefab, Vec2, Vec3 } from 'cc';
 import { GameplayStartedEvent } from './GameplayStartedEvent';
+import { GameManager } from './GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('OmNomBubble')

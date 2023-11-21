@@ -1,5 +1,6 @@
-import { _decorator, Component } from 'cc';
+import { _decorator, Component, EventTarget } from 'cc';
 import { LevelMechanicBrowser } from './LevelMechanicBrowser/LevelMechanicBrowser';
+import { LevelMechanicManager } from './LevelMechanics/LevelMechanicManager';
 import { MechanicSelectedEvent } from './LevelMechanics/MechanicSelectedEvent';
 import { LevelMechanicSettingsDisplay } from './LevelMechanicSettings/LevelMechanicSettingsDisplay';
 const { ccclass, property } = _decorator;
@@ -13,14 +14,20 @@ export class GameManager extends Component {
     @property(LevelMechanicSettingsDisplay)
     private levelMechanicSettingsDisplay: LevelMechanicSettingsDisplay;
 
-    public static didGamePlayStart: boolean;
+    @property(LevelMechanicManager)
+    private levelMechanicManager: LevelMechanicManager;
+
+    public static isInGameplayState: boolean;
+
+    public static eventTarget: EventTarget = new EventTarget();
 
     start() {
         this.node.on('mechanicSelected', this.onMechanicSelected, this);
         this.node.on('gameplayStarted', this.onGameplayStarted, this);
 
         this.levelMechanicSettingsDisplay.setActive(false);
-        GameManager.didGamePlayStart = false;
+
+        GameManager.isInGameplayState = false;
     }
 
     onMechanicSelected(event: MechanicSelectedEvent) {
@@ -32,8 +39,7 @@ export class GameManager extends Component {
         this.levelMechanicBrowser.setActive(false);
         this.levelMechanicSettingsDisplay.setActive(false);
 
-        GameManager.didGamePlayStart = true;
+        GameManager.isInGameplayState = true;
+        GameManager.eventTarget.emit('gameStateChanged');
     }
 }
-
-

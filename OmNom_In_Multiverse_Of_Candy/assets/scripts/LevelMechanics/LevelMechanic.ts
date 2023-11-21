@@ -24,11 +24,20 @@ export class LevelMechanic extends Component {
         this.node.on(NodeEventType.TOUCH_START, this.onTouchStart, this);
         this.node.on(NodeEventType.TOUCH_MOVE, this.onTouchMove, this);
 
+        GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
+
         this.selectMechanic();
     }
 
+    onDestroy() {
+        this.node.off(NodeEventType.TOUCH_START, this.onTouchStart, this);
+        this.node.off(NodeEventType.TOUCH_MOVE, this.onTouchMove, this);
+
+        GameManager.eventTarget.off('gameStateChanged', this.onGameStateChanged, this);
+    }
+
     onTouchStart() {
-        if (GameManager.didGamePlayStart) {
+        if (GameManager.isInGameplayState) {
             return;
         }
 
@@ -36,13 +45,15 @@ export class LevelMechanic extends Component {
     }
 
     onTouchMove(event) {
-        if (GameManager.didGamePlayStart) {
+        if (GameManager.isInGameplayState) {
             return;
         }
 
         var uiDelta: Vec2 = event.getUIDelta();
         this.node.position = new Vec3(this.node.position.x + uiDelta.x, this.node.position.y + uiDelta.y);
     }
+
+    onGameStateChanged() { }
 
     selectMechanic() {
         this.node.dispatchEvent(new MechanicSelectedEvent('mechanicSelected', this, true));

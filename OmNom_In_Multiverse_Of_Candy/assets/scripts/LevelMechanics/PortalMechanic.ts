@@ -27,6 +27,7 @@ export class PortalMechanic extends LevelMechanic {
     }
 
     onDestroy() {
+        super.onDestroy();
         LevelMechanicManager.unregisterPortalMechanic(this);
     }
 
