@@ -40,7 +40,7 @@ export class LevelMechanic extends Component {
     }
 
     selectMechanic() {
-        this.node.dispatchEvent(new MechanicSelectedEvent('mechanic', this, true));
+        this.node.dispatchEvent(new MechanicSelectedEvent('mechanicSelected', this, true));
     }
 
     changeColor() {

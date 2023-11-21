@@ -18,7 +18,7 @@ export class LevelMechanicBrowser extends Component {
         }
     }
 
-    update(deltaTime: number) {
-
+    setActive(isActive: boolean) {
+        this.node.active = isActive;
     }
 }

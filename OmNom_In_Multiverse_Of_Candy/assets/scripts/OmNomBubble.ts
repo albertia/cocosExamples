@@ -1,13 +1,14 @@
 import { _decorator, Component, instantiate, Node, NodeEventType, Prefab, Vec2, Vec3 } from 'cc';
+import { GameplayStartedEvent } from './GameplayStartedEvent';
 import { OmNom } from './OmNom';
 const { ccclass, property } = _decorator;
 
 @ccclass('OmNomBubble')
 export class OmNomBubble extends Component {
     @property(Prefab)
-    public omnomPrefab:Prefab;
+    public omnomPrefab: Prefab;
     @property(Node)
-    public gameNode:Node;
+    public gameNode: Node;
 
     private bubbleMoved = false;
 
@@ -19,16 +20,16 @@ export class OmNomBubble extends Component {
     }
 
     update(deltaTime: number) {
-        
+
     }
 
-    startDrag() {
+    startDrag() {
         this.bubbleMoved = false;
     }
 
     moveBubble(event) {
         this.bubbleMoved = true;
-        var moved:Vec2 = event.getUIDelta();
+        var moved: Vec2 = event.getUIDelta();
         this.node.position = new Vec3(this.node.position.x + moved.x, this.node.position.y + moved.y)
     }
 
@@ -40,6 +41,7 @@ export class OmNomBubble extends Component {
             omnom.getComponent(OmNom).init();
             this.gameNode.addChild(omnom);
             this.node.destroy();
+            this.node.dispatchEvent(new GameplayStartedEvent('gameplayStarted', true));
         }
     }
 
