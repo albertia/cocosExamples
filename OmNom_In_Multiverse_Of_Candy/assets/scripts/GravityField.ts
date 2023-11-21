@@ -8,13 +8,15 @@ export class GravityField extends Component {
     public gravityToApply:Vec2;
 
     start() {
-        let collider = this.node.getComponentInChildren(BoxCollider2D);
+        let collider = this.node.getComponent(BoxCollider2D);
         collider.name = 'gravityField'
         collider.apply();
 
-        let animation = this.node.getComponent(Animation);
-        animation.enabled = true;
-        animation.play();
+        var visuals = this.node.getChildByName("Visuals");
+        var gravityDir = new Vec2(this.gravityToApply).normalize();
+        var angleRad = Math.atan2(gravityDir.y, gravityDir.x)- Math.PI/2;
+        var angle = (angleRad*180/Math.PI);
+        visuals.angle = angle;
     }
 
     update(deltaTime: number) {
