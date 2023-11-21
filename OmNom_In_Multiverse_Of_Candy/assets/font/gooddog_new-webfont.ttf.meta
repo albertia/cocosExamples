@@ -1,11 +1,11 @@
 {
   "ver": "1.0.1",
-  "importer": "*",
+  "importer": "ttf-font",
   "imported": true,
-  "uuid": "f93514cf-8d50-49e5-ba18-190f3afd0ce6",
+  "uuid": "d9b3eeb4-dd3f-4c52-b2bb-0aa390b2d6bf",
   "files": [
     ".json",
-    ".otf"
+    "gooddog_new-webfont.ttf"
   ],
   "subMetas": {},
   "userData": {}
