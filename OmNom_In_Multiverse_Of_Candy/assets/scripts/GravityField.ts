@@ -14,17 +14,17 @@ export class GravityField extends Component {
 
         var visuals = this.node.getChildByName("Visuals");
         var mask = visuals.getChildByName("Mask");
-        var arrows = mask.getChildByName("ArrowsTile");
         var gravityDir = new Vec2(this.gravityToApply).normalize();
         var angleRad = Math.atan2(gravityDir.y, gravityDir.x)- Math.PI/2;
         var angle = ((angleRad*180/Math.PI) + 360) % 360;
         mask.angle = angle;
+        console.log(angle)
         if (angle < 95 && angle > 85){
-            var arrowsTransform = arrows.getComponent(UITransform);
-            arrowsTransform.setContentSize(new Size(arrowsTransform.height, arrowsTransform.width));
+            var maskTransform = mask.getComponent(UITransform);
+            maskTransform.setContentSize(new Size(maskTransform.height, maskTransform.width));
         } else if (angle < 275 && angle > 265) {
-            var arrowsTransform = arrows.getComponent(UITransform);
-            arrowsTransform.setContentSize(new Size(arrowsTransform.height, arrowsTransform.width));
+            var maskTransform = mask.getComponent(UITransform);
+            maskTransform.setContentSize(new Size(maskTransform.height, maskTransform.width));
         }
     }
 
