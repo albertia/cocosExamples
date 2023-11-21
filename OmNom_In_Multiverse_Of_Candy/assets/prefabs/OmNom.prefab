@@ -153,6 +153,13 @@
     "__prefab": {
       "__id__": 7
     },
+    "omNomPrefab": {
+      "__uuid__": "77157f10-4ad2-45fb-bd5d-0a7049c8e846",
+      "__expectedType__": "cc.Prefab"
+    },
+    "body": {
+      "__id__": 8
+    },
     "_id": ""
   },
   {
