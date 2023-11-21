@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.SceneAsset",
-    "_name": "GuillermoTestScene",
+    "_name": "LevelTemplate",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_native": "",
@@ -56,7 +56,7 @@
     "_globals": {
       "__id__": 73
     },
-    "_id": "858df669-ac22-4d3d-be9c-27c67de37a0b"
+    "_id": "79967afc-c4a5-48b8-8ae7-d360b3bba7ec"
   },
   {
     "__type__": "cc.Node",

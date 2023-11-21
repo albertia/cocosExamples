@@ -7,8 +7,6 @@ const { ccclass, property } = _decorator;
 export class OmNomBubble extends Component {
     @property(Prefab)
     public omnomPrefab: Prefab;
-    @property(Node)
-    public gameNode: Node;
 
     private bubbleMoved = false;
 
@@ -37,8 +35,8 @@ export class OmNomBubble extends Component {
     startGame() {
         if (!this.bubbleMoved) {
             const omnom = instantiate(this.omnomPrefab);
+            omnom.setParent(this.node.parent);
             omnom.position = this.node.position;
-            this.gameNode.addChild(omnom);
             this.node.destroy();
             this.node.dispatchEvent(new GameplayStartedEvent('gameplayStarted', true));
         }
