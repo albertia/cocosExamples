@@ -1,0 +1,13 @@
+{
+  "ver": "1.1.49",
+  "importer": "prefab",
+  "imported": true,
+  "uuid": "ad3b59e9-d420-46af-90bc-251c51eaab29",
+  "files": [
+    ".json"
+  ],
+  "subMetas": {},
+  "userData": {
+    "syncNodeName": "InGameLabel"
+  }
+}

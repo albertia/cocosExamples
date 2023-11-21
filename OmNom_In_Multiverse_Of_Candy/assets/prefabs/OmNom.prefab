@@ -184,7 +184,7 @@
     "_group": 1,
     "_type": 2,
     "_allowSleep": false,
-    "_gravityScale": 1,
+    "_gravityScale": 3,
     "_linearDamping": 0.5,
     "_angularDamping": 0.75,
     "_linearVelocity": {
