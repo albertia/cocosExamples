@@ -186,7 +186,7 @@
     "_allowSleep": false,
     "_gravityScale": 3,
     "_linearDamping": 0.5,
-    "_angularDamping": 0,
+    "_angularDamping": 0.75,
     "_linearVelocity": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -201,7 +201,7 @@
     "fileId": "4fcoXgw4VDhbQWYGkA8gYD"
   },
   {
-    "__type__": "cc.BoxCollider2D",
+    "__type__": "cc.CircleCollider2D",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -221,18 +221,14 @@
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": -10
     },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 128,
-      "height": 128
-    },
+    "_radius": 60,
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "da2r8L3DBK+7fcYhuGE/RJ"
+    "fileId": "3ferl3cHVHWanHUfzl+Dlm"
   },
   {
     "__type__": "cc.PrefabInfo",

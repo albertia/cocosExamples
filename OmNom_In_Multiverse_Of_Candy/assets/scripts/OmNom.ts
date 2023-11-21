@@ -1,4 +1,4 @@
-import { _decorator, BoxCollider2D, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3 } from 'cc';
+import { _decorator, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3 } from 'cc';
 import { BlackHole } from './BlackHole';
 import { Candy } from './Candy';
 import { GravityField } from './GravityField';
@@ -25,7 +25,7 @@ export class OmNom extends Component {
 
     start() {
         this.starsCollected = 0;
-        let collider = this.node.getComponent(BoxCollider2D);
+        let collider = this.node.getComponent(Collider2D);
         collider.name = 'omnom'
         collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
         collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
@@ -55,6 +55,7 @@ export class OmNom extends Component {
                 }
 
                 omNom.setVelocity(exitVelocity);
+                omNom.setAngularVelocity(this.body.angularVelocity * 0.5);
             }
 
             this.node.destroy();
@@ -106,7 +107,7 @@ export class OmNom extends Component {
             }
         }
     }
-    
+
     onEndContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         // will be called once when two colliders begin to contact
         if (otherCollider.name == 'gravityField') {
@@ -125,16 +126,16 @@ export class OmNom extends Component {
         }
     }
 
-    init() {
-        let collider = this.node.getComponent(BoxCollider2D);
-        collider.name = 'omnom'
-        collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
-        collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
-        collider.apply();
-    }
-
     setVelocity(velocity: Vec2) {
         this.body.linearVelocity = velocity;
+    }
+
+    addVelocity(velocity: Vec2) {
+        this.body.applyLinearImpulseToCenter(velocity, true);
+    }
+
+    setAngularVelocity(angularVelocity: number) {
+        this.body.applyAngularImpulse(angularVelocity, true);
     }
 }
 
