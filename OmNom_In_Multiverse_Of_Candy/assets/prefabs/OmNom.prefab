@@ -184,9 +184,9 @@
     "_group": 1,
     "_type": 2,
     "_allowSleep": false,
-    "_gravityScale": 3,
+    "_gravityScale": 1,
     "_linearDamping": 0.5,
-    "_angularDamping": 0.75,
+    "_angularDamping": 0,
     "_linearVelocity": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -221,7 +221,7 @@
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -10
+      "y": 0
     },
     "_radius": 60,
     "_id": ""
