@@ -1,4 +1,5 @@
 import { _decorator, BoxCollider2D, CircleCollider2D, Collider2D, Color, Component, Contact2DType, director, ERigidBody2DType, IPhysics2DContact, Node, PolygonCollider2D, RigidBody, RigidBody2D, Sprite } from 'cc';
+import { GameManager } from './GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('NonOverlappingItem')
@@ -14,6 +15,16 @@ export class NonOverlappingItem extends Component {
     private originalContactListener:boolean;
 
     start() {
+        director.on('bubbleExploded', this.onBubbleExploded, this);
+        GameManager.eventTarget.on('gameStateChanged', this.onBubbleRecreated, this);
+        this.onBubbleRecreated();
+    }
+
+    update(deltaTime: number) {
+        
+    }
+
+    onBubbleRecreated() {
         this.gameStarted = false;
         this.collider = this.node.getComponent(CircleCollider2D);
         /* We will ise only circle colliders for this. In the case of polygon one, for the bounce, we will enable/disable it.
@@ -36,11 +47,6 @@ export class NonOverlappingItem extends Component {
         this.node.getComponent(RigidBody2D).enabledContactListener = true;
         this.node.getComponent(RigidBody2D).allowSleep = false;
         this.node.getComponent(RigidBody2D).type = ERigidBody2DType.Dynamic;
-        director.on('bubbleExploded', this.onBubbleExploded, this);
-    }
-
-    update(deltaTime: number) {
-        
     }
 
     onBubbleExploded() {
