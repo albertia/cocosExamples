@@ -154,7 +154,6 @@ export class OmNom extends Component {
         collider.apply();
         this.gameNode.getComponent(Game).numOmNoms++;
         this.rotationDirection = randomRangeInt(-1, 2);
-        console.log("direction", this.rotationDirection);
     }
 
     setVelocity(velocity: Vec2) {
