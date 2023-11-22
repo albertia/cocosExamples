@@ -9,19 +9,23 @@ export class NonOverlappingItem extends Component {
     private collisions:number = 0;
     private collisionsAllowed = ["gravityField", "blackHole"]
 
+    private originalEnable:boolean;
     private originalType:ERigidBody2DType;
     private originalContactListener:boolean;
 
     start() {
         this.gameStarted = false;
         this.collider = this.node.getComponent(CircleCollider2D);
+        /* We will ise only circle colliders for this. In the case of polygon one, for the bounce, we will enable/disable it.
         if (!this.collider) {
             this.collider = this.node.getComponent(BoxCollider2D);
         }
         if (!this.collider) {
             this.collider = this.node.getComponent(PolygonCollider2D);
         }
-        // this.collider.sensor = false;
+        */
+        this.originalEnable = this.collider.enabled;
+        this.collider.enabled = true;
         this.collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
         this.collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
         this.collider.apply();
@@ -40,19 +44,20 @@ export class NonOverlappingItem extends Component {
     }
 
     onBubbleExploded() {
+        this.gameStarted = true;
         if (this.collisions > 0) {
             this.node.destroy();
         }
         this.node.getComponent(RigidBody2D).enabledContactListener = this.originalContactListener;
         this.node.getComponent(RigidBody2D).type = this.originalType;
+        this.collider.enabled = this.originalEnable;
         this.collider.apply();
-        this.gameStarted = true;
     }
 
     onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
+        console.log("CollisionBegin", otherCollider);
         if (!this.gameStarted) {
             if (this.collisionsAllowed.find(name => name == otherCollider.name) == undefined) {
-                console.log("CollisionBegin", otherCollider);
                 this.collisions++;
                 this.node.getComponentInChildren(Sprite).color = new Color(255, 0, 0);
             }

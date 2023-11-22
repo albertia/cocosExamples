@@ -1,4 +1,4 @@
-import { _decorator, Component, director, EventTarget } from 'cc';
+import { _decorator, Component, director, EPhysics2DDrawFlags, EventTarget, PhysicsSystem2D } from 'cc';
 import { LevelMechanicManager } from './LevelMechanics/LevelMechanicManager';
 import { MechanicSelectedEvent } from './LevelMechanics/MechanicSelectedEvent';
 import { LevelMechanicSettingsDisplay } from './LevelMechanicSettings/LevelMechanicSettingsDisplay';
@@ -27,6 +27,12 @@ export class GameManager extends Component {
 
     start() {
         GameManager.instance = this;
+
+        PhysicsSystem2D.instance.debugDrawFlags = EPhysics2DDrawFlags.Aabb |
+        EPhysics2DDrawFlags.Pair |
+        EPhysics2DDrawFlags.CenterOfMass |
+        EPhysics2DDrawFlags.Joint |
+        EPhysics2DDrawFlags.Shape;
 
         this.node.on('mechanicSelected', this.onMechanicSelected, this);
 

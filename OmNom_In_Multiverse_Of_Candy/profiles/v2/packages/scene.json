@@ -450,31 +450,6 @@
       },
       "scale": 1
     },
-    "c77ecaa8-c936-46c4-a5b0-98692673ed87": {
-      "position": {
-        "x": 959.9999999999999,
-        "y": 540,
-        "z": 5000
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0,
-        "w": 1
-      },
-      "viewCenter": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "contentRect": {
-        "x": 0,
-        "y": 0,
-        "width": 1112,
-        "height": 625.5
-      },
-      "scale": 0.5791666666666667
-    },
     "a661f443-c16e-4436-93a8-5fcc9409c765": {
       "position": {
         "x": 0,
@@ -524,6 +499,56 @@
         "height": 100
       },
       "scale": 0.4989613594995259
+    },
+    "c77ecaa8-c936-46c4-a5b0-98692673ed87": {
+      "position": {
+        "x": 960,
+        "y": 540,
+        "z": 5000
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "viewCenter": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "contentRect": {
+        "x": -2.525252525252525,
+        "y": 76.70454545454545,
+        "width": 1485,
+        "height": 990
+      },
+      "scale": 0.99
+    },
+    "d05b867b-ef0b-446f-a1e8-ba404cdc3fb9": {
+      "position": {
+        "x": 422.00000000000006,
+        "y": 237.5,
+        "z": 5000
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "viewCenter": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "contentRect": {
+        "x": 0,
+        "y": 0,
+        "width": 826.2315789473685,
+        "height": 465
+      },
+      "scale": 0.9789473684210527
     }
   },
   "camera-uuids": [
@@ -543,9 +568,10 @@
     "ad3b59e9-d420-46af-90bc-251c51eaab29",
     "86eb0df6-f730-4a7b-b33b-9850acfcf9c4",
     "77157f10-4ad2-45fb-bd5d-0a7049c8e846",
-    "c77ecaa8-c936-46c4-a5b0-98692673ed87",
     "a661f443-c16e-4436-93a8-5fcc9409c765",
-    "945b5094-fbf8-4661-b229-3be867941dba"
+    "945b5094-fbf8-4661-b229-3be867941dba",
+    "c77ecaa8-c936-46c4-a5b0-98692673ed87",
+    "d05b867b-ef0b-446f-a1e8-ba404cdc3fb9"
   ],
   "camera": {
     "color": [
@@ -567,5 +593,13 @@
     "iso": 0,
     "aperture": 19,
     "shutter": 7
+  },
+  "game-view": {
+    "scaleValue": 44,
+    "sliderValue": 19
+  },
+  "scene_view": {
+    "isSceneLightOn": null,
+    "output_device": "__default_design__"
   }
 }
