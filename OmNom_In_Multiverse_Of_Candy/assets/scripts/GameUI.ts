@@ -25,9 +25,6 @@ export class GameUI extends Component {
     }
 
     onGameStateChanged(gameState: GameState) {
-
-        console.log(GameState[gameState]);
-
         switch (gameState) {
             case GameState.Editing:
                 this.levelMechanicBrowser.setActive(true);
