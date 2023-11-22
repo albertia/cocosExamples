@@ -1,4 +1,4 @@
-import { _decorator, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3, Node, CircleCollider2D, CCInteger, random, randomRangeInt } from 'cc';
+import { CCFloat, CCInteger, CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, Vec2, Vec3, _decorator, instantiate, randomRangeInt, v2 } from 'cc';
 import { BlackHole } from './BlackHole';
 import { Game } from './Game';
 import { GameManager, GameState } from './GameManager';
@@ -18,7 +18,10 @@ export class OmNom extends Component {
     @property(CCInteger)
     private rotationSpeed:number = 10;
 
-    private rotationDirection:number;
+    @property(CCFloat)
+    private extraExitPortalSpeed: number = 0;
+
+    private rotationDirection: number;
 
     public gameNode: Node;
     public inPortal: PortalMechanic;
@@ -37,7 +40,7 @@ export class OmNom extends Component {
     }
 
     update(deltaTime: number) {
-        this.node.angle = (360+ this.node.angle + this.rotationDirection*this.rotationSpeed*deltaTime)%360;
+        this.node.angle = (360 + this.node.angle + this.rotationDirection * this.rotationSpeed * deltaTime) % 360;
         //console.log(this.node.angle)
 
         if (this.currentPortal) {
@@ -60,6 +63,9 @@ export class OmNom extends Component {
                     let adjustedVelocity = connectedPortal.node.right.normalize().multiplyScalar(speed);
                     exitVelocity = new Vec2(adjustedVelocity.x, adjustedVelocity.y);
                 }
+
+                let extraVelocity = exitVelocity.clone().normalize().multiplyScalar(this.extraExitPortalSpeed);
+                exitVelocity.add(extraVelocity);
 
                 omNom.setVelocity(exitVelocity);
                 omNom.gameNode = this.gameNode;

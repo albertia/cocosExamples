@@ -2064,6 +2064,8 @@
     "body": {
       "__id__": 90
     },
+    "rotationSpeed": 10,
+    "extraExitPortalSpeed": 0,
     "_id": ""
   },
   {
