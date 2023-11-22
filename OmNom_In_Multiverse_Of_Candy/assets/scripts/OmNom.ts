@@ -16,7 +16,7 @@ export class OmNom extends Component {
     private body: RigidBody2D;
 
     @property(CCInteger)
-    private rotationSpeed:number = 10;
+    private rotationSpeed: number = 10;
 
     @property(CCFloat)
     private extraExitPortalSpeed: number = 0;
@@ -71,10 +71,13 @@ export class OmNom extends Component {
                 omNom.gameNode = this.gameNode;
                 omNom.setAngularVelocity(this.body.angularVelocity * 0.5);
                 omNom.init();
+
+                connectedPortal.doAnimation();
             }
             this.gameNode.getComponent(Game).numOmNoms--;
             this.node.destroy();
 
+            this.currentPortal.doAnimation();
             this.currentPortal = null;
         }
 
