@@ -948,6 +948,8 @@
     "__prefab": {
       "__id__": 69
     },
+    "levelMechanicBrowser": null,
+    "levelMechanicSettingsDisplay": null,
     "levelCompletePopup": {
       "__id__": 53
     },
@@ -967,7 +969,14 @@
     },
     "fileId": "8eBo4pk7xHq4ADAKsjiRGu",
     "instance": null,
-    "targetOverrides": null,
+    "targetOverrides": [
+      {
+        "__id__": 71
+      },
+      {
+        "__id__": 73
+      }
+    ],
     "nestedPrefabInstanceRoots": [
       {
         "__id__": 53
@@ -978,6 +987,50 @@
       {
         "__id__": 6
       }
+    ]
+  },
+  {
+    "__type__": "cc.TargetOverrideInfo",
+    "source": {
+      "__id__": 68
+    },
+    "sourceInfo": null,
+    "propertyPath": [
+      "levelMechanicBrowser"
+    ],
+    "target": {
+      "__id__": 6
+    },
+    "targetInfo": {
+      "__id__": 72
+    }
+  },
+  {
+    "__type__": "cc.TargetInfo",
+    "localID": [
+      "dbcEQJLKJFnbLpU/9wM6lL"
+    ]
+  },
+  {
+    "__type__": "cc.TargetOverrideInfo",
+    "source": {
+      "__id__": 68
+    },
+    "sourceInfo": null,
+    "propertyPath": [
+      "levelMechanicSettingsDisplay"
+    ],
+    "target": {
+      "__id__": 19
+    },
+    "targetInfo": {
+      "__id__": 74
+    }
+  },
+  {
+    "__type__": "cc.TargetInfo",
+    "localID": [
+      "16X5erDxJIpYgbFdJecOkV"
     ]
   }
 ]

@@ -1,4 +1,5 @@
 import { _decorator, Component, director } from 'cc';
+import { GameManager, GameState } from './GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('Game')
@@ -9,7 +10,7 @@ export class Game extends Component {
 
     update(deltaTime: number) {
         if (this.gameStarted && this.numOmNoms <= 0) {
-            director.loadScene(director.getScene().name);
+            GameManager.setGameState(GameState.Editing);
         }
     }
 }
