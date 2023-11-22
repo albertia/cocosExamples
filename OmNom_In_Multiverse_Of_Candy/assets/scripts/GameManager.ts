@@ -51,6 +51,13 @@ export class GameManager extends Component {
         }
 
         GameManager.gameState = gameState;
+
+        switch (gameState) {
+            case GameState.Editing:
+                this.starsCollected = 0;
+                break;
+        }
+
         GameManager.eventTarget.emit('gameStateChanged', gameState);
     }
 
