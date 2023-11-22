@@ -27,13 +27,13 @@ export class GameManager extends Component {
 
     start() {
         GameManager.instance = this;
-
+/*
         PhysicsSystem2D.instance.debugDrawFlags = EPhysics2DDrawFlags.Aabb |
         EPhysics2DDrawFlags.Pair |
         EPhysics2DDrawFlags.CenterOfMass |
         EPhysics2DDrawFlags.Joint |
         EPhysics2DDrawFlags.Shape;
-
+*/
         this.node.on('mechanicSelected', this.onMechanicSelected, this);
 
         this.levelMechanicSettingsDisplay.setActive(false);
