@@ -53,7 +53,7 @@ export class LevelMechanic extends Component {
         this.node.position = new Vec3(this.node.position.x + uiDelta.x, this.node.position.y + uiDelta.y);
     }
 
-    onGameStateChanged() { }
+    onGameStateChanged(gameState: GameState) { }
 
     selectMechanic() {
         this.node.dispatchEvent(new MechanicSelectedEvent('mechanicSelected', this, true));
