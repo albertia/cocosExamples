@@ -1,4 +1,4 @@
-import { _decorator, Component, instantiate, Node, NodeEventType, Prefab, Vec2, Vec3 } from 'cc';
+import { _decorator, Component, director, instantiate, Node, NodeEventType, Prefab, Vec2, Vec3 } from 'cc';
 import { GameplayStartedEvent } from './GameplayStartedEvent';
 import { OmNom } from './OmNom';
 import { Game } from './Game';
@@ -45,6 +45,7 @@ export class OmNomBubble extends Component {
             this.gameNode.getComponent(Game).gameStarted = true;
             this.node.destroy();
             this.node.dispatchEvent(new GameplayStartedEvent('gameplayStarted', true));
+            director.emit('bubbleExploded');
         }
     }
 
