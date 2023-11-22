@@ -1,10 +1,10 @@
-import { _decorator, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3, Node, CircleCollider2D } from 'cc';
+import { CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, Vec2, Vec3, _decorator, instantiate, v2 } from 'cc';
 import { BlackHole } from './BlackHole';
-import { Candy } from './Candy';
+import { Game } from './Game';
+import { GameManager, GameState } from './GameManager';
 import { GravityField } from './GravityField';
 import { LevelMechanicManager } from './LevelMechanics/LevelMechanicManager';
 import { PortalMechanic } from './LevelMechanics/PortalMechanic';
-import { Game } from './Game';
 const { ccclass, property } = _decorator;
 
 @ccclass('OmNom')
@@ -24,6 +24,11 @@ export class OmNom extends Component {
     private currentPortal: PortalMechanic;
 
     start() {
+        GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
+    }
+
+    onDestroy() {
+        GameManager.eventTarget.off('gameStateChanged', this.onGameStateChanged, this);
     }
 
     update(deltaTime: number) {
@@ -76,15 +81,15 @@ export class OmNom extends Component {
             var currentGrav = PhysicsSystem2D.instance.gravity;
             PhysicsSystem2D.instance.gravity = v2(currentGrav.x + gravToApply.x * PHYSICS_2D_PTM_RATIO, currentGrav.y + gravToApply.y * PHYSICS_2D_PTM_RATIO);
         } else if (otherCollider.name == 'star') {
-            this.gameNode.getComponent(Game).starsCollected++;
+            GameManager.starsCollected++;
             setTimeout(function () {
                 otherCollider.node.destroy();
             }.bind(this), 1);
         } else if (otherCollider.name == 'candy') {
             setTimeout(function () {
                 otherCollider.node.destroy();
-                director.loadScene(otherCollider.node.getComponent(Candy).nextScene);
-            }.bind(this), 100);
+                GameManager.setGameState(GameState.LevelCompleted);
+            }.bind(this), 1);
         } else if (otherCollider.name == 'deathTouch') {
             // Lasers or black hole center
             setTimeout(function () {
@@ -144,5 +149,11 @@ export class OmNom extends Component {
     setAngularVelocity(angularVelocity: number) {
         this.body.applyAngularImpulse(angularVelocity, true);
     }
-}
 
+    onGameStateChanged(gameState: GameState) {
+        if (gameState == GameState.LevelCompleted) {
+            this.body.enabled = false;
+            this.enabled = false;
+        }
+    }
+}

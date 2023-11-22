@@ -1,5 +1,5 @@
 import { _decorator, CCBoolean, Component, NodeEventType, Vec2, Vec3 } from 'cc';
-import { GameManager } from '../GameManager';
+import { GameManager, GameState } from '../GameManager';
 import { MechanicSelectedEvent } from './MechanicSelectedEvent';
 const { ccclass, property } = _decorator;
 
@@ -37,7 +37,7 @@ export class LevelMechanic extends Component {
     }
 
     onTouchStart() {
-        if (GameManager.isInGameplayState) {
+        if (GameManager.gameState != GameState.Editing) {
             return;
         }
 
@@ -45,7 +45,7 @@ export class LevelMechanic extends Component {
     }
 
     onTouchMove(event) {
-        if (GameManager.isInGameplayState) {
+        if (GameManager.gameState != GameState.Editing) {
             return;
         }
 
