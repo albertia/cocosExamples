@@ -1,4 +1,4 @@
-import { CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, Vec2, Vec3, _decorator, instantiate, v2 } from 'cc';
+import { _decorator, Collider2D, Component, Contact2DType, director, instantiate, IPhysics2DContact, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, v2, Vec2, Vec3, Node, CircleCollider2D, CCInteger, random, randomRangeInt } from 'cc';
 import { BlackHole } from './BlackHole';
 import { Game } from './Game';
 import { GameManager, GameState } from './GameManager';
@@ -14,6 +14,11 @@ export class OmNom extends Component {
     private omNomPrefab: Prefab;
     @property(RigidBody2D)
     private body: RigidBody2D;
+
+    @property(CCInteger)
+    private rotationSpeed:number = 10;
+
+    private rotationDirection:number;
 
     public gameNode: Node;
     public inPortal: PortalMechanic;
@@ -32,6 +37,9 @@ export class OmNom extends Component {
     }
 
     update(deltaTime: number) {
+        this.node.angle = (360+ this.node.angle + this.rotationDirection*this.rotationSpeed*deltaTime)%360;
+        //console.log(this.node.angle)
+
         if (this.currentPortal) {
             let connectedPortals = LevelMechanicManager.getConnectedPortals(this.currentPortal);
 
@@ -136,6 +144,8 @@ export class OmNom extends Component {
         collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
         collider.apply();
         this.gameNode.getComponent(Game).numOmNoms++;
+        this.rotationDirection = randomRangeInt(-1, 2);
+        console.log("direction", this.rotationDirection);
     }
 
     setVelocity(velocity: Vec2) {
