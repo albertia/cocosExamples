@@ -1,5 +1,6 @@
 import { _decorator, CCFloat, Collider2D, Component, Contact2DType, IPhysics2DContact } from 'cc';
 import { OmNom } from './OmNom';
+import { ItemMovement } from './ItemMovement';
 const { ccclass, property } = _decorator;
 
 @ccclass('BounceObstacle')
@@ -13,6 +14,10 @@ export class BounceObstacle extends Component {
 
     start() {
         this.collider2D.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
+        if (this.node.getComponentInChildren(ItemMovement) != undefined) {
+            console.log("Platform has ItemMovement")
+            this.collider2D.name = 'bounceObstacle';
+        }
     }
 
     onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
