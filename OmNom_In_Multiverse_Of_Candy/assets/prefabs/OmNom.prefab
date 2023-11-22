@@ -3240,7 +3240,7 @@
       "x": 0,
       "y": 0
     },
-    "_radius": 80,
+    "_radius": 60,
     "_id": ""
   },
   {
@@ -3269,11 +3269,6 @@
         "__uuid__": "8ef53d65-ad5f-41da-a0dd-a5dc88513984",
         "__expectedType__": "cc.AnimationClip"
       },
-      {
-        "__uuid__": "f719fa5f-5159-4e5f-990d-570cd8ead35f",
-        "__expectedType__": "cc.AnimationClip"
-      },
-      null,
       {
         "__uuid__": "f719fa5f-5159-4e5f-990d-570cd8ead35f",
         "__expectedType__": "cc.AnimationClip"
