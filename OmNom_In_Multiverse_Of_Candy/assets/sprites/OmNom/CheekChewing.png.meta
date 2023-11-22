@@ -2,7 +2,7 @@
   "ver": "1.0.26",
   "importer": "image",
   "imported": true,
-  "uuid": "2cf754e3-6d35-499d-aaf9-91310750df7c",
+  "uuid": "ab8f49c5-5c4c-4fa8-ba91-f59a0f7cd287",
   "files": [
     ".json",
     ".png"
@@ -10,8 +10,8 @@
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "2cf754e3-6d35-499d-aaf9-91310750df7c@6c48a",
-      "displayName": "Shpunka",
+      "uuid": "ab8f49c5-5c4c-4fa8-ba91-f59a0f7cd287@6c48a",
+      "displayName": "CheekChewing",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -22,7 +22,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "2cf754e3-6d35-499d-aaf9-91310750df7c",
+        "imageUuidOrDatabaseUri": "ab8f49c5-5c4c-4fa8-ba91-f59a0f7cd287",
         "visible": false
       },
       "ver": "1.0.22",
@@ -34,8 +34,8 @@
     },
     "f9941": {
       "importer": "sprite-frame",
-      "uuid": "2cf754e3-6d35-499d-aaf9-91310750df7c@f9941",
-      "displayName": "Shpunka",
+      "uuid": "ab8f49c5-5c4c-4fa8-ba91-f59a0f7cd287@f9941",
+      "displayName": "CheekChewing",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
@@ -46,10 +46,10 @@
         "offsetY": 0,
         "trimX": 0,
         "trimY": 0,
-        "width": 47,
-        "height": 61,
-        "rawWidth": 47,
-        "rawHeight": 61,
+        "width": 173,
+        "height": 54,
+        "rawWidth": 173,
+        "rawHeight": 54,
         "borderTop": 0,
         "borderBottom": 0,
         "borderLeft": 0,
@@ -61,17 +61,17 @@
         "meshType": 0,
         "vertices": {
           "rawPosition": [
-            -23.5,
-            -30.5,
+            -86.5,
+            -27,
             0,
-            23.5,
-            -30.5,
+            86.5,
+            -27,
             0,
-            -23.5,
-            30.5,
+            -86.5,
+            27,
             0,
-            23.5,
-            30.5,
+            86.5,
+            27,
             0
           ],
           "indexes": [
@@ -84,12 +84,12 @@
           ],
           "uv": [
             0,
-            61,
-            47,
-            61,
+            54,
+            173,
+            54,
             0,
             0,
-            47,
+            173,
             0
           ],
           "nuv": [
@@ -103,18 +103,18 @@
             1
           ],
           "minPos": [
-            -23.5,
-            -30.5,
+            -86.5,
+            -27,
             0
           ],
           "maxPos": [
-            23.5,
-            30.5,
+            86.5,
+            27,
             0
           ]
         },
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "2cf754e3-6d35-499d-aaf9-91310750df7c@6c48a",
+        "imageUuidOrDatabaseUri": "ab8f49c5-5c4c-4fa8-ba91-f59a0f7cd287@6c48a",
         "atlasUuid": ""
       },
       "ver": "1.0.12",
@@ -128,7 +128,7 @@
   "userData": {
     "hasAlpha": true,
     "type": "sprite-frame",
-    "fixAlphaTransparencyArtifacts": false,
-    "redirect": "2cf754e3-6d35-499d-aaf9-91310750df7c@f9941"
+    "fixAlphaTransparencyArtifacts": true,
+    "redirect": "ab8f49c5-5c4c-4fa8-ba91-f59a0f7cd287@f9941"
   }
 }
