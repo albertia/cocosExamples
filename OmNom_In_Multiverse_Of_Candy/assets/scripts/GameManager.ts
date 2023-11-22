@@ -1,5 +1,4 @@
 import { _decorator, Component, director, EventTarget } from 'cc';
-import { LevelMechanicBrowser } from './LevelMechanicBrowser/LevelMechanicBrowser';
 import { LevelMechanicManager } from './LevelMechanics/LevelMechanicManager';
 import { MechanicSelectedEvent } from './LevelMechanics/MechanicSelectedEvent';
 import { LevelMechanicSettingsDisplay } from './LevelMechanicSettings/LevelMechanicSettingsDisplay';
@@ -14,9 +13,6 @@ export enum GameState {
 
 @ccclass('GameManager')
 export class GameManager extends Component {
-
-    @property(LevelMechanicBrowser)
-    private levelMechanicBrowser: LevelMechanicBrowser;
 
     @property(LevelMechanicSettingsDisplay)
     private levelMechanicSettingsDisplay: LevelMechanicSettingsDisplay;
@@ -55,18 +51,6 @@ export class GameManager extends Component {
         }
 
         GameManager.gameState = gameState;
-
-        switch (gameState) {
-            case GameState.Editing:
-                break;
-            case GameState.Playing:
-                this.instance.levelMechanicBrowser.setActive(false);
-                this.instance.levelMechanicSettingsDisplay.setActive(false);
-                break;
-            case GameState.LevelCompleted:
-                break;
-        }
-
         GameManager.eventTarget.emit('gameStateChanged', gameState);
     }
 

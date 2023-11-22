@@ -15,14 +15,23 @@ export class OmNomBubble extends Component {
     private bubbleMoved = false;
 
     start() {
+        GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
         this.node.on(NodeEventType.TOUCH_START, this.startDrag, this);
         this.node.on(NodeEventType.TOUCH_MOVE, this.moveBubble, this);
         this.node.on(NodeEventType.TOUCH_END, this.startGame, this);
-
     }
 
-    update(deltaTime: number) {
+    protected onDestroy(): void {
+        GameManager.eventTarget.off('gameStateChanged', this.onGameStateChanged, this);
+        this.node.off(NodeEventType.TOUCH_START, this.startDrag, this);
+        this.node.off(NodeEventType.TOUCH_MOVE, this.moveBubble, this);
+        this.node.off(NodeEventType.TOUCH_END, this.startGame, this);
+    }
 
+    onGameStateChanged(gameState: GameState) {
+        if (gameState == GameState.Editing) {
+            this.node.active = true;
+        }
     }
 
     startDrag() {
@@ -44,7 +53,7 @@ export class OmNomBubble extends Component {
             omnom.getComponent(OmNom).init();
             this.gameNode.addChild(omnom);
             this.gameNode.getComponent(Game).gameStarted = true;
-            this.node.destroy();
+            this.node.active = false;
             this.node.dispatchEvent(new GameplayStartedEvent('gameplayStarted', true));
 
             GameManager.setGameState(GameState.Playing);
