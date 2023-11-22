@@ -90,7 +90,7 @@ export class OmNom extends Component {
             setTimeout(function () {
                 this.gameNode.getComponent(Game).numOmNoms--;
                 this.node.destroy();
-            }.bind(this), 100);
+            }.bind(this), 1);
         } else if (otherCollider.name == 'blackHole') {
             this.blackHoleDeviationForce = otherCollider.node.getComponent(BlackHole).blackHoleDeviationForce;
             this.blackHoleDeviationRadius = otherCollider.node.getComponent(BlackHole).radius;
