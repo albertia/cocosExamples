@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.SceneAsset",
-    "_name": "JLevel-004",
+    "_name": "JLevel-005",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_native": "",
@@ -11,7 +11,7 @@
   },
   {
     "__type__": "cc.Scene",
-    "_name": "JLevel-004",
+    "_name": "JLevel-005",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -56,7 +56,7 @@
     "_globals": {
       "__id__": 183
     },
-    "_id": "fff66a75-6dab-4e71-984c-cdcd0b91e517"
+    "_id": "3c04639b-5f8a-48f2-9fb6-1c41018de8e3"
   },
   {
     "__type__": "cc.Node",
@@ -762,8 +762,8 @@
     ],
     "value": {
       "__type__": "cc.Vec3",
-      "x": 731.061,
-      "y": -264.403,
+      "x": 720.981,
+      "y": 92.981,
       "z": 0
     }
   },
@@ -806,7 +806,7 @@
     "propertyPath": [
       "nextScene"
     ],
-    "value": "JLevel-005"
+    "value": "JLevel-006"
   },
   {
     "__type__": "cc.TargetInfo",
@@ -897,8 +897,8 @@
     ],
     "value": {
       "__type__": "cc.Vec3",
-      "x": 462.915,
-      "y": 277.372,
+      "x": 247.859,
+      "y": 245.063,
       "z": 0
     }
   },
@@ -941,7 +941,7 @@
     "propertyPath": [
       "_string"
     ],
-    "value": "Would you get all the Stars?"
+    "value": "Wondering what that Triangular Portal do???"
   },
   {
     "__type__": "cc.TargetInfo",
@@ -959,7 +959,7 @@
     ],
     "value": {
       "__type__": "cc.Size",
-      "width": 444.5259049906279,
+      "width": 712.620097967432,
       "height": 50.4
     }
   },
@@ -1105,7 +1105,7 @@
     "propertyPath": [
       "_string"
     ],
-    "value": "LEVEL - 4"
+    "value": "LEVEL - 5"
   },
   {
     "__type__": "cc.TargetInfo",
@@ -1123,7 +1123,7 @@
     ],
     "value": {
       "__type__": "cc.Size",
-      "width": 393.5828403233364,
+      "width": 390.9462314022961,
       "height": 100.80000000000001
     }
   },
@@ -1833,8 +1833,8 @@
     ],
     "value": {
       "__type__": "cc.Vec3",
-      "x": 228.492,
-      "y": 155.158,
+      "x": 1.869,
+      "y": 93.171,
       "z": 0
     }
   },
@@ -1944,7 +1944,7 @@
     ],
     "value": {
       "__type__": "cc.Vec3",
-      "x": 475.033,
+      "x": 249.607,
       "y": 96.077,
       "z": 0
     }
@@ -2055,8 +2055,8 @@
     ],
     "value": {
       "__type__": "cc.Vec3",
-      "x": 658.918,
-      "y": -41.038,
+      "x": 483.892,
+      "y": 94.585,
       "z": 0
     }
   },
@@ -2191,8 +2191,8 @@
     ],
     "value": {
       "__type__": "cc.Vec3",
-      "x": -511.317,
-      "y": 228.507,
+      "x": -639.543,
+      "y": 121.484,
       "z": 0
     }
   },
