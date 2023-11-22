@@ -12,6 +12,8 @@ export class ItemMovement extends Component {
     private positionInit:Vec3;
     private positionEnd:Vec3;
 
+    public lastMovementAmount:Vec3 = new Vec3();
+
     start() {
         this.position = this.node.getChildByName("InitMovement").position;
         this.positionInit = this.node.getChildByName("InitMovement").position;
@@ -34,6 +36,7 @@ export class ItemMovement extends Component {
         this.position = new Vec3(this.position.x + distanceX, this.position.y + distanceY);
         var parentPos = this.node.getParent().position;
         this.node.getParent().position = new Vec3(parentPos.x + distanceX, parentPos.y + distanceY);
+        this.lastMovementAmount = new Vec3(distanceX, distanceY);
     }
 }
 
