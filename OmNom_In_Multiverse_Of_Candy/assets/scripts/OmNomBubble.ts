@@ -1,4 +1,4 @@
-import { _decorator, Component, director, instantiate, Node, NodeEventType, Prefab, Vec2, Vec3 } from 'cc';
+import { _decorator, Component, director, instantiate, Node, NodeEventType, Prefab } from 'cc';
 import { Game } from './Game';
 import { GameManager, GameState } from './GameManager';
 import { GameplayStartedEvent } from './GameplayStartedEvent';
@@ -12,19 +12,13 @@ export class OmNomBubble extends Component {
     @property(Node)
     public gameNode: Node;
 
-    private bubbleMoved = false;
-
     start() {
         GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
-        this.node.on(NodeEventType.TOUCH_START, this.startDrag, this);
-        this.node.on(NodeEventType.TOUCH_MOVE, this.moveBubble, this);
         this.node.on(NodeEventType.TOUCH_END, this.startGame, this);
     }
 
     protected onDestroy(): void {
         GameManager.eventTarget.off('gameStateChanged', this.onGameStateChanged, this);
-        this.node.off(NodeEventType.TOUCH_START, this.startDrag, this);
-        this.node.off(NodeEventType.TOUCH_MOVE, this.moveBubble, this);
         this.node.off(NodeEventType.TOUCH_END, this.startGame, this);
     }
 
@@ -34,30 +28,17 @@ export class OmNomBubble extends Component {
         }
     }
 
-    startDrag() {
-        this.bubbleMoved = false;
-    }
-
-    moveBubble(event) {
-        this.bubbleMoved = true;
-        var moved: Vec2 = event.getUIDelta();
-        this.node.position = new Vec3(this.node.position.x + moved.x, this.node.position.y + moved.y)
-    }
-
-
     startGame() {
-        if (!this.bubbleMoved) {
-            const omnom = instantiate(this.omnomPrefab);
-            omnom.position = this.node.position;
-            omnom.getComponent(OmNom).gameNode = this.gameNode;
-            omnom.getComponent(OmNom).init();
-            this.gameNode.addChild(omnom);
-            this.gameNode.getComponent(Game).gameStarted = true;
-            this.node.active = false;
-            this.node.dispatchEvent(new GameplayStartedEvent('gameplayStarted', true));
-            director.emit('bubbleExploded');
-            GameManager.setGameState(GameState.Playing);
-        }
+        const omnom = instantiate(this.omnomPrefab);
+        omnom.position = this.node.position;
+        omnom.getComponent(OmNom).gameNode = this.gameNode;
+        omnom.getComponent(OmNom).init();
+        this.gameNode.addChild(omnom);
+        this.gameNode.getComponent(Game).gameStarted = true;
+        this.node.active = false;
+        this.node.dispatchEvent(new GameplayStartedEvent('gameplayStarted', true));
+        director.emit('bubbleExploded');
+        GameManager.setGameState(GameState.Playing);
     }
 
 }
