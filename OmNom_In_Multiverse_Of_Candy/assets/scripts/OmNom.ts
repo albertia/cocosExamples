@@ -5,6 +5,7 @@ import { GameManager, GameState } from './GameManager';
 import { GravityField } from './GravityField';
 import { LevelMechanicManager } from './LevelMechanics/LevelMechanicManager';
 import { PortalMechanic } from './LevelMechanics/PortalMechanic';
+import { ItemMovement } from './ItemMovement';
 const { ccclass, property } = _decorator;
 
 @ccclass('OmNom')
@@ -30,6 +31,8 @@ export class OmNom extends Component {
     private blackHoleDeviationRadius: number;
     private blackHoleDeviationForce: number;
     private currentPortal: PortalMechanic;
+
+    private attachedToPlatformMovement:ItemMovement;
 
     start() {
         GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
@@ -89,6 +92,10 @@ export class OmNom extends Component {
             this.body.linearVelocity = new Vec2(this.body.linearVelocity.x + directionN.x * devForce * deltaTime,
                 this.body.linearVelocity.y + directionN.y * devForce * deltaTime);
         }
+        if (this.attachedToPlatformMovement != undefined) {
+            this.node.position = new Vec3(this.node.position.x + this.attachedToPlatformMovement.lastMovementAmount.x,
+                this.node.position.y + this.attachedToPlatformMovement.lastMovementAmount.y)
+        }
     }
 
     onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
@@ -117,6 +124,8 @@ export class OmNom extends Component {
             this.blackHoleDeviationForce = otherCollider.node.getComponent(BlackHole).blackHoleDeviationForce;
             this.blackHoleDeviationRadius = otherCollider.node.getComponent(BlackHole).radius;
             this.blackHoleDeviationToPos = otherCollider.node.position;
+        } else if (otherCollider.name == 'bounceObstacle') {
+            this.attachedToPlatformMovement = otherCollider.node.getComponentInChildren(ItemMovement);
         }
 
         let portalMechanic = otherCollider.node.getComponent(PortalMechanic);
@@ -137,6 +146,8 @@ export class OmNom extends Component {
         } else if (otherCollider.name == 'blackHole') {
             this.blackHoleDeviationForce = undefined;
             this.blackHoleDeviationToPos = undefined;
+        } else if (otherCollider.name == 'bounceObstacle') {
+            this.attachedToPlatformMovement = undefined;
         }
 
         let portalMechanic = otherCollider.getComponent(PortalMechanic);
