@@ -193,7 +193,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 240.3176802659325,
+      "width": 387.3486466187559,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -229,11 +229,11 @@
       "b": 0,
       "a": 255
     },
-    "_string": "Tap to Create Portals",
+    "_string": "Tap Icons to create Portals",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 31.120833333333337,
-    "_fontSize": 28,
+    "_actualFontSize": 39.7875,
+    "_fontSize": 36,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
     "_overflow": 0,
