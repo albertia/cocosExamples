@@ -1,4 +1,4 @@
-import { CCBoolean, Sprite, SpriteFrame, _decorator } from 'cc';
+import { CCBoolean, Node, Sprite, SpriteFrame, Tween, Vec3, _decorator, randomRange, tween } from 'cc';
 import { LevelMechanic, LevelMechanicColor } from './LevelMechanic';
 import { LevelMechanicManager } from './LevelMechanicManager';
 const { ccclass, property } = _decorator;
@@ -8,6 +8,9 @@ export class PortalMechanic extends LevelMechanic {
 
     @property(CCBoolean)
     public isGuidedPortal: boolean;
+
+    @property(Node)
+    private visualsNode: Node;
 
     @property({ type: Sprite })
     private sprite: Sprite | null = null;
@@ -20,6 +23,8 @@ export class PortalMechanic extends LevelMechanic {
 
     @property({ type: SpriteFrame })
     private purpleSprite: SpriteFrame | null = null;
+
+    private animationTween: Tween<Vec3>;
 
     start() {
         super.start();
@@ -48,6 +53,21 @@ export class PortalMechanic extends LevelMechanic {
                 console.log('unhandled LevelMechanicColor');
                 break;
         }
+    }
+
+    doAnimation() {
+        if (this.animationTween != null) {
+            this.animationTween.stop();
+        }
+
+        let randomX = randomRange(0.6, 0.9);
+        let randomY = randomRange(0.6, 0.9);
+
+        this.animationTween =
+            tween(this.visualsNode.scale)
+                .to(0.05, new Vec3(randomX, randomY, 1), { easing: "linear" })
+                .to(0.05, Vec3.ONE, { easing: "linear" })
+                .start();
     }
 }
 

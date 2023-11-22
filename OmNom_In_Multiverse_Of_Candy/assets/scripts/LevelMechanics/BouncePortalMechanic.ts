@@ -1,5 +1,5 @@
 import { Collider2D, _decorator } from 'cc';
-import { GameManager } from '../GameManager';
+import { GameState } from '../GameManager';
 import { LevelMechanic } from './LevelMechanic';
 const { ccclass, property } = _decorator;
 
@@ -14,9 +14,9 @@ export class BouncePortalMechanic extends LevelMechanic {
         this.setColliderState(false);
     }
 
-    onGameStateChanged(): void {
-        super.onGameStateChanged();
-        this.setColliderState(GameManager.isInGameplayState);
+    onGameStateChanged(gameState: GameState): void {
+        super.onGameStateChanged(gameState);
+        this.setColliderState(gameState != GameState.Editing);
     }
 
     setColliderState(isEnabled: boolean) {

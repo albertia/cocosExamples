@@ -482,6 +482,9 @@
     "canChangeColor": true,
     "canRotate": true,
     "isGuidedPortal": true,
+    "visualsNode": {
+      "__id__": 2
+    },
     "sprite": {
       "__id__": 6
     },

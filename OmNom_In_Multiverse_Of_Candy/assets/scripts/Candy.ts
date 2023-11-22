@@ -1,10 +1,8 @@
-import { _decorator, CCString, CircleCollider2D, Component, Node } from 'cc';
+import { _decorator, CircleCollider2D, Component } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('Candy')
 export class Candy extends Component {
-    @property(CCString)
-    public nextScene:string = "";
 
     start() {
         let collider = this.node.getComponent(CircleCollider2D);
@@ -13,7 +11,7 @@ export class Candy extends Component {
     }
 
     update(deltaTime: number) {
-        
+
     }
 }
 
