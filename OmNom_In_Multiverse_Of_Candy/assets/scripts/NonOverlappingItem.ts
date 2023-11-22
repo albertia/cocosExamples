@@ -8,7 +8,7 @@ export class NonOverlappingItem extends Component {
     private gameStarted:boolean = false;
     private collider:Collider2D;
     private collisions:number = 0;
-    private collisionsAllowed = ["gravityField", "blackHole"]
+    private collisionsAllowed = ["gravityField", "blackHole", "omnom"]
 
     private originalEnable:boolean;
     private originalType:ERigidBody2DType;
@@ -61,7 +61,7 @@ export class NonOverlappingItem extends Component {
     }
 
     onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
-        console.log("CollisionBegin", otherCollider);
+        console.log("CollisionBegin - NonOverlappingItem", otherCollider, ' gameStarted ', this.gameStarted);
         if (!this.gameStarted) {
             if (this.collisionsAllowed.find(name => name == otherCollider.name) == undefined) {
                 this.collisions++;
