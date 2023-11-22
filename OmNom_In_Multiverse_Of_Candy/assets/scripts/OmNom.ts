@@ -100,7 +100,7 @@ export class OmNom extends Component {
         } else if (otherCollider.name == 'star') {
             GameManager.starsCollected++;
             setTimeout(function () {
-                otherCollider.node.destroy();
+                otherCollider.node.active = false;
             }.bind(this), 1);
         } else if (otherCollider.name == 'candy') {
             setTimeout(function () {
