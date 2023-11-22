@@ -9,7 +9,11 @@ export class NonOverlappingItem extends Component {
     private collisions:number = 0;
     private collisionsAllowed = ["gravityField", "blackHole"]
 
+    private originalType:ERigidBody2DType;
+    private originalContactListener:boolean;
+
     start() {
+        this.gameStarted = false;
         this.collider = this.node.getComponent(CircleCollider2D);
         if (!this.collider) {
             this.collider = this.node.getComponent(BoxCollider2D);
@@ -21,6 +25,10 @@ export class NonOverlappingItem extends Component {
         this.collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
         this.collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
         this.collider.apply();
+        
+        this.originalType = this.node.getComponent(RigidBody2D).type;
+        this.originalContactListener = this.node.getComponent(RigidBody2D).enabledContactListener;
+
         this.node.getComponent(RigidBody2D).enabledContactListener = true;
         this.node.getComponent(RigidBody2D).allowSleep = false;
         this.node.getComponent(RigidBody2D).type = ERigidBody2DType.Dynamic;
@@ -32,15 +40,11 @@ export class NonOverlappingItem extends Component {
     }
 
     onBubbleExploded() {
-        console.log("onBubbleExploded ", this.collisions);
         if (this.collisions > 0) {
-            console.log("onBubbleExploded Delete node");
             this.node.destroy();
         }
-        this.node.getComponent(RigidBody2D).enabledContactListener = false;
-        this.node.getComponent(RigidBody2D).allowSleep = true;
-        this.node.getComponent(RigidBody2D).gravityScale = 0;
-        this.node.getComponent(RigidBody2D).type = ERigidBody2DType.Kinematic;
+        this.node.getComponent(RigidBody2D).enabledContactListener = this.originalContactListener;
+        this.node.getComponent(RigidBody2D).type = this.originalType;
         this.collider.apply();
         this.gameStarted = true;
     }
@@ -48,6 +52,7 @@ export class NonOverlappingItem extends Component {
     onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         if (!this.gameStarted) {
             if (this.collisionsAllowed.find(name => name == otherCollider.name) == undefined) {
+                console.log("CollisionBegin", otherCollider);
                 this.collisions++;
                 this.node.getComponentInChildren(Sprite).color = new Color(255, 0, 0);
             }
