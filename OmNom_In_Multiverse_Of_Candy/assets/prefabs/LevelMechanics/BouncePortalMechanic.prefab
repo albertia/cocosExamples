@@ -418,6 +418,13 @@
     "collider2D": {
       "__id__": 16
     },
+    "shouldAnimate": true,
+    "visualsNode": {
+      "__id__": 2
+    },
+    "sprite": {
+      "__id__": 6
+    },
     "_id": ""
   },
   {
