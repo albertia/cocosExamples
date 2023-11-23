@@ -34,11 +34,12 @@ export class OmNom extends Component {
     private blackHoleDeviationForce: number;
     private currentPortal: PortalMechanic;
     private animation: Animation;
-    private animationNames:string[] = ["OmNomChewing","OmNomFalling","OmNomDisintegrate","OmNomIdleBubble"]
+    private animationNames: string[] = ["OmNomChewing", "OmNomFalling", "OmNomDisintegrate", "OmNomIdleBubble"]
 
     private attachedToPlatformMovement: ItemMovement;
 
     private timeoutIds: number[] = [];
+    private emergencyStopped: boolean;
 
     start() {
         GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
@@ -48,6 +49,7 @@ export class OmNom extends Component {
     emergencyStop() {
         this.stopInertia();
         this.blackHoleDeviationToPos = undefined;
+        this.emergencyStopped = true;
     }
 
     onDestroy() {
@@ -111,9 +113,10 @@ export class OmNom extends Component {
             this.timeoutIds.push(
                 setTimeout(function () {
                     this.stopInertia();
+                    this.body.enabled = false;
                     this.timeoutIds.push(
                         setTimeout(function () {
-                            tween(this.node.scale).to(0.15, Vec3.ZERO).call(() => this.node.destroy()).start();
+                            tween(this.node.scale).to(0.15, Vec3.ZERO).call(() => this.node?.destroy()).start();
                             // this.node.destroy();
                         }.bind(this), 1000));
                 }.bind(this), 1));
@@ -184,7 +187,10 @@ export class OmNom extends Component {
     }
 
     onGameStateChanged(gameState: GameState) {
-        if (gameState == GameState.LevelCompleted) {
+        if (gameState == GameState.Editing) {
+            this.node.destroy();
+        }
+        else if (gameState == GameState.LevelCompleted) {
             this.body.enabled = false;
         }
     }
@@ -211,6 +217,10 @@ export class OmNom extends Component {
     }
 
     doPortalLogic() {
+        if (this.emergencyStopped) {
+            return;
+        }
+
         let connectedPortals = LevelMechanicManager.getConnectedPortals(this.currentPortal);
 
         for (let i = 0; i < connectedPortals.length; i++) {

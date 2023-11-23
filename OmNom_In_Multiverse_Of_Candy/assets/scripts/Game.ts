@@ -13,9 +13,11 @@ export class Game extends Component {
         if (this.gameStarted && this.numOmNoms <= 0) {
             this.gameStarted = false;
 
-            ScreenTransition.instance.doTransition(() => {
-                GameManager.setGameState(GameState.Editing);
-            });
+            setTimeout(function () {
+                ScreenTransition.instance.doTransition(() => {
+                    GameManager.setGameState(GameState.Editing);
+                })
+            }, 1000);
         }
     }
 }
