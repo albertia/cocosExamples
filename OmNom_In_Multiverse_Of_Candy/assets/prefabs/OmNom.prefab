@@ -3175,7 +3175,7 @@
     "body": {
       "__id__": 138
     },
-    "rotationSpeed": 10,
+    "rotationSpeed": 100,
     "extraExitPortalSpeed": 0,
     "_id": ""
   },

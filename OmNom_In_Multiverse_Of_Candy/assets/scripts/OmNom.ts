@@ -1,4 +1,4 @@
-import { CCFloat, CCInteger, CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, Vec2, Vec3, _decorator, instantiate, randomRangeInt, tween, v2 } from 'cc';
+import { Animation, CCFloat, CCInteger, CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, Vec2, Vec3, _decorator, instantiate, randomRangeInt, tween, v2 } from 'cc';
 import { BlackHole } from './BlackHole';
 import { Game } from './Game';
 import { GameManager, GameState } from './GameManager';
@@ -33,6 +33,7 @@ export class OmNom extends Component {
     private blackHoleDeviationRadius: number;
     private blackHoleDeviationForce: number;
     private currentPortal: PortalMechanic;
+    private animation: Animation;
 
     private attachedToPlatformMovement: ItemMovement;
 
@@ -75,15 +76,28 @@ export class OmNom extends Component {
         } else if (otherCollider.name == 'candy') {
             setTimeout(function () {
                 otherCollider.node.destroy();
-                GameManager.setGameState(GameState.LevelCompleted);
+                this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
+                this.animation.getState("OmNomChewing").play();
+                this.stopInertia();
+                setTimeout(function () {
+                    GameManager.setGameState(GameState.LevelCompleted);
+                }.bind(this), 2000);
             }.bind(this), 1);
         } else if (otherCollider.name == 'deathTouch') {
             // Lasers or black hole center
+            this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
             setTimeout(function () {
-                this.gameNode.getComponent(Game).numOmNoms--;
-                this.node.destroy();
-            }.bind(this), 1);
+                this.animation.getState("OmNomDisintegrate").play();
+                this.stopInertia();
+                setTimeout(function () {
+                    this.gameNode.getComponent(Game).numOmNoms--;
+                    this.node.destroy();
+                }.bind(this), 2000)
+            }.bind(this), 1)
         } else if (otherCollider.name == 'blackHole') {
+            this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
+            this.animation.getState("OmNomFalling").play();
+
             this.blackHoleDeviationForce = otherCollider.node.getComponent(BlackHole).blackHoleDeviationForce;
             this.blackHoleDeviationRadius = otherCollider.node.getComponent(BlackHole).radius;
             this.blackHoleDeviationToPos = otherCollider.node.position;
@@ -130,6 +144,7 @@ export class OmNom extends Component {
         collider.apply();
         this.gameNode.getComponent(Game).numOmNoms++;
         this.rotationDirection = randomRangeInt(-1, 2);
+        this.animation = this.node.getComponent(Animation);
     }
 
     setVelocity(velocity: Vec2) {
@@ -207,5 +222,10 @@ export class OmNom extends Component {
 
         this.gameNode.getComponent(Game).numOmNoms--;
         this.node.destroy();
+    }
+
+    stopInertia() {
+        this.node.getComponent(RigidBody2D).linearVelocity = new Vec2(0, 0);
+        this.node.getComponent(RigidBody2D).gravityScale = 0;
     }
 }
