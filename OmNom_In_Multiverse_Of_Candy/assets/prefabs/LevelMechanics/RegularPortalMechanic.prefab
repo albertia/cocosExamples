@@ -341,7 +341,7 @@
       "__id__": 15
     },
     "canChangeColor": true,
-    "canRotate": false,
+    "canRotate": true,
     "visualsNode": {
       "__id__": 2
     },
