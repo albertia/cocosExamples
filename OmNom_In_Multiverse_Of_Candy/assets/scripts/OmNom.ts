@@ -1,4 +1,4 @@
-import { Animation, CCFloat, CCInteger, CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, Vec2, Vec3, _decorator, instantiate, randomRangeInt, tween, v2 } from 'cc';
+import { Animation, CCFloat, CCInteger, CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, Vec2, Vec3, _decorator, director, instantiate, randomRangeInt, tween, v2 } from 'cc';
 import { BlackHole } from './BlackHole';
 import { Game } from './Game';
 import { GameManager, GameState } from './GameManager';
@@ -42,10 +42,17 @@ export class OmNom extends Component {
 
     start() {
         GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
+        director.on("om_noms_emergency_stop", this.emergencyStop, this);
+    }
+
+    emergencyStop() {
+        this.stopInertia();
+        this.blackHoleDeviationToPos = undefined;
     }
 
     onDestroy() {
         GameManager.eventTarget.off('gameStateChanged', this.onGameStateChanged, this);
+        director.off("om_noms_emergency_stop", this.emergencyStop, this);
 
         for (let timeoutId of this.timeoutIds) {
             clearTimeout(timeoutId);
@@ -84,6 +91,7 @@ export class OmNom extends Component {
         } else if (otherCollider.name == 'candy') {
             this.animationNames.forEach((c: string) => this.animation.getState(c).stop());
             this.animation.getState("OmNomChewing").play();
+            director.emit("om_noms_emergency_stop");
             this.timeoutIds.push(
                 setTimeout(function () {
                     otherCollider.node.destroy();
@@ -91,6 +99,7 @@ export class OmNom extends Component {
                     this.blackHoleDeviationToPos = undefined;
                     this.timeoutIds.push(
                         setTimeout(function () {
+                            director.emit("om_noms_emergency_stop");
                             GameManager.setGameState(GameState.LevelCompleted);
                         }.bind(this), 2000));
                 }.bind(this), 1));
@@ -98,12 +107,12 @@ export class OmNom extends Component {
             // Lasers or black hole center
             this.animationNames.forEach((c: string) => this.animation.getState(c).stop());
             this.animation.getState("OmNomDisintegrate").play();
+            this.gameNode.getComponent(Game).numOmNoms--;
             this.timeoutIds.push(
                 setTimeout(function () {
                     this.stopInertia();
                     this.timeoutIds.push(
                         setTimeout(function () {
-                            this.gameNode.getComponent(Game).numOmNoms--;
                             tween(this.node.scale).to(0.15, Vec3.ZERO).call(() => this.node.destroy()).start();
                             // this.node.destroy();
                         }.bind(this), 1000));
@@ -205,31 +214,33 @@ export class OmNom extends Component {
         let connectedPortals = LevelMechanicManager.getConnectedPortals(this.currentPortal);
 
         for (let i = 0; i < connectedPortals.length; i++) {
-            let connectedPortal = connectedPortals[i];
+            if (this.gameNode.getComponent(Game).numOmNoms < 20) {
+                let connectedPortal = connectedPortals[i];
 
-            let omNomInstance = instantiate(this.omNomPrefab);
-            omNomInstance.setPosition(connectedPortal.node.position);
-            omNomInstance.setParent(this.node.parent);
-            let omNom = omNomInstance.getComponent(OmNom);
-            omNom.inPortal = connectedPortal;
+                let omNomInstance = instantiate(this.omNomPrefab);
+                omNomInstance.setPosition(connectedPortal.node.position);
+                omNomInstance.setParent(this.node.parent);
+                let omNom = omNomInstance.getComponent(OmNom);
+                omNom.inPortal = connectedPortal;
 
-            let exitVelocity = this.body.linearVelocity;
+                let exitVelocity = this.body.linearVelocity;
 
-            if (connectedPortal.isGuidedPortal) {
-                let speed = this.body.linearVelocity.length();
-                let adjustedVelocity = connectedPortal.node.right.normalize().multiplyScalar(speed);
-                exitVelocity = new Vec2(adjustedVelocity.x, adjustedVelocity.y);
+                if (connectedPortal.isGuidedPortal) {
+                    let speed = this.body.linearVelocity.length();
+                    let adjustedVelocity = connectedPortal.node.right.normalize().multiplyScalar(speed);
+                    exitVelocity = new Vec2(adjustedVelocity.x, adjustedVelocity.y);
+                }
+
+                let extraVelocity = exitVelocity.clone().normalize().multiplyScalar(this.extraExitPortalSpeed);
+                exitVelocity.add(extraVelocity);
+
+                omNom.setVelocity(exitVelocity);
+                omNom.gameNode = this.gameNode;
+                omNom.setAngularVelocity(this.body.angularVelocity * 0.5);
+                omNom.init();
+
+                connectedPortal.doAnimation();
             }
-
-            let extraVelocity = exitVelocity.clone().normalize().multiplyScalar(this.extraExitPortalSpeed);
-            exitVelocity.add(extraVelocity);
-
-            omNom.setVelocity(exitVelocity);
-            omNom.gameNode = this.gameNode;
-            omNom.setAngularVelocity(this.body.angularVelocity * 0.5);
-            omNom.init();
-
-            connectedPortal.doAnimation();
         }
 
         this.currentPortal = null;
