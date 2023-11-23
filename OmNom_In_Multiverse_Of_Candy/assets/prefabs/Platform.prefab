@@ -157,6 +157,9 @@
     "collider2D": {
       "__id__": 8
     },
+    "visualsNode": {
+      "__id__": 1
+    },
     "_id": ""
   },
   {
