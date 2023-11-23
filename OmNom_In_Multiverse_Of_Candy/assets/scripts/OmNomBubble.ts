@@ -1,4 +1,4 @@
-import { _decorator, Component, director, instantiate, Node, NodeEventType, Prefab } from 'cc';
+import { _decorator, Component, director, instantiate, Node, NodeEventType, Prefab, Animation } from 'cc';
 import { Game } from './Game';
 import { GameManager, GameState } from './GameManager';
 import { GameplayStartedEvent } from './GameplayStartedEvent';
@@ -20,15 +20,22 @@ export class OmNomBubble extends Component {
     protected onDestroy(): void {
         GameManager.eventTarget.off('gameStateChanged', this.onGameStateChanged, this);
         this.node.off(NodeEventType.TOUCH_END, this.startGame, this);
+        this.node.getComponent(Animation).off(Animation.EventType.FINISHED, this.playAnimAndStartGame, this);
     }
 
     onGameStateChanged(gameState: GameState) {
         if (gameState == GameState.Editing) {
             this.node.active = true;
+            this.node.getChildByName("Bubble").active = true;
         }
     }
 
     startGame() {
+        this.node.getComponent(Animation).on(Animation.EventType.FINISHED, this.playAnimAndStartGame, this);
+        this.node.getComponent(Animation).play();      
+    }
+
+    playAnimAndStartGame(){
         const omnom = instantiate(this.omnomPrefab);
         omnom.position = this.node.position;
         omnom.getComponent(OmNom).gameNode = this.gameNode;
