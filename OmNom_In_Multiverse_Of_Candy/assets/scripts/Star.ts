@@ -6,6 +6,7 @@ const { ccclass, property } = _decorator;
 export class Star extends Component {
     start() {
         GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
+        GameManager.starsInLevel++;
 
         let collider = this.node.getComponent(CircleCollider2D);
         collider.name = 'star'

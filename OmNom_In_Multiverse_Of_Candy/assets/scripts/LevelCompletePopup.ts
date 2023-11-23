@@ -1,4 +1,4 @@
-import { _decorator, Component, director, Label } from 'cc';
+import { _decorator, Component, Label } from 'cc';
 import { GameManager } from './GameManager';
 const { ccclass, property } = _decorator;
 
@@ -9,7 +9,7 @@ export class LevelCompletePopup extends Component {
     private starsCollectedLabel: Label;
 
     protected onEnable(): void {
-        this.starsCollectedLabel.string = 'STARS: ' + GameManager.starsCollected;
+        this.starsCollectedLabel.string = 'STARS: ' + GameManager.starsCollected + '/' + GameManager.starsInLevel;
     }
 
     onResetButtonPressed() {
