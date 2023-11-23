@@ -87,6 +87,7 @@ export class OmNom extends Component {
                     this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
                     this.animation.getState("OmNomChewing").play();
                     this.stopInertia();
+                    this.blackHoleDeviationToPos = undefined;
                     this.timeoutIds.push(
                         setTimeout(function () {
                             GameManager.setGameState(GameState.LevelCompleted);
