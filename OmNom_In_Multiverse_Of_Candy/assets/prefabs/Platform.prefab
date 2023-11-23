@@ -124,7 +124,7 @@
     },
     "_type": 2,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -157,9 +157,11 @@
     "collider2D": {
       "__id__": 8
     },
+    "shouldAnimate": false,
     "visualsNode": {
       "__id__": 1
     },
+    "sprite": null,
     "_id": ""
   },
   {
@@ -243,7 +245,6 @@
       "__id__": 0
     },
     "fileId": "c46/YsCPVOJYA4mWEpNYRx",
-    "instance": null,
-    "targetOverrides": null
+    "instance": null
   }
 ]
