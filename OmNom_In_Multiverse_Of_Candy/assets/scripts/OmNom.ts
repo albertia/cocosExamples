@@ -113,21 +113,23 @@ export class OmNom extends Component {
         } else if (otherCollider.name == 'candy') {
             setTimeout(function () {
                 otherCollider.node.destroy();
+                this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
+                this.animation.getState("OmNomChewing").play();
+                this.stopInertia();
                 setTimeout(function(){
-                    this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
-                    this.animation.getState("OmNomChewing").play();
                     GameManager.setGameState(GameState.LevelCompleted);
-                }.bind(this), 1);
+                }.bind(this), 2000);
             }.bind(this), 1);
         } else if (otherCollider.name == 'deathTouch') {
             // Lasers or black hole center
             this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
             setTimeout(function (){
                 this.animation.getState("OmNomDisintegrate").play();
+                this.stopInertia();
                 setTimeout(function (){
                     this.gameNode.getComponent(Game).numOmNoms--;
                     this.node.destroy();
-                }.bind(this), 500)
+                }.bind(this), 2000)
             }.bind(this), 1)
         } else if (otherCollider.name == 'blackHole') {
             this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
@@ -197,5 +199,10 @@ export class OmNom extends Component {
             this.body.enabled = false;
             this.enabled = false;
         }
+    }
+
+    stopInertia() {
+        this.node.getComponent(RigidBody2D).linearVelocity = new Vec2(0,0);
+        this.node.getComponent(RigidBody2D).gravityScale = 0;
     }
 }
