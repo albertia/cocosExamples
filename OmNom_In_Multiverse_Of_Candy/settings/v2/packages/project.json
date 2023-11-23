@@ -12,5 +12,11 @@
     "gravity": {
       "y": 0
     }
-  }
+  },
+  "layer": [
+    {
+      "name": "TRANSITION",
+      "value": 524288
+    }
+  ]
 }

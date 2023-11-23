@@ -37,12 +37,18 @@ export class OmNom extends Component {
 
     private attachedToPlatformMovement: ItemMovement;
 
+    private timeoutIds: number[] = [];
+
     start() {
         GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
     }
 
     onDestroy() {
         GameManager.eventTarget.off('gameStateChanged', this.onGameStateChanged, this);
+
+        for (let timeoutId of this.timeoutIds) {
+            clearTimeout(timeoutId);
+        }
     }
 
     update(deltaTime: number) {
@@ -70,30 +76,37 @@ export class OmNom extends Component {
             PhysicsSystem2D.instance.gravity = v2(currentGrav.x + gravToApply.x * PHYSICS_2D_PTM_RATIO, currentGrav.y + gravToApply.y * PHYSICS_2D_PTM_RATIO);
         } else if (otherCollider.name == 'star') {
             GameManager.starsCollected++;
-            setTimeout(function () {
-                otherCollider.node.active = false;
-            }.bind(this), 1);
-        } else if (otherCollider.name == 'candy') {
-            setTimeout(function () {
-                otherCollider.node.destroy();
-                this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
-                this.animation.getState("OmNomChewing").play();
-                this.stopInertia();
+            this.timeoutIds.push(
                 setTimeout(function () {
-                    GameManager.setGameState(GameState.LevelCompleted);
-                }.bind(this), 2000);
-            }.bind(this), 1);
+                    otherCollider.node.active = false;
+                }.bind(this), 1));
+        } else if (otherCollider.name == 'candy') {
+            this.timeoutIds.push(
+                setTimeout(function () {
+                    otherCollider.node.destroy();
+                    this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
+                    this.animation.getState("OmNomChewing").play();
+                    this.stopInertia();
+                    this.blackHoleDeviationToPos = undefined;
+                    this.timeoutIds.push(
+                        setTimeout(function () {
+                            GameManager.setGameState(GameState.LevelCompleted);
+                        }.bind(this), 2000));
+                }.bind(this), 1));
         } else if (otherCollider.name == 'deathTouch') {
             // Lasers or black hole center
             this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
-            setTimeout(function () {
-                this.animation.getState("OmNomDisintegrate").play();
-                this.stopInertia();
+            this.timeoutIds.push(
                 setTimeout(function () {
-                    this.gameNode.getComponent(Game).numOmNoms--;
-                    this.node.destroy();
-                }.bind(this), 2000)
-            }.bind(this), 1)
+                    this.animation.getState("OmNomDisintegrate").play();
+                    this.stopInertia();
+                    this.timeoutIds.push(
+                        setTimeout(function () {
+                            this.gameNode.getComponent(Game).numOmNoms--;
+                            tween(this.node.scale).to(0.15, Vec3.ZERO).call(() => this.node.destroy()).start();
+                            // this.node.destroy();
+                        }.bind(this), 1000));
+                }.bind(this), 1));
         } else if (otherCollider.name == 'blackHole') {
             this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
             this.animation.getState("OmNomFalling").play();
@@ -109,9 +122,10 @@ export class OmNom extends Component {
 
         if (portalMechanic != null) {
             if (this.inPortal == null || portalMechanic != this.inPortal) {
-                setTimeout(function () {
-                    this.usePortal(portalMechanic);
-                }.bind(this), 1);
+                this.timeoutIds.push(
+                    setTimeout(function () {
+                        this.usePortal(portalMechanic);
+                    }.bind(this), 1));
             }
         }
     }
@@ -162,7 +176,6 @@ export class OmNom extends Component {
     onGameStateChanged(gameState: GameState) {
         if (gameState == GameState.LevelCompleted) {
             this.body.enabled = false;
-            this.enabled = false;
         }
     }
 

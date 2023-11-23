@@ -1,5 +1,6 @@
-import { _decorator, Component, director } from 'cc';
+import { _decorator, Component } from 'cc';
 import { GameManager, GameState } from './GameManager';
+import { ScreenTransition } from './ScreenTransition';
 const { ccclass, property } = _decorator;
 
 @ccclass('Game')
@@ -10,7 +11,11 @@ export class Game extends Component {
 
     update(deltaTime: number) {
         if (this.gameStarted && this.numOmNoms <= 0) {
-            GameManager.setGameState(GameState.Editing);
+            this.gameStarted = false;
+
+            ScreenTransition.instance.doTransition(() => {
+                GameManager.setGameState(GameState.Editing);
+            });
         }
     }
 }
