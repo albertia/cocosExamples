@@ -34,6 +34,7 @@ export class OmNom extends Component {
     private blackHoleDeviationForce: number;
     private currentPortal: PortalMechanic;
     private animation: Animation;
+    private animationNames:string[] = ["OmNomChewing","OmNomFalling","OmNomDisintegrate","OmNomIdleBubble"]
 
     private attachedToPlatformMovement: ItemMovement;
 
@@ -81,11 +82,11 @@ export class OmNom extends Component {
                     otherCollider.node.active = false;
                 }.bind(this), 1));
         } else if (otherCollider.name == 'candy') {
+            this.animationNames.forEach((c: string) => this.animation.getState(c).stop());
+            this.animation.getState("OmNomChewing").play();
             this.timeoutIds.push(
                 setTimeout(function () {
                     otherCollider.node.destroy();
-                    this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
-                    this.animation.getState("OmNomChewing").play();
                     this.stopInertia();
                     this.blackHoleDeviationToPos = undefined;
                     this.timeoutIds.push(
@@ -95,10 +96,10 @@ export class OmNom extends Component {
                 }.bind(this), 1));
         } else if (otherCollider.name == 'deathTouch') {
             // Lasers or black hole center
-            this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
+            this.animationNames.forEach((c: string) => this.animation.getState(c).stop());
+            this.animation.getState("OmNomDisintegrate").play();
             this.timeoutIds.push(
                 setTimeout(function () {
-                    this.animation.getState("OmNomDisintegrate").play();
                     this.stopInertia();
                     this.timeoutIds.push(
                         setTimeout(function () {
@@ -108,7 +109,7 @@ export class OmNom extends Component {
                         }.bind(this), 1000));
                 }.bind(this), 1));
         } else if (otherCollider.name == 'blackHole') {
-            this.animation.clips.forEach(c => this.animation.getState(c.name).stop());
+            this.animationNames.forEach((c: string) => this.animation.getState(c).stop());
             this.animation.getState("OmNomFalling").play();
 
             this.blackHoleDeviationForce = otherCollider.node.getComponent(BlackHole).blackHoleDeviationForce;
