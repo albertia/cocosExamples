@@ -61,7 +61,6 @@ export class NonOverlappingItem extends Component {
     }
 
     onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
-        console.log("CollisionBegin - NonOverlappingItem", otherCollider, ' gameStarted ', this.gameStarted);
         if (!this.gameStarted) {
             if (this.collisionsAllowed.find(name => name == otherCollider.name) == undefined) {
                 this.collisions++;
