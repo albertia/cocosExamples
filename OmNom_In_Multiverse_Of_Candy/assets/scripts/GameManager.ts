@@ -25,6 +25,7 @@ export class GameManager extends Component {
     public static gameState: GameState = GameState.Editing;
     public static eventTarget: EventTarget = new EventTarget();
     public static starsCollected: number;
+    public static starsInLevel: number;
 
     start() {
         GameManager.instance = this;
@@ -41,6 +42,7 @@ export class GameManager extends Component {
 
         GameManager.gameState = GameState.Editing;
         GameManager.starsCollected = 0;
+        GameManager.starsInLevel = 0;
     }
 
     onDestroy() {
