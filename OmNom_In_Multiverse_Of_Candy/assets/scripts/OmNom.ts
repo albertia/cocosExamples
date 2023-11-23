@@ -1,12 +1,14 @@
-import { CCFloat, CCInteger, CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, Vec2, Vec3, _decorator, instantiate, randomRangeInt, v2 } from 'cc';
+import { CCFloat, CCInteger, CircleCollider2D, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, PHYSICS_2D_PTM_RATIO, PhysicsSystem2D, Prefab, RigidBody2D, Vec2, Vec3, _decorator, instantiate, randomRangeInt, tween, v2 } from 'cc';
 import { BlackHole } from './BlackHole';
 import { Game } from './Game';
 import { GameManager, GameState } from './GameManager';
 import { GravityField } from './GravityField';
+import { ItemMovement } from './ItemMovement';
 import { LevelMechanicManager } from './LevelMechanics/LevelMechanicManager';
 import { PortalMechanic } from './LevelMechanics/PortalMechanic';
-import { ItemMovement } from './ItemMovement';
 const { ccclass, property } = _decorator;
+
+const disappearDuration: number = 0.25;
 
 @ccclass('OmNom')
 export class OmNom extends Component {
@@ -32,7 +34,7 @@ export class OmNom extends Component {
     private blackHoleDeviationForce: number;
     private currentPortal: PortalMechanic;
 
-    private attachedToPlatformMovement:ItemMovement;
+    private attachedToPlatformMovement: ItemMovement;
 
     start() {
         GameManager.eventTarget.on('gameStateChanged', this.onGameStateChanged, this);
@@ -44,45 +46,6 @@ export class OmNom extends Component {
 
     update(deltaTime: number) {
         this.node.angle = (360 + this.node.angle + this.rotationDirection * this.rotationSpeed * deltaTime) % 360;
-        //console.log(this.node.angle)
-
-        if (this.currentPortal) {
-            let connectedPortals = LevelMechanicManager.getConnectedPortals(this.currentPortal);
-
-            for (let i = 0; i < connectedPortals.length; i++) {
-
-                let connectedPortal = connectedPortals[i];
-
-                let omNomInstance = instantiate(this.omNomPrefab);
-                omNomInstance.setPosition(connectedPortal.node.position);
-                omNomInstance.setParent(this.node.parent);
-                let omNom = omNomInstance.getComponent(OmNom);
-                omNom.inPortal = connectedPortal;
-
-                let exitVelocity = this.body.linearVelocity;
-
-                if (connectedPortal.isGuidedPortal) {
-                    let speed = this.body.linearVelocity.length();
-                    let adjustedVelocity = connectedPortal.node.right.normalize().multiplyScalar(speed);
-                    exitVelocity = new Vec2(adjustedVelocity.x, adjustedVelocity.y);
-                }
-
-                let extraVelocity = exitVelocity.clone().normalize().multiplyScalar(this.extraExitPortalSpeed);
-                exitVelocity.add(extraVelocity);
-
-                omNom.setVelocity(exitVelocity);
-                omNom.gameNode = this.gameNode;
-                omNom.setAngularVelocity(this.body.angularVelocity * 0.5);
-                omNom.init();
-
-                connectedPortal.doAnimation();
-            }
-            this.gameNode.getComponent(Game).numOmNoms--;
-            this.node.destroy();
-
-            this.currentPortal.doAnimation();
-            this.currentPortal = null;
-        }
 
         if (this.blackHoleDeviationToPos != undefined && this.blackHoleDeviationForce != undefined) {
             var direction = new Vec2(this.blackHoleDeviationToPos.x - this.node.position.x, this.blackHoleDeviationToPos.y - this.node.position.y);
@@ -132,7 +95,9 @@ export class OmNom extends Component {
 
         if (portalMechanic != null) {
             if (this.inPortal == null || portalMechanic != this.inPortal) {
-                this.currentPortal = portalMechanic;
+                setTimeout(function () {
+                    this.usePortal(portalMechanic);
+                }.bind(this), 1);
             }
         }
     }
@@ -184,5 +149,63 @@ export class OmNom extends Component {
             this.body.enabled = false;
             this.enabled = false;
         }
+    }
+
+    usePortal(portalMechanic: PortalMechanic) {
+        this.currentPortal = portalMechanic;
+        this.currentPortal.doAnimation();
+        this.disappear(portalMechanic.node.worldPosition);
+    }
+
+    disappear(targetWorldPosition: Vec3) {
+        this.body.enabled = false;
+        this.node.getComponent(CircleCollider2D).enabled = false;
+
+        let scaleTween = tween(this.node).to(disappearDuration, { scale: Vec3.ZERO });
+        let worldPositionTween = tween(this.node).to(disappearDuration, { worldPosition: targetWorldPosition });
+
+        tween(this.node)
+            .parallel(scaleTween, worldPositionTween)
+            .call(() => {
+                this.doPortalLogic();
+            })
+            .start();
+    }
+
+    doPortalLogic() {
+        let connectedPortals = LevelMechanicManager.getConnectedPortals(this.currentPortal);
+
+        for (let i = 0; i < connectedPortals.length; i++) {
+            let connectedPortal = connectedPortals[i];
+
+            let omNomInstance = instantiate(this.omNomPrefab);
+            omNomInstance.setPosition(connectedPortal.node.position);
+            omNomInstance.setParent(this.node.parent);
+            let omNom = omNomInstance.getComponent(OmNom);
+            omNom.inPortal = connectedPortal;
+
+            let exitVelocity = this.body.linearVelocity;
+
+            if (connectedPortal.isGuidedPortal) {
+                let speed = this.body.linearVelocity.length();
+                let adjustedVelocity = connectedPortal.node.right.normalize().multiplyScalar(speed);
+                exitVelocity = new Vec2(adjustedVelocity.x, adjustedVelocity.y);
+            }
+
+            let extraVelocity = exitVelocity.clone().normalize().multiplyScalar(this.extraExitPortalSpeed);
+            exitVelocity.add(extraVelocity);
+
+            omNom.setVelocity(exitVelocity);
+            omNom.gameNode = this.gameNode;
+            omNom.setAngularVelocity(this.body.angularVelocity * 0.5);
+            omNom.init();
+
+            connectedPortal.doAnimation();
+        }
+
+        this.currentPortal = null;
+
+        this.gameNode.getComponent(Game).numOmNoms--;
+        this.node.destroy();
     }
 }
