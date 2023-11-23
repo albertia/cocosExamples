@@ -51,7 +51,7 @@ export class BounceObstacle extends Component {
             this.animationTween.stop();
         }
 
-        this.sprite.color = Color.CYAN;
+        this.sprite.color = Color.BLUE;
 
         tween(this.visualsNode.scale)
             .to(0.05, new Vec3(1.2, 1.2, 1))
