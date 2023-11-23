@@ -3,6 +3,7 @@ import { LevelMechanicManager } from './LevelMechanics/LevelMechanicManager';
 import { MechanicSelectedEvent } from './LevelMechanics/MechanicSelectedEvent';
 import { LevelMechanicSettingsDisplay } from './LevelMechanicSettings/LevelMechanicSettingsDisplay';
 import { Levels } from './Levels';
+import { ScreenTransition } from './ScreenTransition';
 const { ccclass, property } = _decorator;
 
 export enum GameState {
@@ -67,26 +68,34 @@ export class GameManager extends Component {
         GameManager.eventTarget.emit('gameStateChanged', gameState);
     }
 
+    static resetLevel() {
+        ScreenTransition.instance.doTransition(() => {
+            director.loadScene(director.getScene().name);
+        });
+    }
+
     static loadNextLevel() {
-        let currentLevel = director.getScene().name;
+        ScreenTransition.instance.doTransition(() => {
+            let currentLevel = director.getScene().name;
 
-        let levelAmount = 0;
-        let currentLevelIndex = 0;
+            let levelAmount = 0;
+            let currentLevelIndex = 0;
 
-        for (let level in Levels) {
+            for (let level in Levels) {
 
-            if (isNaN(Number(level))) {
-                continue;
+                if (isNaN(Number(level))) {
+                    continue;
+                }
+
+                levelAmount++;
+
+                if (currentLevel == Levels[level]) {
+                    currentLevelIndex = levelAmount;
+                }
             }
 
-            levelAmount++;
-
-            if (currentLevel == Levels[level]) {
-                currentLevelIndex = levelAmount;
-            }
-        }
-
-        let nextLevelIndex = currentLevelIndex % levelAmount;
-        director.loadScene(Levels[nextLevelIndex]);
+            let nextLevelIndex = currentLevelIndex % levelAmount;
+            director.loadScene(Levels[nextLevelIndex]);
+        });
     }
 }

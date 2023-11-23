@@ -13,12 +13,10 @@ export class LevelCompletePopup extends Component {
     }
 
     onResetButtonPressed() {
-        director.loadScene(director.getScene().name);
+        GameManager.resetLevel();
     }
 
     onContinueButtonPressed() {
         GameManager.loadNextLevel();
     }
 }
-
-
