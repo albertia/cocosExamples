@@ -12,6 +12,11 @@ export class ScreenTransition extends Component {
     private isTransitioning: boolean;
 
     start() {
+        if (ScreenTransition.instance != null) {
+            this.node.destroy();
+            return;
+        }
+
         ScreenTransition.instance = this;
         director.addPersistRootNode(this.node);
     }
