@@ -6,6 +6,9 @@ const { ccclass, property } = _decorator;
 @ccclass('BounceObstacle')
 export class BounceObstacle extends Component {
 
+    @property(CCBoolean)
+    private shouldAddForce: boolean;
+
     @property(CCFloat)
     private bounceForce: number = 150;
 
@@ -37,7 +40,16 @@ export class BounceObstacle extends Component {
 
         let omNom = otherCollider.getComponent(OmNom);
         if (omNom) {
-            omNom.addVelocity(contact.getWorldManifold().normal.multiplyScalar(this.bounceForce));
+
+            let bounceForce = contact.getWorldManifold().normal.multiplyScalar(this.bounceForce);
+
+            if (this.shouldAddForce) {
+                omNom.addVelocity(bounceForce);
+            }
+            else {
+                omNom.setVelocity(bounceForce);
+            }
+
             this.doAnimation();
         }
     }
