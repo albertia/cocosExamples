@@ -1,7 +1,6 @@
-import { _decorator, Component, director, instantiate, Node, NodeEventType, Prefab, Animation } from 'cc';
+import { Animation, Component, Node, NodeEventType, Prefab, _decorator, director, instantiate } from 'cc';
 import { Game } from './Game';
 import { GameManager, GameState } from './GameManager';
-import { GameplayStartedEvent } from './GameplayStartedEvent';
 import { OmNom } from './OmNom';
 const { ccclass, property } = _decorator;
 
@@ -32,10 +31,10 @@ export class OmNomBubble extends Component {
 
     startGame() {
         this.node.getComponent(Animation).on(Animation.EventType.FINISHED, this.playAnimAndStartGame, this);
-        this.node.getComponent(Animation).play();      
+        this.node.getComponent(Animation).play();
     }
 
-    playAnimAndStartGame(){
+    playAnimAndStartGame() {
         const omnom = instantiate(this.omnomPrefab);
         omnom.position = this.node.position;
         omnom.getComponent(OmNom).gameNode = this.gameNode;
@@ -43,7 +42,6 @@ export class OmNomBubble extends Component {
         this.gameNode.addChild(omnom);
         this.gameNode.getComponent(Game).gameStarted = true;
         this.node.active = false;
-        this.node.dispatchEvent(new GameplayStartedEvent('gameplayStarted', true));
         director.emit('bubbleExploded');
         GameManager.setGameState(GameState.Playing);
     }
