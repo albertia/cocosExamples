@@ -414,8 +414,8 @@
     "__prefab": {
       "__id__": 19
     },
-    "shouldAddForce": true,
-    "bounceForce": 150,
+    "shouldAddForce": false,
+    "bounceForce": 25,
     "collider2D": {
       "__id__": 16
     },
