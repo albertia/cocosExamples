@@ -6,6 +6,7 @@ import { GravityField } from './GravityField';
 import { ItemMovement } from './ItemMovement';
 import { LevelMechanicManager } from './LevelMechanics/LevelMechanicManager';
 import { PortalMechanic } from './LevelMechanics/PortalMechanic';
+import { Star } from './Star';
 const { ccclass, property } = _decorator;
 
 const disappearDuration: number = 0.25;
@@ -85,10 +86,7 @@ export class OmNom extends Component {
             PhysicsSystem2D.instance.gravity = v2(currentGrav.x + gravToApply.x * PHYSICS_2D_PTM_RATIO, currentGrav.y + gravToApply.y * PHYSICS_2D_PTM_RATIO);
         } else if (otherCollider.name == 'star') {
             GameManager.starsCollected++;
-            this.timeoutIds.push(
-                setTimeout(function () {
-                    otherCollider.node.active = false;
-                }.bind(this), 1));
+            otherCollider.node.getComponent(Star).touched();
         } else if (otherCollider.name == 'candy') {
             this.animation.play('OmNomChewing');
             director.emit("om_noms_emergency_stop");
