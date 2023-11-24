@@ -34,7 +34,6 @@ export class OmNom extends Component {
     private blackHoleDeviationForce: number;
     private currentPortal: PortalMechanic;
     private animation: Animation;
-    private animationNames: string[] = ["OmNomChewing", "OmNomFalling", "OmNomDisintegrate", "OmNomIdleBubble"]
 
     private attachedToPlatformMovement: ItemMovement;
 
@@ -91,8 +90,7 @@ export class OmNom extends Component {
                     otherCollider.node.active = false;
                 }.bind(this), 1));
         } else if (otherCollider.name == 'candy') {
-            this.animationNames.forEach((c: string) => this.animation.getState(c).stop());
-            this.animation.getState("OmNomChewing").play();
+            this.animation.play('OmNomChewing');
             director.emit("om_noms_emergency_stop");
             this.timeoutIds.push(
                 setTimeout(function () {
@@ -107,8 +105,7 @@ export class OmNom extends Component {
                 }.bind(this), 1));
         } else if (otherCollider.name == 'deathTouch') {
             // Lasers or black hole center
-            this.animationNames.forEach((c: string) => this.animation.getState(c).stop());
-            this.animation.getState("OmNomDisintegrate").play();
+            this.animation.play('OmNomDisintegrate');
             this.gameNode.getComponent(Game).numOmNoms--;
             this.timeoutIds.push(
                 setTimeout(function () {
@@ -121,9 +118,7 @@ export class OmNom extends Component {
                         }.bind(this), 1000));
                 }.bind(this), 1));
         } else if (otherCollider.name == 'blackHole') {
-            this.animationNames.forEach((c: string) => this.animation.getState(c).stop());
-            this.animation.getState("OmNomFalling").play();
-
+            this.animation.play('OmNomFalling');
             this.blackHoleDeviationForce = otherCollider.node.getComponent(BlackHole).blackHoleDeviationForce;
             this.blackHoleDeviationRadius = otherCollider.node.getComponent(BlackHole).radius;
             this.blackHoleDeviationToPos = otherCollider.node.position;
