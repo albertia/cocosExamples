@@ -174,6 +174,10 @@ export class OmNom extends Component {
         this.animation = this.node.getComponent(Animation);
     }
 
+    getVelocity() {
+        return this.body.linearVelocity;
+    }
+
     setVelocity(velocity: Vec2) {
         this.body.linearVelocity = velocity;
     }

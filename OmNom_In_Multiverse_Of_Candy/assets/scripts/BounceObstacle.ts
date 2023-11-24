@@ -1,4 +1,4 @@
-import { CCBoolean, CCFloat, Collider2D, Color, Component, Contact2DType, IPhysics2DContact, Node, Sprite, Tween, Vec3, _decorator, tween } from 'cc';
+import { CCBoolean, CCFloat, Collider2D, Color, Component, Contact2DType, IPhysics2DContact, Node, Sprite, Tween, Vec2, Vec3, _decorator, tween } from 'cc';
 import { ItemMovement } from './ItemMovement';
 import { OmNom } from './OmNom';
 const { ccclass, property } = _decorator;
@@ -40,18 +40,31 @@ export class BounceObstacle extends Component {
 
         let omNom = otherCollider.getComponent(OmNom);
         if (omNom) {
-
-            let bounceForce = contact.getWorldManifold().normal.multiplyScalar(this.bounceForce);
-
             if (this.shouldAddForce) {
+                let bounceForce = contact.getWorldManifold().normal.multiplyScalar(this.bounceForce);
                 omNom.addVelocity(bounceForce);
             }
             else {
-                omNom.setVelocity(bounceForce);
+
+                let normal = contact.getWorldManifold().normal;
+                let previousDirection = omNom.getVelocity().normalize();
+                let outDirection = this.reflect(previousDirection, normal);
+                var outForce = new Vec2();
+                Vec2.multiplyScalar(outForce, outDirection, this.bounceForce);
+                omNom.setVelocity(outForce);
             }
 
             this.doAnimation();
         }
+    }
+
+    reflect(inVector: Vec2, normalVector: Vec2) {
+        let projection = Vec2.dot(inVector, normalVector);
+        let mult = 2 * projection;
+        let reflectedVector = new Vec2();
+        Vec2.multiplyScalar(reflectedVector, normalVector, mult);
+        Vec2.subtract(reflectedVector, inVector, reflectedVector);
+        return reflectedVector;
     }
 
     doAnimation() {
